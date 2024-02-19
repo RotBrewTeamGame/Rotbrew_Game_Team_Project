@@ -12,6 +12,7 @@ public class BossDoor : MonoBehaviour
     public TextMeshProUGUI text;
 
     public bool canOpen;
+    public bool bossDoorOpened;
 
     public void Start()
     {
@@ -22,13 +23,13 @@ public class BossDoor : MonoBehaviour
     {
         interactionUI.gameObject.SetActive(true);
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount <= 2)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount <= 3)
         {
             text.color = Color.red;
             canOpen = false;
         }
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount >= 2)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount >= 3)
         {
             text.color = Color.green;
             canOpen = true;
@@ -44,7 +45,7 @@ public class BossDoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && canOpen && Input.GetKeyDown(KeyCode.E))
         {
-            bossDoor.SetActive(false);
+            Destroy(bossDoor);
         }
     }
 }

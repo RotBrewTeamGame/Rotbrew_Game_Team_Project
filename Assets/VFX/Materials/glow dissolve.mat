@@ -44,8 +44,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _glow_speed: 5
-    - _glow_strength: 5
+    - _glow_speed: 0
+    - _glow_strength: 0
     - _hologram_speed: 0.32
     m_Colors:
     - _Base_Color: {r: 0.9528302, g: 0.15608181, b: 0.13034001, a: 0}
