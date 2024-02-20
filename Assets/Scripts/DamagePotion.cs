@@ -14,7 +14,6 @@ public class DamagePotion : MonoBehaviour
         
     }
 
-    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -23,7 +22,6 @@ public class DamagePotion : MonoBehaviour
             this.GetComponent<PotionSplash>().BreakPotion();
         }
     }
-    */
 
     private void OnCollisionEnter(Collision collide)
     {
