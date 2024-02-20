@@ -110,8 +110,6 @@ GameObject:
   - component: {fileID: 2116750452657671600}
   - component: {fileID: 8214939067505902342}
   - component: {fileID: 3926428264556433798}
-  - component: {fileID: 6959517405623365650}
-  - component: {fileID: 5708694287266979829}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Untagged
@@ -184,48 +182,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6959517405623365650
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468696230364028148}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.6166113
-  m_Center: {x: 0, y: -0.27246195, z: 0}
---- !u!65 &5708694287266979829
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468696230364028148}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5723953, y: 0.63238907, z: 0.5758686}
-  m_Center: {x: 0.0034713745, y: 0.5728787, z: -0.0017361641}
 --- !u!1 &6048100087669746141
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +193,6 @@ GameObject:
   - component: {fileID: 1629240167597913647}
   - component: {fileID: 5326307510670106135}
   - component: {fileID: 8529132963989981207}
-  - component: {fileID: 5693907961868316878}
   m_Layer: 0
   m_Name: Cork
   m_TagString: Untagged
@@ -310,27 +265,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5693907961868316878
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6048100087669746141}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.23993742, y: 0.40000004, z: 0.29304382}
-  m_Center: {x: -0.0018432001, y: 0.0000002376547, z: 0.008025394}
 --- !u!1 &6487572040481391484
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +278,8 @@ GameObject:
   - component: {fileID: 2728893039210312247}
   - component: {fileID: 5480219290367213170}
   - component: {fileID: 8058717555402013740}
+  - component: {fileID: 1943784501410044902}
+  - component: {fileID: 7617965387199854336}
   m_Layer: 0
   m_Name: DamagePotion
   m_TagString: Untagged
@@ -360,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 6487572040481391484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.028183, y: 1.013, z: -6.478067}
+  m_LocalPosition: {x: 15.323328, y: 0.251, z: -8.916613}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -392,8 +328,6 @@ MonoBehaviour:
       Data3: 1320764804
       Data4: -176298879
     Path: event:/PotionSmashed
-  potionSmashEffect: {fileID: 0}
-  VFXPrefab: {fileID: 0}
   hasBroke: 0
 --- !u!114 &2728893039210312247
 MonoBehaviour:
@@ -422,11 +356,11 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.9924582
+  m_Radius: 0.84
   m_Center: {x: 0, y: 0.42451513, z: 0}
 --- !u!54 &8058717555402013740
 Rigidbody:
@@ -436,7 +370,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6487572040481391484}
   serializedVersion: 4
-  m_Mass: 2
+  m_Mass: 1
   m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -455,3 +389,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1943784501410044902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487572040481391484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ece1b9a66fa434da95bb1dcbfccc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7617965387199854336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487572040481391484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a92e96ccf6e0a4ea03801fcd405bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashParticleOffset: {x: 0, y: 1, z: 0}
+  splashDelay: 3
+  splashForce: 700
+  splashRadius: 5
+  S100PotionSmashSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  hasBroke: 0
