@@ -44,7 +44,7 @@ public class BossDoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && canOpen && Input.GetKeyDown(KeyCode.E))
         {
-            bossDoor.SetActive(false);
+            Destroy(bossDoor);
         }
     }
 }

@@ -16,7 +16,7 @@ public class ToBeContinued : MonoBehaviour
 
     private void EnableScreen()
     {
-        if (bossDoor == null && GameManager.instance.keyPieceItemCount == 3)
+        if (bossDoor == null)
         {
             tBCScreen.SetActive(true);
             playerRB.isKinematic = true;
