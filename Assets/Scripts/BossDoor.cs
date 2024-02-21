@@ -22,13 +22,13 @@ public class BossDoor : MonoBehaviour
     {
         interactionUI.gameObject.SetActive(true);
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount <= 2)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount <= 1)
         {
             text.color = Color.red;
             canOpen = false;
         }
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyPieceItemCount >= 2)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount >= 1)
         {
             text.color = Color.green;
             canOpen = true;

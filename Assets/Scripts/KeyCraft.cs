@@ -21,7 +21,8 @@ public class KeyCraft : MonoBehaviour
         if (GameManager.instance.keyPieceItemCount == 3)
         {
             GameManager.instance.keyPieceItemCount = GameManager.instance.keyPieceItemCount - 3;
-            GameManager.instance.keyPieceItemCount++;
+            GameManager.instance.TurnOnKeyUI();
+            GameManager.instance.IncreaseKeyAmount(1);
         }
     }
 }

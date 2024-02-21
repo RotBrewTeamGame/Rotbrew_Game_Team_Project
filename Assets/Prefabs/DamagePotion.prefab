@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splashParticleOffset: {x: 0, y: 1, z: 0}
-  splashDelay: 0.5
+  splashDelay: 3
   splashForce: 700
   splashRadius: 5
   S100PotionSmashSFX:
@@ -328,6 +328,10 @@ MonoBehaviour:
       Data3: 1320764804
       Data4: -176298879
     Path: event:/PotionSmashed
+  potionSmashEffect: {fileID: 8926484042661614526, guid: d71e4dbbc9a01c14393c9eaaaccc935a,
+    type: 3}
+  VFXPrefab: {fileID: 6906867303468118253, guid: 15f86ad6729619f4cb0182de14c33cb5,
+    type: 3}
   hasBroke: 0
 --- !u!114 &2728893039210312247
 MonoBehaviour:
@@ -424,4 +428,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  potionSmashEffect: {fileID: 0}
+  VFXPrefab: {fileID: 0}
   hasBroke: 0

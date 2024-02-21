@@ -13,11 +13,16 @@ public class GameManager : MonoBehaviour
     public int keyPieceItemCount;
     public int damagePotionItemCount;
     public int healthPotionItemCount;
+    public int keyItemCount;
+
     public TextMeshProUGUI damagePlantQuantity;
     public TextMeshProUGUI healthHerbQuantity;
     public TextMeshProUGUI keyPieceQuantity;
     public TextMeshProUGUI damagePotionQuantity;
     public TextMeshProUGUI healthPotionQuantity;
+    public TextMeshProUGUI keyQuantity;
+
+    public GameObject keyUI;
 
     void Start()
     {
@@ -67,5 +72,16 @@ public class GameManager : MonoBehaviour
     {
         healthPotionItemCount += amount;
         healthPotionQuantity.text = healthPotionItemCount.ToString();
+    }
+
+    public void TurnOnKeyUI()
+    {
+        keyUI.SetActive(true);
+    }
+
+    public void IncreaseKeyAmount(int amount)
+    {
+        keyItemCount += amount;
+        keyQuantity.text = keyItemCount.ToString();
     }
 }

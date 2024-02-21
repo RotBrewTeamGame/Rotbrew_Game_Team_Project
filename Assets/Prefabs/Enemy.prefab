@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2618436251438903900}
   - component: {fileID: 6241452950965923712}
   - component: {fileID: 8951581981912680212}
+  - component: {fileID: 8847600366177974939}
+  - component: {fileID: 1489042748717196473}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -66,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 076a358caad6fb948aa7c44f9b5f99f7, type: 2}
+  - {fileID: 2100000, guid: f91573c7c501976468414b7ed84ff3ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,6 +149,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 4
   maxHealth: 4
+  fxStrength: 0
+  fxSpeed: 0
+  damageFX: {fileID: 2100000, guid: f91573c7c501976468414b7ed84ff3ae, type: 2}
+--- !u!114 &8847600366177974939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601980518245616941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd5f2061197c4449a75fb9359abec80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 1413734649051562841, guid: 88d9ea1fc76756844b4b10399e872aa5,
+    type: 3}
+  lootList:
+  - {fileID: 11400000, guid: cf53e64ad1ed7c74c8fc84397cbcf526, type: 2}
+  - {fileID: 11400000, guid: d2c5d743c21bf5442b36437c4c28785e, type: 2}
+--- !u!114 &1489042748717196473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601980518245616941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232196948b73c824c993ae77a32c4589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
 --- !u!1 &5749289196247711364
 GameObject:
   m_ObjectHideFlags: 0
