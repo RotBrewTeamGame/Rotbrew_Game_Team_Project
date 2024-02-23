@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid
+  m_Name: IcePotion
   m_Shader: {fileID: -6465566751694194690, guid: 84f055ab19f91e14a856edc17c222bb1,
     type: 3}
   m_Parent: {fileID: 0}
@@ -59,6 +59,6 @@ Material:
     - _WobbleZ: 0
     m_Colors:
     - _Fresnel_Colour: {r: 1, g: 1, b: 1, a: 0}
-    - _Liquid_Colour: {r: 12.553699, g: 0, b: 9.795688, a: 0}
-    - _Surface_Colour: {r: 0.65215003, g: 0, b: 4.867144, a: 0}
+    - _Liquid_Colour: {r: 0.21676762, g: 2.769762, b: 2.9573312, a: 0}
+    - _Surface_Colour: {r: 0.23554282, g: 0.56554955, b: 3.749056, a: 0}
   m_BuildTextureStacks: []

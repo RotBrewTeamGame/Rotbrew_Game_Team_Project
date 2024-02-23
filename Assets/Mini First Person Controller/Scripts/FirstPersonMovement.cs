@@ -1,21 +1,28 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class FirstPersonMovement : MonoBehaviour
 {
     public float speed = 5;
-
+    public GroundCheck groundCheck;
     [Header("Running")]
     public bool canRun = true;
     public bool IsRunning { get; private set; }
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
 
+    [Header("Audio")]
+    private EventInstance playerFootsteps;
+
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
-
+    private void Start()
+    {
+        playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+    }
 
     void Awake()
     {
@@ -40,5 +47,22 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+    }
+
+    private void UpdateSound()
+    {
+        if (rigidbody.velocity.x != 0 && groundCheck)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+        }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }
