@@ -15,9 +15,8 @@ public class PotionSplash : MonoBehaviour
     [SerializeField] private float splashDelay = 1f; // delay before explosion
     [SerializeField] private float splashForce = 700f; // force applied by splash
     [SerializeField] private float splashRadius = 5f; // radius of splash
-    [SerializeField] public EventReference S100PotionSmashSFX;
-    //public VisualEffect potionSmashEffect;
-    //public GameObject VFXPrefab;
+    public VisualEffect potionSmashEffect;
+    public GameObject VFXPrefab;
 
     private float countdown;
     public bool hasBroke = false;
@@ -43,10 +42,9 @@ public class PotionSplash : MonoBehaviour
 
     public void BreakPotion()
     {
-        //GameObject potionSmashEffect = Instantiate(VFXPrefab, transform.position + splashParticleOffset, Quaternion.identity);
-        //VisualEffect potionSmashEffectComponent = potionSmashEffect.GetComponent<VisualEffect>();
-
-        //Destroy(potionSmashEffectComponent, 10f);
+        GameObject potionSmashEffect = Instantiate(VFXPrefab, transform.position + splashParticleOffset, Quaternion.identity);
+        VisualEffect potionSmashEffectComponent = potionSmashEffect.GetComponent<VisualEffect>();
+        Destroy(potionSmashEffectComponent, 10f);
 
         Destroy(gameObject);
     }

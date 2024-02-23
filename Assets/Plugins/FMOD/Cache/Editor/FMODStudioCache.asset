@@ -20,7 +20,74 @@ MonoBehaviour:
   - Name: Desktop
     Value: 920
   Exists: 1
+--- !u!114 &-6318204770832774634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Projects/Rotbrew/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638438083736913419
+  FileSizes:
+  - Name: Desktop
+    Value: 920
+  Exists: 1
 --- !u!114 &-3256409554662876913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Projects/Rotbrew/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638440672872102237
+  FileSizes:
+  - Name: Desktop
+    Value: 53568
+  Exists: 1
+--- !u!114 &-1590877939585544840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerFootsteps
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerFootsteps
+  Guid:
+    Data1: -1320764934
+    Data2: 1085588567
+    Data3: 1565745051
+    Data4: -2122805635
+  Banks:
+  - {fileID: -770865604425702018}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &-770865604425702018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,20 +120,67 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7126099126343723597}
-  - {fileID: 7379532947655567848}
-  - {fileID: -3256409554662876913}
+  - {fileID: -6318204770832774634}
+  - {fileID: 446241901245921507}
+  - {fileID: -770865604425702018}
   EditorEvents:
-  - {fileID: 1403160877772016776}
-  - {fileID: 5543565175061912973}
+  - {fileID: 1341318543457236879}
+  - {fileID: -1590877939585544840}
   EditorParameters:
-  - {fileID: 2784732718379568952}
+  - {fileID: 2959169693311682325}
   MasterBanks:
-  - {fileID: 7379532947655567848}
+  - {fileID: 446241901245921507}
   StringsBanks:
-  - {fileID: -7126099126343723597}
+  - {fileID: -6318204770832774634}
   cacheTime: 638440672872102237
   cacheVersion: 131616
+--- !u!114 &446241901245921507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Projects/Rotbrew/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638438083736862834
+  FileSizes:
+  - Name: Desktop
+    Value: 1226
+  Exists: 1
+--- !u!114 &1341318543457236879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PotionSmashed
+  m_EditorClassIdentifier: 
+  Path: event:/PotionSmashed
+  Guid:
+    Data1: 525645396
+    Data2: 1159449364
+    Data3: 1320764804
+    Data4: -176298879
+  Banks:
+  - {fileID: -770865604425702018}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1403160877772016776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +209,30 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 0
 --- !u!114 &2784732718379568952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Randomisation
+  m_EditorClassIdentifier: 
+  Name: Randomisation
+  StudioPath: parameter:/Randomisation
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4115259819
+    data2: 1823444260
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2959169693311682325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
