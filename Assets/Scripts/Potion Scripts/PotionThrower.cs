@@ -1,5 +1,7 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PotionThrower : MonoBehaviour
@@ -16,7 +18,11 @@ public class PotionThrower : MonoBehaviour
     [SerializeField] private float throwForce = 10f; // force applied to throw potion
     [SerializeField] private float maxForce = 20f; // maximum force applied to throw potion
 
+    [Header("SFX")]
+    [SerializeField] private EventReference PotionThrowSFX;
+
     private Camera mainCam;
+
 
     private bool isCharging = false; // check if player is charging the throw
     private float chargeTime = 0f; // time player has been charging throw
@@ -72,5 +78,6 @@ public class PotionThrower : MonoBehaviour
 
         Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
         rb.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
+        AudioManager.instance.PlayOneShot(PotionThrowSFX, this.transform.position);
     }
 }

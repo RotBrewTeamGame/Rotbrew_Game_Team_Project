@@ -15,7 +15,7 @@ public class PotionSplash : MonoBehaviour
     [SerializeField] private float splashDelay = 1f; // delay before explosion
     [SerializeField] private float splashForce = 700f; // force applied by splash
     [SerializeField] private float splashRadius = 5f; // radius of splash
-    [SerializeField] public EventReference S100PotionSmashSFX;
+    [SerializeField] private EventReference PotionSmashSFX;
     [SerializeField] public VisualEffectAsset potionSmashEffect;
     [SerializeField] public GameObject VFXPrefab;
 
@@ -45,9 +45,9 @@ public class PotionSplash : MonoBehaviour
     {
         GameObject potionSmashEffect = Instantiate(VFXPrefab, transform.position, Quaternion.identity);
         VisualEffectAsset potionSmashEffectComponent = potionSmashEffect.GetComponent<VisualEffectAsset>();
-
-        Destroy(potionSmashEffectComponent, 10f);
-        Destroy(potionSmashEffect, 10f);
+        AudioManager.instance.PlayOneShot(PotionSmashSFX, this.transform.position);
+        Destroy(potionSmashEffectComponent, 6f);
+        Destroy(potionSmashEffect, 6f);
 
         Destroy(gameObject);
     }
