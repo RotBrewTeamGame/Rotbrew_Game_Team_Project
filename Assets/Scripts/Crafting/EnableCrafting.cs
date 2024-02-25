@@ -10,13 +10,18 @@ public class EnableCrafting : MonoBehaviour
     {
         craftingSystem.SetActive(false);
     }
-    void Update()
+
+    private void OnTriggerEnter(Collider collision)
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (collision.gameObject.tag == "CraftingStation")
         {
             craftingSystem.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag == "CraftingStation")
         {
             craftingSystem.SetActive(false);
         }
