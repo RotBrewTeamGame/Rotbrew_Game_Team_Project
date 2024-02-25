@@ -35,17 +35,18 @@ public class PotionThrower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(throwKey))
+        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0)
         {
             StartThrowing();
         }
-        if (isCharging)
+        if (isCharging && GameManager.instance.damagePotionItemCount != 0)
         {
             ChargeThrow();
         }
-        if (Input.GetKeyUp(throwKey))
+        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0)
         {
             ReleaseThrow();
+            GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
         }
     }
 
