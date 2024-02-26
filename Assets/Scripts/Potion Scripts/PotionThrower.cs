@@ -26,6 +26,8 @@ public class PotionThrower : MonoBehaviour
 
     private bool isCharging = false; // check if player is charging the throw
     private float chargeTime = 0f; // time player has been charging throw
+    public GameObject craftingUI;
+    public GameObject damagePotionUI;
 
     void Start()
     {
@@ -35,15 +37,15 @@ public class PotionThrower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0)
+        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
         {
             StartThrowing();
         }
-        if (isCharging && GameManager.instance.damagePotionItemCount != 0)
+        if (isCharging && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
         {
             ChargeThrow();
         }
-        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0)
+        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
         {
             ReleaseThrow();
             GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
