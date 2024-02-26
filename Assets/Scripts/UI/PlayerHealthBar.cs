@@ -5,19 +5,24 @@ using UnityEngine.UI;
 
 public class PlayerHealthBar : MonoBehaviour
 {
-    public Slider healthSlider;
+    public Image healthBar;
 
     private void Start()
     {
-        healthSlider.value = healthSlider.maxValue;
+        healthBar.fillAmount = float.MaxValue;
     }
     private void Update()
     {
 
     }
 
-    public void UpdateHealthBar(float currentValue, float maxValue)
+    public void DamageHealthBar(float currentValue, float maxValue)
     {
-        healthSlider.value = currentValue / maxValue;
+        healthBar.fillAmount = currentValue / maxValue;
+    }
+
+    public void Heal(float currentValue, float maxValue)
+    {
+        healthBar.fillAmount = currentValue / maxValue;
     }
 }

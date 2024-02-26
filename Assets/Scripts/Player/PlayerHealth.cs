@@ -24,12 +24,18 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
-        healthBar.UpdateHealthBar(health, maxHealth);
+        healthBar.DamageHealthBar(health, maxHealth);
 
         if (health <= 0)
         {
             Die();
         }
+    }
+
+    public void HealHealth(float healAmount)
+    {
+        health += healAmount;
+        healthBar.Heal(health, maxHealth);
     }
 
     public void Die()
