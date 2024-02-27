@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glow dissolve
+  m_Name: HologramMat
   m_Shader: {fileID: -6465566751694194690, guid: 24b2d7ff7f1ef3f49afc73228137b958,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Hologram_Texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0b21c95bd83e4714c936e3520d617f89, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -44,16 +44,15 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _glow_speed: 0
-    - _glow_strength: 0
-    - _hologram_speed: 0.32
+    - _glow_speed: 5
+    - _glow_strength: 2
+    - _hologram_speed: 0.44
     m_Colors:
-    - _Base_Color: {r: 0.6792453, g: 0.09387684, b: 0.07369172, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Holo_Texture_Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _glow_colour: {r: 32, g: 1.631373, b: 0.2509804, a: 0}
+    - _Base_Color: {r: 0.97646517, g: 1, b: 0, a: 0}
+    - _Holo_Texture_Tiling: {r: 0.06, g: 1, b: 0, a: 0}
+    - _glow_colour: {r: 0.5072944, g: 54.88552, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4386434632831587438
+--- !u!114 &7976402630713016016
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
