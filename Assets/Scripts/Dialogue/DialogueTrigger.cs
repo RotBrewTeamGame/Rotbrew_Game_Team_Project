@@ -1,16 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private List<dialogueString> dialogueStrings = new List<dialogueString>();
     [SerializeField] private Transform NPCTransform;
+    [SerializeField] private GameObject interactionUI;
+
+    private void Start()
+    {
+        interactionUI.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
+        {
+            interactionUI.SetActive(true);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, NPCTransform);
         }
