@@ -10,9 +10,10 @@ public class HealthPotion : MonoBehaviour
 
     void Update()
     {
-        if (potions.healthPotionON && Input.GetKeyDown(KeyCode.Mouse1))
+        if (potions.healthPotionON && Input.GetKeyDown(KeyCode.Mouse1) && GameManager.instance.healthPotionItemCount != 0 && health.health != health.maxHealth)
         {
             health.HealHealth(1);
+            GameManager.instance.healthPotionItemCount--;
         }
     }
 }
