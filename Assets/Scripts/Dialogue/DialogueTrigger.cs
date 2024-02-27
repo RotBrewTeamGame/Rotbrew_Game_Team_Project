@@ -10,10 +10,21 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private List<dialogueString> dialogueStrings = new List<dialogueString>();
     [SerializeField] private Transform NPCTransform;
     [SerializeField] private GameObject interactionUI;
+    [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private bool canTalk;
 
     private void Start()
     {
         interactionUI.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (canTalk && Input.GetKeyDown(KeyCode.E))
+        {
+            dialogueManager.DialogueStart(dialogueStrings, NPCTransform);
+            canTalk = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,15 +32,14 @@ public class DialogueTrigger : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             interactionUI.SetActive(true);
+            canTalk = true;
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
-        {
-            other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, NPCTransform);
-        }
+        interactionUI.SetActive(false);
+        canTalk = false;
     }
 }
     [System.Serializable]
