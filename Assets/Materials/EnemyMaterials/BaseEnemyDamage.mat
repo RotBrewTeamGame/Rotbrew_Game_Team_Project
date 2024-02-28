@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToxicWasteMat
-  m_Shader: {fileID: -6465566751694194690, guid: a5afd5d38c9e6fd4aa27cf9a99119630,
+  m_Name: BaseEnemyDamage
+  m_Shader: {fileID: -6465566751694194690, guid: 4336054ef4a61164c94dcb9acc3c0e5d,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -40,9 +40,13 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    - _glow_speed: 0
+    - _glow_strength: 0
+    m_Colors:
+    - _base_color: {r: 0.83137256, g: 0, b: 0, a: 1}
+    - _glow_colour: {r: 32, g: 1.631373, b: 0.2509804, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &1935328726305035312
+--- !u!114 &7407899667673371730
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
