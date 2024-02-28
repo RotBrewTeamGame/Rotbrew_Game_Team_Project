@@ -12,10 +12,13 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private GameObject interactionUI;
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private bool canTalk;
+    [SerializeField] private bool isTalking;
 
     private void Start()
     {
         interactionUI.SetActive(false);
+        dialogueManager.dialogueON = false;
+        isTalking = false;
     }
 
     private void Update()
@@ -23,7 +26,17 @@ public class DialogueTrigger : MonoBehaviour
         if (canTalk && Input.GetKeyDown(KeyCode.E))
         {
             dialogueManager.DialogueStart(dialogueStrings, NPCTransform);
+            dialogueManager.dialogueON = true;
+            isTalking = true;
             canTalk = false;
+        }
+
+        if (isTalking && Input.GetKeyDown(KeyCode.R))
+        {
+            dialogueManager.DialogueStop();
+            dialogueManager.dialogueON = false;
+            isTalking = false;
+            canTalk = true;
         }
     }
 

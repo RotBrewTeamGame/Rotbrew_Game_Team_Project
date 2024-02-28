@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private FirstPersonMovement firstPersonMovements;
     [SerializeField] private FirstPersonLook firstPersonCam;
     [SerializeField] private PotionThrower potionController;
+    public bool dialogueON;
     private Transform playerCamera;
 
     private int currentDialogueIndex = 0;
@@ -145,8 +146,9 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex++;
     }
 
-    private void DialogueStop()
+    public void DialogueStop()
     {
+        dialogueON = false;
         StopAllCoroutines();
         dialogueText.text = "";
         dialogueParent.SetActive(false);
