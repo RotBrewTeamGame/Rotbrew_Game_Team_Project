@@ -44,13 +44,13 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _glow_speed: 5
-    - _glow_strength: 2
-    - _hologram_speed: 0.44
+    - _glow_speed: 2
+    - _glow_strength: 0.05
+    - _hologram_speed: 2
     m_Colors:
-    - _Base_Color: {r: 0.97646517, g: 1, b: 0, a: 0}
-    - _Holo_Texture_Tiling: {r: 0.06, g: 1, b: 0, a: 0}
-    - _glow_colour: {r: 0.5072944, g: 54.88552, b: 0, a: 0}
+    - _Base_Color: {r: 0.053800307, g: 0.5236494, b: 0.8773585, a: 0}
+    - _Holo_Texture_Tiling: {r: 1, g: 15, b: 0, a: 0}
+    - _glow_colour: {r: 5.5996366, g: 18.479328, b: 30.439045, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7976402630713016016
 MonoBehaviour:
