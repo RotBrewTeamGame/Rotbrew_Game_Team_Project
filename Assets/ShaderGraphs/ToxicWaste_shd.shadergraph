@@ -3763,7 +3763,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "c9e3fa5f8566450688e201e3eaffe879",
     "m_Id": 0,
-    "m_DisplayName": "Vector2",
+    "m_DisplayName": "normalsSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
