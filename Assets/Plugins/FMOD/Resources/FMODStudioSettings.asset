@@ -462,8 +462,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../FMOD/Projects/Rotbrew/RotBrew/RotBrew.fspro
-  sourceBankPath: ../../../FMOD/Projects/Rotbrew/RotBrew/Build
+  sourceProjectPath: RotBrewFMOD/RotBrew.fspro
+  sourceBankPath: RotBrewFMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 10
   ShowBankRefreshWindow: 1
@@ -484,11 +484,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks:
-  - Master
-  Banks:
-  - SFX
-  - Soundtracks
+  MasterBanks: []
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

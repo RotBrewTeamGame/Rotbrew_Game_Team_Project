@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ba640c45-a66c-4843-99b1-3caa656950ef}">
+		<property name="assetPath">
+			<value>footsteps-dirt-gravel-1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.1479375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e781564-8f46-4516-8d73-ca9403ae40a6}</destination>
+		</relationship>
+	</object>
+</objects>

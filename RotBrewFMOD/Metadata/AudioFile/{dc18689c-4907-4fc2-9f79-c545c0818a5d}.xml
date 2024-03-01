@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dc18689c-4907-4fc2-9f79-c545c0818a5d}">
+		<property name="assetPath">
+			<value>Can Roll in Wind.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>64.809795918367342</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e781564-8f46-4516-8d73-ca9403ae40a6}</destination>
+		</relationship>
+	</object>
+</objects>

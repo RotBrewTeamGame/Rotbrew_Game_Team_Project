@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f4029bec-da0e-4594-b777-46b02870903c}">
+		<property name="assetPath">
+			<value>S100v2-PotionSmashSFX-2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0048125000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e781564-8f46-4516-8d73-ca9403ae40a6}</destination>
+		</relationship>
+	</object>
+</objects>

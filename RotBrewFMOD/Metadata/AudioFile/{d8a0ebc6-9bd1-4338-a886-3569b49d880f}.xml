@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d8a0ebc6-9bd1-4338-a886-3569b49d880f}">
+		<property name="assetPath">
+			<value>GhillieGoblinPlayer_STEP4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.216</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9e781564-8f46-4516-8d73-ca9403ae40a6}</destination>
+		</relationship>
+	</object>
+</objects>
