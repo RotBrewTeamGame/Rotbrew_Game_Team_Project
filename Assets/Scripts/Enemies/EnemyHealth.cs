@@ -7,23 +7,19 @@ public class EnemyHealth : MonoBehaviour
     public float enemyHealth;
     public float maxHealth;
 
-    public float fxStrength;
-    public float fxSpeed;
-
-    public Material damageFX;
+    public Material baseEnemyMat;
+    public Material damageFlashFX;
 
     void Start()
     {
         maxHealth = enemyHealth;
 
-        damageFX.SetFloat("_glow_speed", 0f);
-        damageFX.SetFloat("_glow_strength", 0f);
+        this.GetComponent<Renderer>().material = baseEnemyMat;
     }
 
     public void TakeDamage(float damageAmount)
     {
-        damageFX.SetFloat("_glow_speed", 5f);
-        damageFX.SetFloat("_glow_strength", 0.06f);
+        this.GetComponent<Renderer>().material = damageFlashFX;
 
         StartCoroutine("DamageFlashTimer");
 
@@ -37,8 +33,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        damageFX.SetFloat("_glow_speed", 0f);
-        damageFX.SetFloat("_glow_strength", 0f);
+        this.GetComponent<Renderer>().material = baseEnemyMat;
 
         GetComponent<DropLoot>().InstantiateLoot(transform.position);
         this.gameObject.SetActive(false);
@@ -48,7 +43,6 @@ public class EnemyHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        damageFX.SetFloat("_glow_speed", 0f);
-        damageFX.SetFloat("_glow_strength", 0f);
+        this.GetComponent<Renderer>().material = baseEnemyMat;
     }
 }

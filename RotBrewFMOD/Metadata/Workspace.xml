@@ -4,6 +4,7 @@
 		<property name="builtBanksOutputDirectory">
 			<value>Build</value>
 		</property>
+		<property name="builtBanksEncryptionKey" />
 		<relationship name="masterEventFolder">
 			<destination>{7195ec6f-ff56-4750-a5d8-1233d9e77fe3}</destination>
 		</relationship>
