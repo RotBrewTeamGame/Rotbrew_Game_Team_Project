@@ -16,20 +16,7 @@ public class ShowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (craftingUI != null && craftingUI.activeInHierarchy)
-        {
-            // Show the mouse cursor
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            // Hide the mouse cursor
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        
-        if (dialogueManager.dialogueON)
+        if (craftingUI != null && craftingUI.activeInHierarchy || dialogueManager.dialogueON)
         {
             // Show the mouse cursor
             Cursor.visible = true;
