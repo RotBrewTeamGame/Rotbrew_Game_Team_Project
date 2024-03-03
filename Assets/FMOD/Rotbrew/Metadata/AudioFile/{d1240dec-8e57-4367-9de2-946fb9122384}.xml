@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d1240dec-8e57-4367-9de2-946fb9122384}">
+		<property name="assetPath">
+			<value>Environment/evening birds singing birds.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>93.671999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9aacd7c8-1491-4a8f-89c6-bc2ef7f4ffa0}</destination>
+		</relationship>
+	</object>
+</objects>

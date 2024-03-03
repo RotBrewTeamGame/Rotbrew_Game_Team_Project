@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{fe2d6641-001d-470c-915d-0af6e5f8dc46}">
+		<property name="assetPath">
+			<value>Enemies/GhillieGoblin/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9aacd7c8-1491-4a8f-89c6-bc2ef7f4ffa0}</destination>
+		</relationship>
+	</object>
+</objects>

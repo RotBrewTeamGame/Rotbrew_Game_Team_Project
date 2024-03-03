@@ -79,6 +79,8 @@ public class PotionThrower : MonoBehaviour
 
         Rigidbody rb = potion.GetComponent<Rigidbody>();
 
+        AudioManager.instance.PlayOneShot(PotionThrowSFX, this.transform.position);
+
         Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
         rb.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
         AudioManager.instance.PlayOneShot(PotionThrowSFX, this.transform.position);

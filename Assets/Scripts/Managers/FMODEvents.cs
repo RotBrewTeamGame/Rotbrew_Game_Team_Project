@@ -12,7 +12,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference potionSmashed { get; private set;}
 
     [field: Header("Potion Throw")]
-    [field: SerializeField] public EventReference potionThrow { get; private set; }
+    [field: SerializeField] public EventReference damagePotionThrow { get; private set; }
 
     public static FMODEvents instance {  get; private set; }
 

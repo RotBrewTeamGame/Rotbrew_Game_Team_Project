@@ -321,11 +321,11 @@ MonoBehaviour:
   splashRadius: 5
   PotionSmashSFX:
     Guid:
-      Data1: -1279226612
-      Data2: 1244684127
-      Data3: 1624172457
-      Data4: -1412054419
-    Path: event:/Potions/Smash/PotionSmash
+      Data1: -158512764
+      Data2: 1228809434
+      Data3: -2121252209
+      Data4: -1561865661
+    Path: event:/PotionSmash
   potionSmashEffect: {fileID: 8926484042661614526, guid: d71e4dbbc9a01c14393c9eaaaccc935a,
     type: 3}
   VFXPrefab: {fileID: 6906867303468118253, guid: 15f86ad6729619f4cb0182de14c33cb5,
