@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class EnemyHealth : MonoBehaviour
 
     public Material baseEnemyMat;
     public Material damageFlashFX;
+
+    public NavMeshAgent agent;
+    public GameObject player;
+
 
     void Start()
     {
@@ -24,6 +29,8 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine("DamageFlashTimer");
 
         enemyHealth -= damageAmount;
+
+        agent.SetDestination(player.transform.position);
 
         if (enemyHealth <= 0)
         {
