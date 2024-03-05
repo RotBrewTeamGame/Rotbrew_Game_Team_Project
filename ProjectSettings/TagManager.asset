@@ -7,7 +7,6 @@ TagManager:
   - Ground
   - Enemy
   - CraftingStation
-  - DamagePotion
   layers:
   - Default
   - TransparentFX
