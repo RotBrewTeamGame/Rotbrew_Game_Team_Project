@@ -9,7 +9,7 @@ public class FirstPersonAudio : MonoBehaviour
     public GroundCheck groundCheck;
 
     [Header("Step")]
-    public EventReference stepEvent;
+    public EventReference playerFootsteps;
     private EventInstance stepEventInstance;
 
     [Header("Running")]
@@ -33,8 +33,28 @@ public class FirstPersonAudio : MonoBehaviour
         audioManager = AudioManager.instance;
 
         // Initialize FMOD events
-        stepEventInstance = audioManager.CreateInstance(stepEvent);
+        stepEventInstance = audioManager.CreateInstance(playerFootsteps);
         runningEventInstance = audioManager.CreateInstance(runningEvent);
+
+        // Set 3D attributes for the event instances
+        Set3DAttributes();
+    }
+
+    void Set3DAttributes()
+    {
+        // Set 3D attributes for step event instance
+        if (stepEventInstance.isValid())
+        {
+            FMOD.ATTRIBUTES_3D attributes = RuntimeUtils.To3DAttributes(transform.position);
+            stepEventInstance.set3DAttributes(attributes);
+        }
+
+        // Set 3D attributes for running event instance
+        if (runningEventInstance.isValid())
+        {
+            FMOD.ATTRIBUTES_3D attributes = RuntimeUtils.To3DAttributes(transform.position);
+            runningEventInstance.set3DAttributes(attributes);
+        }
     }
 
     void OnEnable()
@@ -49,38 +69,81 @@ public class FirstPersonAudio : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Implement logic for playing FMOD events based on character state
+        // Play step or running audio based on character movement
+        float velocity = character.GetMovementVelocity();
+        if (velocity > 0.01f && groundCheck.isGrounded)
+        {
+            if (character.IsRunning)
+            {
+                PlayRunningAudio();
+            }
+            else
+            {
+                PlayStepAudio();
+            }
+        }
     }
 
     void SubscribeToEvents()
     {
         // Subscribe to game events to trigger FMOD events
+        character.Landed += PlayLandingAudio;
+        character.Jumped += PlayJumpAudio;
+        character.CrouchStarted += PlayCrouchStartAudio;
+        character.CrouchEnded += PlayCrouchEndAudio;
     }
 
     void UnsubscribeToEvents()
     {
         // Unsubscribe from game events
+        character.Landed -= PlayLandingAudio;
+        character.Jumped -= PlayJumpAudio;
+        character.CrouchStarted -= PlayCrouchStartAudio;
+        character.CrouchEnded -= PlayCrouchEndAudio;
     }
 
-    #region Play instant-related audios
+
+    void PlayStepAudio()
+    {
+        // Play step audio
+        if (!stepEventInstance.isValid())
+        {
+            stepEventInstance = audioManager.CreateInstance(playerFootsteps);
+        }
+        stepEventInstance.start();
+    }
+
+    void PlayRunningAudio()
+    {
+        // Play running audio
+        if (!runningEventInstance.isValid())
+        {
+            runningEventInstance = audioManager.CreateInstance(runningEvent);
+        }
+        runningEventInstance.start();
+    }
+
     void PlayLandingAudio()
     {
+        // Play landing audio
         audioManager.PlayOneShot(landingEvent, transform.position);
     }
 
     void PlayJumpAudio()
     {
+        // Play jump audio
         audioManager.PlayOneShot(jumpEvent, transform.position);
     }
 
     void PlayCrouchStartAudio()
     {
+        // Play crouch start audio
         audioManager.PlayOneShot(crouchStartEvent, transform.position);
     }
 
     void PlayCrouchEndAudio()
     {
+        // Play crouch end audio
         audioManager.PlayOneShot(crouchEndEvent, transform.position);
     }
-    #endregion
 }

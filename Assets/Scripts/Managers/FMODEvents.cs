@@ -2,28 +2,108 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class FMODEvents : MonoBehaviour
 {
-    [field: Header("Player Footsteps")]
-    [field: SerializeField] public EventReference playerFootsteps { get; private set; }
+    [Header("Player Footsteps")]
+    public EventReference playerFootsteps;
 
-    [field: Header ("Potion Smash")]
-    [field: SerializeField] public EventReference potionSmashed { get; private set;}
+    [Header("Jump")]
+    public EventReference jumpEvent;
 
-    [field: Header("Potion Throw")]
-    [field: SerializeField] public EventReference damagePotionThrow { get; private set; }
+    [Header("Landing")]
+    public EventReference landingEvent;
 
-    public static FMODEvents instance {  get; private set; }
+    [Header("Crouch Start")]
+    public EventReference crouchStartEvent;
+
+    [Header("Crouch End")]
+    public EventReference crouchEndEvent;
+
+    public static FMODEvents instance;
 
     private void Awake()
     {
+        if (instance != null)
         {
-            if (instance != null) 
-            {
-                Debug.LogError("Found more than one FMOD Events instance in this scene.");
-            }
-            instance = this;
+            Debug.LogError("Found more than one FMOD Events instance in this scene.");
+        }
+        instance = this;
+
+        // Subscribe to FirstPersonMovement events
+        FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
+        if (character != null)
+        {
+            character.Jumped += PlayJumpAudio;
+            character.Landed += PlayLandingAudio;
+            character.CrouchStarted += PlayCrouchStartAudio;
+            character.CrouchEnded += PlayCrouchEndAudio;
+        }
+        else
+        {
+            Debug.LogWarning("FirstPersonMovement script not found in the scene.");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe from FirstPersonMovement events
+        FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
+        if (character != null)
+        {
+            character.Jumped -= PlayJumpAudio;
+            character.Landed -= PlayLandingAudio;
+            character.CrouchStarted -= PlayCrouchStartAudio;
+            character.CrouchEnded -= PlayCrouchEndAudio;
+        }
+    }
+
+    private void PlayJumpAudio()
+    {
+        // Play jump audio event
+        Debug.Log("Jump audio played.");
+
+        // Add FMOD logic here to trigger the jump audio event
+        if (!jumpEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(jumpEvent, transform.position);
+        }
+    }
+
+    private void PlayLandingAudio()
+    {
+        // Play landing audio event
+        Debug.Log("Landing audio played.");
+
+        // Add FMOD logic here to trigger the landing audio event
+        if (!landingEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(landingEvent, transform.position);
+        }
+    }
+
+    private void PlayCrouchStartAudio()
+    {
+        // Play crouch start audio event
+        Debug.Log("Crouch start audio played.");
+
+        // Add FMOD logic here to trigger the crouch start audio event
+        if (!crouchStartEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(crouchStartEvent, transform.position);
+        }
+    }
+
+    private void PlayCrouchEndAudio()
+    {
+        // Play crouch end audio event
+        Debug.Log("Crouch end audio played.");
+
+        // Add FMOD logic here to trigger the crouch end audio event
+        if (!crouchEndEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(crouchEndEvent, transform.position);
         }
     }
 }

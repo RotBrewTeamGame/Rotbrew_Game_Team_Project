@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
@@ -13,9 +14,13 @@ public class FirstPersonMovement : MonoBehaviour
 
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
-    public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
+    public List<Func<float>> speedOverrides = new List<Func<float>>();
 
-
+    // Define events for jumping, landing, crouch start, and crouch end
+    public event Action Jumped;
+    public event Action Landed;
+    public event Action CrouchStarted;
+    public event Action CrouchEnded;
 
     void Awake()
     {
@@ -36,9 +41,36 @@ public class FirstPersonMovement : MonoBehaviour
         }
 
         // Get targetVelocity from input.
-        Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+        Vector2 targetVelocity = new Vector2(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+    }
+
+    public float GetMovementVelocity()
+    {
+        // Implement logic to calculate movement velocity
+        return 0f;
+    }
+
+    // Call these methods when the corresponding events occur
+    public void OnJumped()
+    {
+        Jumped?.Invoke();
+    }
+
+    public void OnLanded()
+    {
+        Landed?.Invoke();
+    }
+
+    public void OnCrouchStarted()
+    {
+        CrouchStarted?.Invoke();
+    }
+
+    public void OnCrouchEnded()
+    {
+        CrouchEnded?.Invoke();
     }
 }

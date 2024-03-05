@@ -319,13 +319,13 @@ MonoBehaviour:
   splashDelay: 3
   splashForce: 700
   splashRadius: 5
-  PotionSmashSFX:
+  potionSmashed:
     Guid:
       Data1: -158512764
       Data2: 1228809434
       Data3: -2121252209
       Data4: -1561865661
-    Path: event:/PotionSmash
+    Path: event:/PlayerMovement/potionSmash
   potionSmashEffect: {fileID: 8926484042661614526, guid: d71e4dbbc9a01c14393c9eaaaccc935a,
     type: 3}
   VFXPrefab: {fileID: 6906867303468118253, guid: 15f86ad6729619f4cb0182de14c33cb5,

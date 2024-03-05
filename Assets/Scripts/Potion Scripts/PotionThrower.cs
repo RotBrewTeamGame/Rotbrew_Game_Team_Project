@@ -19,7 +19,7 @@ public class PotionThrower : MonoBehaviour
     [SerializeField] private float maxForce = 20f; // maximum force applied to throw potion
 
     [Header("SFX")]
-    [SerializeField] private EventReference PotionThrowSFX;
+    [SerializeField] private EventReference damagePotionThrow;
 
     private Camera mainCam;
 
@@ -79,10 +79,10 @@ public class PotionThrower : MonoBehaviour
 
         Rigidbody rb = potion.GetComponent<Rigidbody>();
 
-        AudioManager.instance.PlayOneShot(PotionThrowSFX, this.transform.position);
+        AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
 
         Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
         rb.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
-        AudioManager.instance.PlayOneShot(PotionThrowSFX, this.transform.position);
+        AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
     }
 }
