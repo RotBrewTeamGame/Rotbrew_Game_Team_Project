@@ -7,6 +7,9 @@ public class FirstPersonAudio : MonoBehaviour
 {
     public FirstPersonMovement character;
     public GroundCheck groundCheck;
+    public float velocityThreshold = .01f;
+    Vector2 lastCharacterPosition;
+    Vector2 CurrentCharacterPosition => new Vector2(character.transform.position.x, character.transform.position.z);
 
     [Header("Step")]
     public EventReference playerFootsteps;
@@ -70,8 +73,8 @@ public class FirstPersonAudio : MonoBehaviour
     void FixedUpdate()
     {
         // Play step or running audio based on character movement
-        float velocity = character.GetMovementVelocity();
-        if (velocity > 0.01f && groundCheck.isGrounded)
+        float velocity = Vector3.Distance(CurrentCharacterPosition, lastCharacterPosition);
+        if (velocity >= velocityThreshold && groundCheck && groundCheck.isGrounded)
         {
             if (character.IsRunning)
             {
@@ -82,6 +85,8 @@ public class FirstPersonAudio : MonoBehaviour
                 PlayStepAudio();
             }
         }
+
+        lastCharacterPosition = CurrentCharacterPosition;
     }
 
     void SubscribeToEvents()
