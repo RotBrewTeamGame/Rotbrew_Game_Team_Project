@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     public Material baseEnemyMat;
     public Material damageFlashFX;
+    public Material deathFX;
 
     void Start()
     {
@@ -33,7 +34,14 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        this.GetComponent<Renderer>().material = baseEnemyMat;
+        this.GetComponent<Renderer>().material = deathFX;
+
+        StartCoroutine("DeathTimer");
+    }
+
+    public IEnumerator DeathTimer()
+    {
+        yield return new WaitForSeconds(0.5f);
 
         GetComponent<DropLoot>().InstantiateLoot(transform.position);
         this.gameObject.SetActive(false);
