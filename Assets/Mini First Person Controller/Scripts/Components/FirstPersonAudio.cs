@@ -5,6 +5,7 @@ using System;
 
 public class FirstPersonAudio : MonoBehaviour
 {
+    public bool playerIsMoving;
     public FirstPersonMovement character;
     public GroundCheck groundCheck;
     public float velocityThreshold = .01f;
@@ -72,6 +73,8 @@ public class FirstPersonAudio : MonoBehaviour
 
     void FixedUpdate()
     {
+        Walking();
+        /*
         // Play step or running audio based on character movement
         float velocity = Vector3.Distance(CurrentCharacterPosition, lastCharacterPosition);
         if (velocity >= velocityThreshold && groundCheck && groundCheck.isGrounded)
@@ -87,6 +90,28 @@ public class FirstPersonAudio : MonoBehaviour
         }
 
         lastCharacterPosition = CurrentCharacterPosition;
+        */
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            playerIsMoving = true;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            playerIsMoving = true;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            playerIsMoving = true;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            playerIsMoving = true;
+        }
+        else
+        {
+            playerIsMoving = false;
+        }
     }
 
     void SubscribeToEvents()
@@ -107,17 +132,26 @@ public class FirstPersonAudio : MonoBehaviour
         character.CrouchEnded -= PlayCrouchEndAudio;
     }
 
+void Walking()
+{
+    if (playerIsMoving == true)
+    {
+        FMODEvents.instance.PlayWalkingAudio();
+    }
+}
 
-    void PlayStepAudio()
+    /*
+void PlayStepAudio()
     {
         // Play step audio
         if (!stepEventInstance.isValid())
         {
-            stepEventInstance = audioManager.CreateInstance(playerFootsteps);
+            //stepEventInstance = audioManager.CreateInstance(playerFootsteps);
+            InvokeRepeating(“Walking”, 0.5f, walkingSpeed);
         }
-        stepEventInstance.start();
+        //stepEventInstance.start();
     }
-
+    */
     void PlayRunningAudio()
     {
         // Play running audio

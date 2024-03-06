@@ -17,6 +17,7 @@ public class FirstPersonMovement : MonoBehaviour
     public List<Func<float>> speedOverrides = new List<Func<float>>();
 
     // Define events for jumping, landing, crouch start, and crouch end
+    public event Action Walked;
     public event Action Jumped;
     public event Action Landed;
     public event Action CrouchStarted;
@@ -47,11 +48,13 @@ public class FirstPersonMovement : MonoBehaviour
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
     }
 
+    /*
     public float GetMovementVelocity()
     {
         // Implement logic to calculate movement velocity
         return 0f;
     }
+    */
 
     // Call these methods when the corresponding events occur
     public void OnJumped()

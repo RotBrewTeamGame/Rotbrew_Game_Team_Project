@@ -35,6 +35,7 @@ public class FMODEvents : MonoBehaviour
         FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
         if (character != null)
         {
+            character.Walked += PlayWalkingAudio;
             character.Jumped += PlayJumpAudio;
             character.Landed += PlayLandingAudio;
             character.CrouchStarted += PlayCrouchStartAudio;
@@ -52,6 +53,7 @@ public class FMODEvents : MonoBehaviour
         FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
         if (character != null)
         {
+            character.Walked += PlayWalkingAudio;
             character.Jumped -= PlayJumpAudio;
             character.Landed -= PlayLandingAudio;
             character.CrouchStarted -= PlayCrouchStartAudio;
@@ -59,7 +61,15 @@ public class FMODEvents : MonoBehaviour
         }
     }
 
-    private void PlayJumpAudio()
+    public void PlayWalkingAudio()
+    {
+        if (!playerFootsteps.IsNull)
+        {
+            RuntimeManager.PlayOneShot(playerFootsteps, transform.position);
+        }
+    }
+
+    public void PlayJumpAudio()
     {
         // Play jump audio event
         Debug.Log("Jump audio played.");
@@ -71,7 +81,7 @@ public class FMODEvents : MonoBehaviour
         }
     }
 
-    private void PlayLandingAudio()
+    public void PlayLandingAudio()
     {
         // Play landing audio event
         Debug.Log("Landing audio played.");
@@ -83,7 +93,7 @@ public class FMODEvents : MonoBehaviour
         }
     }
 
-    private void PlayCrouchStartAudio()
+    public void PlayCrouchStartAudio()
     {
         // Play crouch start audio event
         Debug.Log("Crouch start audio played.");
@@ -95,7 +105,7 @@ public class FMODEvents : MonoBehaviour
         }
     }
 
-    private void PlayCrouchEndAudio()
+    public void PlayCrouchEndAudio()
     {
         // Play crouch end audio event
         Debug.Log("Crouch end audio played.");
