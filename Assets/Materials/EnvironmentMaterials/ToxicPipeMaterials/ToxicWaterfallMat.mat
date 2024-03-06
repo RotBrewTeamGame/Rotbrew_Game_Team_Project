@@ -44,13 +44,13 @@ Material:
     - _normalStrength: 0.1
     - _smoothness: 1
     - _voroniAgitation: 3
-    - _voroniPower: 5
+    - _voroniPower: 4
     - _voroniScale: 12
     m_Colors:
     - _baseColor: {r: 0.031971768, g: 1.3584905, b: 0, a: 1}
-    - _normalsSpeed: {r: 0, g: 0.2, b: 0, a: 0}
+    - _normalsSpeed: {r: 0, g: 0.15, b: 0, a: 0}
     - _voroniColor: {r: 0.7209227, g: 1.490566, b: 0.5132609, a: 0}
-    - _voroniSpeed: {r: 0, g: 0.25, b: 0, a: 0}
+    - _voroniSpeed: {r: 0, g: 0.2, b: 0, a: 0}
     - _voroniTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1935328726305035312

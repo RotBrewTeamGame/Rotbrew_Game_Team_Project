@@ -40,17 +40,17 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _metallic: 0.1
+    - _metallic: 0.2
     - _normalStrength: 0.05
-    - _smoothness: 1
+    - _smoothness: 2
     - _voroniAgitation: 2
-    - _voroniPower: 4.35
+    - _voroniPower: 3
     - _voroniScale: 15
     m_Colors:
     - _baseColor: {r: 0.031971768, g: 1.3584905, b: 0, a: 1}
-    - _normalsSpeed: {r: 0, g: 0.25, b: 0, a: 0}
+    - _normalsSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _voroniColor: {r: 0.7209227, g: 1.490566, b: 0.5132609, a: 0}
-    - _voroniSpeed: {r: 0, g: 0.25, b: 0, a: 0}
+    - _voroniSpeed: {r: 0, g: 0.15, b: 0, a: 0}
     - _voroniTiling: {r: 1.2, g: 0.6, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1935328726305035312
