@@ -1,100 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9072143312006198500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638452765522643510
-  FileSizes:
-  - Name: Desktop
-    Value: 1216
-  Exists: 1
---- !u!114 &-6443121294338001521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerMovement/playerFootsteps
-  m_EditorClassIdentifier: 
-  Path: event:/PlayerMovement/playerFootsteps
-  Guid:
-    Data1: -891470291
-    Data2: 1204564024
-    Data3: 904325796
-    Data4: 916417895
-  Banks:
-  - {fileID: 5880499990901195210}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 350
---- !u!114 &-2808162783464781845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Soundtracks.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
-  Name: Soundtracks
-  StudioPath: bank:/Soundtracks
-  lastModified: 638452765522718429
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
---- !u!114 &-2554109852447152425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerMovement/CrouchEndEvent
-  m_EditorClassIdentifier: 
-  Path: event:/PlayerMovement/CrouchEndEvent
-  Guid:
-    Data1: -1158988528
-    Data2: 1325321358
-    Data3: 2080426
-    Data4: 292301492
-  Banks:
-  - {fileID: 5880499990901195210}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 140
---- !u!114 &-1061699885298632710
+--- !u!114 &-8139238512690307969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +19,7 @@ MonoBehaviour:
     Data3: 1031126656
     Data4: -756813223
   Banks:
-  - {fileID: 5880499990901195210}
+  - {fileID: 4236947307862804807}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -121,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 370
---- !u!114 &-123256901075496853
+--- !u!114 &-7892410260973838850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,17 +37,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638452765522643510
+  Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638453738575644264
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1352
   Exists: 1
---- !u!114 &11400000
+--- !u!114 &-6622632606582554452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,35 +56,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerMovement/playerFootsteps
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -9072143312006198500}
-  - {fileID: -123256901075496853}
-  - {fileID: 5880499990901195210}
-  - {fileID: -2808162783464781845}
-  EditorEvents:
-  - {fileID: -2554109852447152425}
-  - {fileID: -6443121294338001521}
-  - {fileID: -1061699885298632710}
-  - {fileID: 8378992178837506857}
-  - {fileID: 3201317424418700326}
-  - {fileID: 7740559894449339189}
-  - {fileID: 1647765717728749972}
-  - {fileID: 7908890072326393168}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -123256901075496853}
-  StringsBanks:
-  - {fileID: -9072143312006198500}
-<<<<<<< Updated upstream
-  cacheTime: 638452765522718429
-=======
-  cacheTime: 638453651073581064
->>>>>>> Stashed changes
-  cacheVersion: 131616
---- !u!114 &1647765717728749972
+  Path: event:/PlayerMovement/playerFootsteps
+  Guid:
+    Data1: -891470291
+    Data2: 1204564024
+    Data3: 904325796
+    Data4: 916417895
+  Banks:
+  - {fileID: 4236947307862804807}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
+--- !u!114 &-2045430133421446251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,7 +93,7 @@ MonoBehaviour:
     Data3: 1244081285
     Data4: -232825415
   Banks:
-  - {fileID: 5880499990901195210}
+  - {fileID: 4236947307862804807}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -205,7 +101,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200
---- !u!114 &3201317424418700326
+--- !u!114 &-1900549529644345213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,24 +111,133 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerMovement/JumpEvent
+  m_Name: event:/Environment/Ingredient Plant Hum
   m_EditorClassIdentifier: 
-  Path: event:/PlayerMovement/JumpEvent
+  Path: event:/Environment/Ingredient Plant Hum
   Guid:
-    Data1: 526865788
-    Data2: 1161865779
-    Data3: 78240700
-    Data4: -189844617
+    Data1: -516153655
+    Data2: 1082575629
+    Data3: 44564100
+    Data4: 1166183764
   Banks:
-  - {fileID: 5880499990901195210}
+  - {fileID: 5342766799394024072}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7982
+--- !u!114 &-1341384225831334323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/PotionSmash
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/PotionSmash
+  Guid:
+    Data1: -158512764
+    Data2: 1228809434
+    Data3: -2121252209
+    Data4: -1561865661
+  Banks:
+  - {fileID: 4236947307862804807}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 552
---- !u!114 &5880499990901195210
+  Length: 1160
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -7892410260973838850}
+  - {fileID: 5342766799394024072}
+  - {fileID: 1505079691232832659}
+  - {fileID: 4236947307862804807}
+  - {fileID: 9022731805977689344}
+  EditorEvents:
+  - {fileID: -1900549529644345213}
+  - {fileID: 3221834203875293454}
+  - {fileID: -6622632606582554452}
+  - {fileID: -8139238512690307969}
+  - {fileID: 6765632380134419236}
+  - {fileID: 7351835365675865048}
+  - {fileID: -1341384225831334323}
+  - {fileID: -2045430133421446251}
+  - {fileID: 6182098185106730448}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1505079691232832659}
+  StringsBanks:
+  - {fileID: -7892410260973838850}
+  cacheTime: 638453738577500678
+  cacheVersion: 131616
+--- !u!114 &1505079691232832659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638453738575592849
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &3221834203875293454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerMovement/CrouchEndEvent
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerMovement/CrouchEndEvent
+  Guid:
+    Data1: -1158988528
+    Data2: 1325321358
+    Data3: 2080426
+    Data4: 292301492
+  Banks:
+  - {fileID: 4236947307862804807}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 140
+--- !u!114 &4236947307862804807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,16 +252,32 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-<<<<<<< Updated upstream
-  lastModified: 638452765522718429
-=======
-  lastModified: 638453651073581064
->>>>>>> Stashed changes
+  lastModified: 638453738575931751
   FileSizes:
   - Name: Desktop
     Value: 109952
   Exists: 1
---- !u!114 &7740559894449339189
+--- !u!114 &5342766799394024072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Environment.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
+  Name: Environment
+  StudioPath: bank:/Environment
+  lastModified: 638453738577500678
+  FileSizes:
+  - Name: Desktop
+    Value: 155264
+  Exists: 1
+--- !u!114 &6182098185106730448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,43 +287,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerMovement/potionSmash
+  m_Name: event:/Potion/DamagePotionThrow
   m_EditorClassIdentifier: 
-  Path: event:/PlayerMovement/potionSmash
-  Guid:
-    Data1: -158512764
-    Data2: 1228809434
-    Data3: -2121252209
-    Data4: -1561865661
-  Banks:
-  - {fileID: 5880499990901195210}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1160
---- !u!114 &7908890072326393168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerMovement/DamagePotionThrow
-  m_EditorClassIdentifier: 
-  Path: event:/PlayerMovement/DamagePotionThrow
+  Path: event:/Potion/DamagePotionThrow
   Guid:
     Data1: 560595665
     Data2: 1172071187
     Data3: -2245973
     Data4: 695673039
   Banks:
-  - {fileID: 5880499990901195210}
+  - {fileID: 4236947307862804807}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -310,7 +304,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
---- !u!114 &8378992178837506857
+--- !u!114 &6765632380134419236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,7 +323,7 @@ MonoBehaviour:
     Data3: -203605367
     Data4: -1617889020
   Banks:
-  - {fileID: 5880499990901195210}
+  - {fileID: 4236947307862804807}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -337,3 +331,50 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &7351835365675865048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerMovement/JumpEvent
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerMovement/JumpEvent
+  Guid:
+    Data1: 526865788
+    Data2: 1161865779
+    Data3: 78240700
+    Data4: -189844617
+  Banks:
+  - {fileID: 4236947307862804807}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 552
+--- !u!114 &9022731805977689344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Soundtracks.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
+  Name: Soundtracks
+  StudioPath: bank:/Soundtracks
+  lastModified: 638450834699533851
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
