@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - CraftingStation
+  - Industrial
+  - City Centre
+  - Sewer
   layers:
   - Default
   - TransparentFX
