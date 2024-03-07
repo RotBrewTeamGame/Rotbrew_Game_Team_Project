@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseEnemyDamage
+  m_Name: BaseEnemy
   m_Shader: {fileID: -6465566751694194690, guid: 4336054ef4a61164c94dcb9acc3c0e5d,
     type: 3}
   m_Parent: {fileID: 0}
