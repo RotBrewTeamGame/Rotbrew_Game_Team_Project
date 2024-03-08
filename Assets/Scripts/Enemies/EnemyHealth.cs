@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public GameObject enemyObject;
     public float enemyHealth;
     public float maxHealth;
 
@@ -44,7 +45,7 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         GetComponent<DropLoot>().InstantiateLoot(transform.position);
-        this.gameObject.SetActive(false);
+        Destroy(enemyObject);
     }
 
     public IEnumerator DamageFlashTimer()

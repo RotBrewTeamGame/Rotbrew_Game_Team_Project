@@ -10,6 +10,7 @@ TagManager:
   - Industrial
   - City Centre
   - Sewer
+  - Dart
   layers:
   - Default
   - TransparentFX
