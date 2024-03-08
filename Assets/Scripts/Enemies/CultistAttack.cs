@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CultistAttack : MonoBehaviour
 {
-    public EnemyPatrol patrol;
+    public EnemyPatrolPoints patrol;
     public EnemyDart dart;
 
     private void Start()

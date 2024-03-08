@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2119575689533556870}
   - component: {fileID: 5576903840691412075}
+  - component: {fileID: 3349605013800889795}
   m_Layer: 0
   m_Name: GhillieGoblin
   m_TagString: Enemy
@@ -57,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1705022004956534750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.9, y: 0.59, z: -16}
+  m_LocalPosition: {x: 108.2, y: 0.59, z: 81.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -88,6 +89,25 @@ NavMeshAgent:
   m_BaseOffset: 0.57
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &3349605013800889795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705022004956534750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &3747063448155674021
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +119,7 @@ GameObject:
   - component: {fileID: 1690663368317714049}
   - component: {fileID: 725261919933321029}
   - component: {fileID: 497602693960221416}
+  - component: {fileID: 207425978852344847}
   m_Layer: 0
   m_Name: enemyView
   m_TagString: Untagged
@@ -149,7 +170,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3747063448155674021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f576e737773accd43861ab7c5d6b4d18, type: 3}
   m_Name: 
@@ -157,6 +178,25 @@ MonoBehaviour:
   agent: {fileID: 5576903840691412075}
   range: 9
   centrePoint: {fileID: 0}
+  patrolling: 0
+  player: {fileID: 0}
+--- !u!114 &207425978852344847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747063448155674021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b1522700916bc458b0c9530b4a7344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  patrolPointIndex: 0
+  agent: {fileID: 5576903840691412075}
   patrolling: 0
   player: {fileID: 0}
 --- !u!1 &7775743114569427090
@@ -314,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2322136dcb961d4d99c5b3fec32b919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrol: {fileID: 497602693960221416}
+  patrol: {fileID: 207425978852344847}
   dart: {fileID: 8643251747225790703}
 --- !u!114 &5883718658317520001
 MonoBehaviour:
