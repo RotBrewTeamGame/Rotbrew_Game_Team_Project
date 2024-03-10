@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,18 +13,27 @@ public class EnemyHealth : MonoBehaviour
     public Material damageFlashFX;
     public Material deathFX;
 
+    public GameObject deathVFXPrefab; // Reference to the death VFX prefab
+    public EventReference enemyDissolveSFX; // FMOD EventReference for the enemy dissolve SFX
+
+    private AudioManager audioManager;
+    private Renderer enemyRenderer;
+
     void Start()
     {
         maxHealth = enemyHealth;
 
-        this.GetComponent<Renderer>().material = baseEnemyMat;
+        enemyRenderer = GetComponent<Renderer>();
+        enemyRenderer.material = baseEnemyMat;
+
+        audioManager = AudioManager.instance;
     }
 
     public void TakeDamage(float damageAmount)
     {
-        this.GetComponent<Renderer>().material = damageFlashFX;
+        enemyRenderer.material = damageFlashFX;
 
-        StartCoroutine("DamageFlashTimer");
+        StartCoroutine(DamageFlashTimer());
 
         enemyHealth -= damageAmount;
 
@@ -35,14 +45,32 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        this.GetComponent<Renderer>().material = deathFX;
-
-        StartCoroutine("DeathTimer");
+        StartCoroutine(DeathTimer());
     }
 
     public IEnumerator DeathTimer()
     {
-        yield return new WaitForSeconds(0.5f);
+        float dissolveAmount = 0f;
+        float dissolveSpeed = 0.5f; // Adjust speed as needed
+
+        // Play dissolve SFX
+        if (audioManager != null && !enemyDissolveSFX.IsNull)
+        {
+            audioManager.PlayOneShot(enemyDissolveSFX, transform.position);
+        }
+
+        while (dissolveAmount < 1f)
+        {
+            dissolveAmount += Time.deltaTime * dissolveSpeed;
+            enemyRenderer.material.SetFloat("_VisibilityAmount", dissolveAmount);
+            yield return null;
+        }
+
+        // Instantiate death VFX
+        if (deathVFXPrefab != null)
+        {
+            Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
+        }
 
         GetComponent<DropLoot>().InstantiateLoot(transform.position);
         Destroy(enemyObject);
@@ -52,6 +80,6 @@ public class EnemyHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        this.GetComponent<Renderer>().material = baseEnemyMat;
+        enemyRenderer.material = baseEnemyMat;
     }
 }

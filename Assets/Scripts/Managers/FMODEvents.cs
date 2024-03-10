@@ -21,6 +21,9 @@ public class FMODEvents : MonoBehaviour
     [Header("Crouch End")]
     public EventReference crouchEndEvent;
 
+    [Header("Enemy Dissolve SFX")]
+    public EventReference enemyDissolveSFX;
+
     public static FMODEvents instance;
 
     private void Awake()
@@ -114,6 +117,18 @@ public class FMODEvents : MonoBehaviour
         if (!crouchEndEvent.IsNull)
         {
             RuntimeManager.PlayOneShot(crouchEndEvent, transform.position);
+        }
+    }
+
+    public void PlayEnemyDissolveSFX(Vector3 worldPos)
+    {
+        // Play enemy dissolve sound effect
+        Debug.Log("Enemy dissolve SFX played.");
+
+        // Add FMOD logic here to trigger the enemy dissolve SFX
+        if (!enemyDissolveSFX.IsNull)
+        {
+            RuntimeManager.PlayOneShot(enemyDissolveSFX, worldPos);
         }
     }
 }
