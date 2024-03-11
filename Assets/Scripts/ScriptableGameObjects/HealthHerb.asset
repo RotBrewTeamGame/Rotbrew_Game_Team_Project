@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: HealthHerb
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 2369433905290970305, guid: 06b386d3f58cfbd4dac0e23d7a1ae474,
+  lootObject: {fileID: 5350512052901728285, guid: 7e3613154aa7b1044934db61d5c25a72,
     type: 3}
   lootName: Health Herb
   dropChance: 100

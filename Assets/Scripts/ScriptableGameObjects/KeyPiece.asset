@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: KeyPiece
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 5801323524494371975, guid: c7aa04114fbdc494998e1e279541f7d5,
+  lootObject: {fileID: 6276867379750116988, guid: febc1a73dc444ed489abe67d3dcdcd2e,
     type: 3}
   lootName: Key Piece
   dropChance: 100

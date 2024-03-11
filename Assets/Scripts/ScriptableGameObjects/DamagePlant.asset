@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: DamagePlant
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 8479803483890545805, guid: 3b2af562cff557646a19564178aa2392,
+  lootObject: {fileID: 8163704383519780470, guid: 792757e5ba7a38a429bd86563a8abd62,
     type: 3}
   lootName: Damage Leaf
   dropChance: 100
