@@ -320,9 +320,7 @@ MonoBehaviour:
   currentObject: 0
   inTrigger: 0
   plant: 1
-  vfx: {fileID: 8702081342129639379}
-  damageLeafSpawnRateParameterName: DamageLeafSpawnRate
-  healthLeafSpawnRateParameterName: HealthLeafSpawnRate
+  visualEffect: {fileID: 8702081342129639379}
 --- !u!65 &-8262272663021788387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -373,7 +371,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905332825153112393}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: a26a2297549362d43be03ace529310bb, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 8752c9e6cbf24e147a4dc8e83b5a0d9e, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -388,7 +386,10 @@ VisualEffect:
     m_Vector3f:
       m_Array: []
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.6274991, y: 2, z: 0.1981132, w: 1}
+        m_Name: LeafColor
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:

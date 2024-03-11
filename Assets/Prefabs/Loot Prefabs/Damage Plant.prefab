@@ -197,9 +197,7 @@ MonoBehaviour:
   currentObject: 0
   inTrigger: 0
   plant: 0
-  vfx: {fileID: 665230155326108384}
-  damageLeafSpawnRateParameterName: DamageLeafSpawnRate
-  healthLeafSpawnRateParameterName: HealthLeafSpawnRate
+  visualEffect: {fileID: 665230155326108384}
 --- !u!65 &159207001682342385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -259,13 +257,22 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 10
+        m_Name: LeafSpawnRate
+        m_Overridden: 0
     m_Vector2f:
       m_Array: []
     m_Vector3f:
       m_Array: []
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.2963888, y: 0.08574528, z: 1.1698112, w: 1}
+        m_Name: Leaf Color
+        m_Overridden: 1
+      - m_Value: {x: 1.0773231, y: 0.31372547, z: 4, w: 1}
+        m_Name: LeafColor
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
