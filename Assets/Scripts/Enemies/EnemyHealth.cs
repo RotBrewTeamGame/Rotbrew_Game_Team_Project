@@ -2,6 +2,7 @@ using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class EnemyHealth : MonoBehaviour
     private AudioManager audioManager;
     private Renderer enemyRenderer;
 
+    public NavMeshAgent agent;
+    public GameObject player;
+
     void Start()
     {
         maxHealth = enemyHealth;
@@ -27,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
         enemyRenderer.material = baseEnemyMat;
 
         audioManager = AudioManager.instance;
+        agent = transform.parent.GetComponent<NavMeshAgent>();
     }
 
     public void TakeDamage(float damageAmount)
@@ -36,6 +41,8 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(DamageFlashTimer());
 
         enemyHealth -= damageAmount;
+
+        agent.SetDestination(player.transform.position);
 
         if (enemyHealth <= 0)
         {
