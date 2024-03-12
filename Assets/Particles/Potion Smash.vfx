@@ -24,28 +24,10 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614999}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661615001}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661615005}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661615020}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615032}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661615036}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615038}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615059}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615105}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661615066}
@@ -62,28 +44,10 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614915}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614917}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614921}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614936}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614948}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614952}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615119}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614975}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661615091}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661614992}
@@ -93,10 +57,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 523
-    y: -185
-    width: 1494
-    height: 1886
+    x: 498
+    y: -244
+    width: 1544
+    height: 1970
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4222,7 +4186,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Plane, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"normal":{"x":0.0,"y":1.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Plane
     m_serializedType:
@@ -4693,7 +4657,7 @@ MonoBehaviour:
         m_SerializableType: UnityEditor.VFX.Plane, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       m_SerializableObject: '{"position":{"x":0.0,"y":0.0,"z":0.0},"normal":{"x":0.0,"y":1.0,"z":0.0}}'
-    m_Space: 0
+    m_Space: 1
   m_Property:
     name: Plane
     m_serializedType:
