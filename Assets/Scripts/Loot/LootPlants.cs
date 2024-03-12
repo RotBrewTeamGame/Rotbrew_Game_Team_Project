@@ -9,6 +9,7 @@ public class LootPlants : MonoBehaviour
     public bool inTrigger = false;
     public VisualEffect vfx;
     public string LeafSpawnRateParameterName = "LeafSpawnRate";
+    public int plant;
 
     private Coroutine fadeCoroutine; // Coroutine reference for fading effect
 
@@ -40,6 +41,14 @@ public class LootPlants : MonoBehaviour
     {
         if (plants.Count > 0)
         {
+            if (plant == 0)
+            {
+                GameManager.instance.damagePlantItemCount++;
+            }
+            if (plant == 1)
+            {
+                GameManager.instance.healthHerbItemCount++;
+            }
             Destroy(plants[0]);
             plants.RemoveAt(0);
             if (plants.Count == 0)
