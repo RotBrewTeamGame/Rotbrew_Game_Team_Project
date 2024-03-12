@@ -194,10 +194,9 @@ MonoBehaviour:
   - {fileID: 2835066442699975467}
   - {fileID: 5604550193760843002}
   - {fileID: 4333224027910223214}
-  currentObject: 0
   inTrigger: 0
-  plant: 0
-  visualEffect: {fileID: 665230155326108384}
+  vfx: {fileID: 665230155326108384}
+  LeafSpawnRateParameterName: LeafSpawnRate
 --- !u!65 &159207001682342385
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -6,9 +6,7 @@ using UnityEngine.VFX;
 public class LootPlants : MonoBehaviour
 {
     public List<GameObject> plants;
-    public int currentObject = 0;
     public bool inTrigger = false;
-    public int plant;
     public VisualEffect vfx;
     public string LeafSpawnRateParameterName = "LeafSpawnRate";
 
@@ -34,27 +32,23 @@ public class LootPlants : MonoBehaviour
     {
         if (inTrigger && Input.GetKeyDown(KeyCode.E))
         {
-            if (currentObject < plants.Count)
+            CollectPlant();
+        }
+    }
+
+    void CollectPlant()
+    {
+        if (plants.Count > 0)
+        {
+            Destroy(plants[0]);
+            plants.RemoveAt(0);
+            if (plants.Count == 0)
             {
-                Destroy(plants[currentObject]);
-                currentObject++;
-                if (plant == 0)
+                SetSpawnRatesToZero();
+                // Start fading effect only if it's not already running
+                if (fadeCoroutine == null)
                 {
-                    GameManager.instance.damagePlantItemCount++;
-                }
-                if (plant == 1)
-                {
-                    GameManager.instance.healthHerbItemCount++;
-                }
-                // Check if the gameObject list is empty
-                if (plants.Count == 0)
-                {
-                    SetSpawnRatesToZero ();
-                    // Start fading effect only if it's not already running
-                    if (fadeCoroutine == null)
-                    {
-                        fadeCoroutine = StartCoroutine(FadeLeafSpawnRate());
-                    }
+                    fadeCoroutine = StartCoroutine(FadeLeafSpawnRate());
                 }
             }
         }
@@ -82,7 +76,7 @@ public class LootPlants : MonoBehaviour
             float newValue = Mathf.Lerp(startValue, endValue, t);
 
             // Set the new value of the LeafSpawnRate parameter
-            vfx.SetFloat("LeafSpawnRate", newValue);
+            vfx.SetFloat(LeafSpawnRateParameterName, newValue);
 
             // Increment the timer
             elapsedTime += Time.deltaTime;
@@ -91,7 +85,7 @@ public class LootPlants : MonoBehaviour
         }
 
         // Ensure the final value is set
-        vfx.SetFloat("LeafSpawnRate", endValue);
+        vfx.SetFloat(LeafSpawnRateParameterName, endValue);
 
         // Reset coroutine reference
         fadeCoroutine = null;
