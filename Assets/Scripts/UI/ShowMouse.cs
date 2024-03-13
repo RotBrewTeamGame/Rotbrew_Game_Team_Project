@@ -6,6 +6,7 @@ public class ShowMouse : MonoBehaviour
 {
     public GameObject craftingUI;
     public DialogueManager dialogueManager;
+    public GameObject deathScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class ShowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (craftingUI != null && craftingUI.activeInHierarchy || dialogueManager.dialogueON)
+        if (craftingUI != null && craftingUI.activeInHierarchy || dialogueManager.dialogueON || deathScreen != null && deathScreen.activeInHierarchy)
         {
             // Show the mouse cursor
             Cursor.visible = true;
