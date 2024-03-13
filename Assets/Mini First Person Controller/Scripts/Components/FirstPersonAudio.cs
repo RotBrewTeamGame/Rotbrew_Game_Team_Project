@@ -7,6 +7,8 @@ public class FirstPersonAudio : MonoBehaviour
 {
     public bool playerIsMoving;
     public FirstPersonMovement character;
+    public Jump jump;
+    public Crouch crouch;
     public GroundCheck groundCheck;
     public float velocityThreshold = .01f;
     Vector2 lastCharacterPosition;
@@ -73,76 +75,45 @@ public class FirstPersonAudio : MonoBehaviour
 
     void FixedUpdate()
     {
-        Walking();
-        /*
-        // Play step or running audio based on character movement
-        float velocity = Vector3.Distance(CurrentCharacterPosition, lastCharacterPosition);
-        if (velocity >= velocityThreshold && groundCheck && groundCheck.isGrounded)
-        {
-            if (character.IsRunning)
-            {
-                PlayRunningAudio();
-            }
-            else
-            {
-                PlayStepAudio();
-            }
-        }
-
-        lastCharacterPosition = CurrentCharacterPosition;
-        */
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            playerIsMoving = true;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            playerIsMoving = true;
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            playerIsMoving = true;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            playerIsMoving = true;
-        }
-        else
-        {
-            playerIsMoving = false;
-        }
+        
     }
 
     void SubscribeToEvents()
     {
+        Debug.Log("FirstPersonAudio::SubscribeToEvents");
+
         // Subscribe to game events to trigger FMOD events
-        character.Landed += PlayLandingAudio;
-        character.Jumped += PlayJumpAudio;
-        character.CrouchStarted += PlayCrouchStartAudio;
-        character.CrouchEnded += PlayCrouchEndAudio;
+        character.Walked += PlayStepAudio;
+        //character.Landed += PlayLandingAudio;
+        jump.Jumped += PlayJumpAudio;
+        crouch.CrouchStart += PlayCrouchStartAudio;
+        crouch.CrouchEnd += PlayCrouchEndAudio;
     }
 
     void UnsubscribeToEvents()
     {
         // Unsubscribe from game events
-        character.Landed -= PlayLandingAudio;
-        character.Jumped -= PlayJumpAudio;
-        character.CrouchStarted -= PlayCrouchStartAudio;
-        character.CrouchEnded -= PlayCrouchEndAudio;
+        character.Walked -= PlayStepAudio;
+        //character.Landed -= PlayLandingAudio;
+        jump.Jumped -= PlayJumpAudio;
+        crouch.CrouchStart -= PlayCrouchStartAudio;
+        crouch.CrouchEnd -= PlayCrouchEndAudio;
     }
 
-void Walking()
-{
-    if (playerIsMoving == true)
+    void Walking()
     {
-        FMODEvents.instance.PlayWalkingAudio();
+        if (playerIsMoving == true)
+        {
+            FMODEvents.instance.PlayWalkingAudio();
+        }
     }
-}
 
-    /*
-void PlayStepAudio()
+    
+    void PlayStepAudio()
     {
+        Debug.Log("FirstPersonAudio::PlayStepAudio");
+
+        /*
         // Play step audio
         if (!stepEventInstance.isValid())
         {
@@ -150,8 +121,9 @@ void PlayStepAudio()
             InvokeRepeating(“Walking”, 0.5f, walkingSpeed);
         }
         //stepEventInstance.start();
+        */
     }
-    */
+    
     void PlayRunningAudio()
     {
         // Play running audio
@@ -170,6 +142,8 @@ void PlayStepAudio()
 
     void PlayJumpAudio()
     {
+        Debug.Log("FirstPersonAudio::PlayJumpAudio");
+
         // Play jump audio
         audioManager.PlayOneShot(jumpEvent, transform.position);
     }

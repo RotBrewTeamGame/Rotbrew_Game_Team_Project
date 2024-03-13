@@ -18,10 +18,13 @@ public class FirstPersonMovement : MonoBehaviour
 
     // Define events for jumping, landing, crouch start, and crouch end
     public event Action Walked;
+    
+    // Delete the following
     public event Action Jumped;
     public event Action Landed;
     public event Action CrouchStarted;
     public event Action CrouchEnded;
+    
 
     void Awake()
     {
@@ -46,6 +49,19 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+
+        
+        if (targetVelocity.magnitude > 0)
+        {
+            if (IsRunning)
+            {
+
+            }
+            else
+            {
+                Walked?.Invoke();
+            }
+        }
     }
 
     /*
@@ -54,7 +70,7 @@ public class FirstPersonMovement : MonoBehaviour
         // Implement logic to calculate movement velocity
         return 0f;
     }
-    */
+    
 
     // Call these methods when the corresponding events occur
     public void OnJumped()
@@ -76,4 +92,5 @@ public class FirstPersonMovement : MonoBehaviour
     {
         CrouchEnded?.Invoke();
     }
+    */
 }
