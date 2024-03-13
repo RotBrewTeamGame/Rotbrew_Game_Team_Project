@@ -10,16 +10,24 @@ public class GameManager : MonoBehaviour
 
     public int damagePlantItemCount;
     public int healthHerbItemCount;
+    public int iceCrystalItemCount;
+    public int slimeBallItemCount;
     public int keyPieceItemCount;
     public int damagePotionItemCount;
     public int healthPotionItemCount;
+    public int frostPotionItemCount;
+    public int firePotionItemCount;
     public int keyItemCount;
 
     public TextMeshProUGUI damagePlantQuantity;
     public TextMeshProUGUI healthHerbQuantity;
+    public TextMeshProUGUI iceCrystalQuantity;
+    public TextMeshProUGUI slimeBallQuantity;
     public TextMeshProUGUI keyPieceQuantity;
     public TextMeshProUGUI damagePotionQuantity;
     public TextMeshProUGUI healthPotionQuantity;
+    public TextMeshProUGUI frostPotionQuantity;
+    public TextMeshProUGUI firePotionQuantity;
     public TextMeshProUGUI keyQuantity;
 
     public GameObject keyUI;
@@ -56,6 +64,18 @@ public class GameManager : MonoBehaviour
         healthHerbQuantity.text = healthHerbItemCount.ToString();
     }
 
+    public void IncreaseIceCrystalAmount(int amount)
+    {
+        iceCrystalItemCount += amount;
+        iceCrystalQuantity.text = iceCrystalItemCount.ToString();
+    }
+
+    public void IncreaseSlimeBallAmount(int amount)
+    {
+        slimeBallItemCount += amount;
+        slimeBallQuantity.text = slimeBallItemCount.ToString();
+    }
+
     public void IncreaseKeyPieceAmount(int amount)
     {
         keyPieceItemCount += amount;
@@ -72,6 +92,18 @@ public class GameManager : MonoBehaviour
     {
         healthPotionItemCount += amount;
         healthPotionQuantity.text = healthPotionItemCount.ToString();
+    }
+
+    public void IncreaseFrostPotionAmount(int amount)
+    {
+        frostPotionItemCount += amount;
+        frostPotionQuantity.text = frostPotionItemCount.ToString();
+    }
+
+    public void IncreaseFirePotionAmount(int amount)
+    {
+        firePotionItemCount += amount;
+        firePotionQuantity.text = firePotionItemCount.ToString();
     }
 
     public void TurnOnKeyUI()
