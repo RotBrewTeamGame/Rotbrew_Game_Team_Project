@@ -46,7 +46,7 @@ Material:
     - _QueueOffset: 0
     - _glow_speed: 2
     - _glow_strength: 0.05
-    - _hologram_speed: 2
+    - _hologram_speed: 2.77
     m_Colors:
     - _Base_Color: {r: 0.053800307, g: 0.5236494, b: 0.8773585, a: 0}
     - _Holo_Texture_Tiling: {r: 1, g: 15, b: 0, a: 0}

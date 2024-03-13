@@ -40,8 +40,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _glow_speed: 0.06
-    - _glow_strength: 5
+    - _glow_speed: 0.5
+    - _glow_strength: 10
     m_Colors:
     - _base_color: {r: 0.83137256, g: 0, b: 0, a: 1}
     - _glow_colour: {r: 32, g: 1.631373, b: 0.2509804, a: 0}
