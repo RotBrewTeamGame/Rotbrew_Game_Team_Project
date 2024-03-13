@@ -18,9 +18,9 @@ public class HealthPotionCraft : MonoBehaviour
 
     public void OnButtonClick()
     {
-        if (GameManager.instance.healthHerbItemCount >= 5)
+        if (GameManager.instance.healthHerbItemCount >= 2)
         {
-            GameManager.instance.healthHerbItemCount = GameManager.instance.healthHerbItemCount - 5;
+            GameManager.instance.healthHerbItemCount = GameManager.instance.healthHerbItemCount - 2;
             GameManager.instance.healthPotionItemCount++;
         }
     }

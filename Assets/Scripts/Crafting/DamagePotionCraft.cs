@@ -18,9 +18,9 @@ public class DamagePotionCraft : MonoBehaviour
 
     public void OnButtonClick()
     {
-        if (GameManager.instance.damagePlantItemCount >= 3)
+        if (GameManager.instance.damagePlantItemCount >= 1)
         {
-            GameManager.instance.damagePlantItemCount = GameManager.instance.damagePlantItemCount - 3;
+            GameManager.instance.damagePlantItemCount--;
             GameManager.instance.damagePotionItemCount++;
         }
     }
