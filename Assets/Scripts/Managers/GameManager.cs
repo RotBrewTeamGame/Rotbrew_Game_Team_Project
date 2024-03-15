@@ -46,10 +46,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.K))
         {
             IncreaseKeyPieceAmount(1);
         }
+        */
     }
 
     public void IncreaseDamagePlantAmount(int amount)
