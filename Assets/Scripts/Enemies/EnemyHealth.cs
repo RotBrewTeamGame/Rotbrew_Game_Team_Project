@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
     public IEnumerator DeathTimer()
     {
         float dissolveAmount = 0f;
-        float dissolveSpeed = 0.5f; // Adjust speed as needed
+        float dissolveSpeed = 3f; // Adjust speed as needed
 
         // Play dissolve SFX
         if (audioManager != null && !enemyDissolveSFX.IsNull)
