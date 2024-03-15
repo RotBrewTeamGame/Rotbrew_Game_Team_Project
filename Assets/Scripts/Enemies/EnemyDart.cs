@@ -7,6 +7,7 @@ public class EnemyDart : MonoBehaviour
     public Transform player;
     public GameObject dart;
     public Transform dartSpawn;
+    public float force;
     public bool isShooting = false;
 
     public IEnumerator ShootDart()
@@ -17,7 +18,7 @@ public class EnemyDart : MonoBehaviour
         {
             GameObject clone;
             clone = Instantiate(dart, dartSpawn.transform.position, Quaternion.identity);
-            clone.GetComponent<Rigidbody>().velocity = dartSpawn.TransformDirection(Vector3.forward * 8000 * Time.deltaTime);
+            clone.GetComponent<Rigidbody>().velocity = dartSpawn.TransformDirection(Vector3.forward * force * Time.deltaTime);
 
             Destroy(clone, 1);
         }
