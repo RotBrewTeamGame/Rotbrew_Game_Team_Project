@@ -9,6 +9,8 @@ public class FirstPersonMovement : MonoBehaviour
     [Header("Running")]
     public bool canRun = true;
     public bool IsRunning { get; private set; }
+    public bool IsWalking;
+    public KeyCode walkingKey = KeyCode.W;
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
 
@@ -36,6 +38,7 @@ public class FirstPersonMovement : MonoBehaviour
     {
         // Update IsRunning from input.
         IsRunning = canRun && Input.GetKey(runningKey);
+        IsWalking = Input.GetKey(walkingKey);
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
