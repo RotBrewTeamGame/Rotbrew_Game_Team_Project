@@ -11,6 +11,7 @@ public class EnemyPatrolPoints : MonoBehaviour
     public NavMeshAgent agent;
     public bool patrolling;
     public Transform player;
+    public float chasingDistance;
 
     private void Start()
     {
@@ -50,7 +51,7 @@ public class EnemyPatrolPoints : MonoBehaviour
     {
         agent.SetDestination(player.transform.position);
 
-        if (agent.remainingDistance > 8f)
+        if (agent.remainingDistance > chasingDistance)
         {
             patrolling = true;
         }

@@ -22,9 +22,12 @@ public class EnemyHealth : MonoBehaviour
 
     public NavMeshAgent agent;
     public GameObject player;
+    public bool damaged;
 
     void Start()
     {
+        damaged = false;
+
         maxHealth = enemyHealth;
 
         enemyRenderer = GetComponent<Renderer>();
@@ -85,8 +88,12 @@ public class EnemyHealth : MonoBehaviour
 
     public IEnumerator DamageFlashTimer()
     {
+        damaged = true;
+
         yield return new WaitForSeconds(0.5f);
 
         enemyRenderer.material = baseEnemyMat;
+
+        damaged = false;
     }
 }
