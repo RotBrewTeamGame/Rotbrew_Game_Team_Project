@@ -86,12 +86,16 @@ public class PotionThrower : MonoBehaviour
 
             GameObject potion = Instantiate(potionPrefab, spawnPos, mainCam.transform.rotation);
 
-            Rigidbody rb = potion.GetComponent<Rigidbody>();
+            Rigidbody potionRB = potion.GetComponent<Rigidbody>();
+            Rigidbody playerRB = this.GetComponent<Rigidbody>();
 
             AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
 
+            potionRB.velocity = playerRB.velocity;
+
             Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
-            rb.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
+            potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
+
             AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
     }
 
