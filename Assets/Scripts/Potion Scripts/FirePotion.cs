@@ -27,7 +27,6 @@ public class FirePotion : MonoBehaviour
 
         while (Time.time - startTime < 5f)
         {
-            enemyRenderer.material = fireMAT;
             if (collidedEnemy != null)
                 collidedEnemy.GetComponent<EnemyHealth>().TakeDamage(1); // Damage the enemy
             yield return new WaitForSeconds(0.25f);
