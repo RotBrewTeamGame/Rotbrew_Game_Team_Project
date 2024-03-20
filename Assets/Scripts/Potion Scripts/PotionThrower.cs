@@ -7,7 +7,8 @@ using UnityEngine;
 public class PotionThrower : MonoBehaviour
 {
     [Header("Potion Prefab")]
-    [SerializeField] private GameObject potionPrefab; // reference to potion prefab
+    [SerializeField] private GameObject damagePotionPrefab; // reference to potion prefab
+    [SerializeField] private GameObject frostPotionPrefab; // reference to potion prefab
 
     [Header("Potion Settings")]
     [SerializeField] private KeyCode throwKey = KeyCode.Mouse0;
@@ -31,6 +32,7 @@ public class PotionThrower : MonoBehaviour
     private float chargeTime = 0f; // time player has been charging throw
     public GameObject craftingUI;
     public GameObject damagePotionUI;
+    public GameObject frostPotionUI;
 
     void Start()
     {
@@ -40,18 +42,28 @@ public class PotionThrower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
+        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+            Input.GetKeyDown(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf)
         {
             StartThrowing();
         }
-        if (isCharging && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
+        if (isCharging && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+            isCharging && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf)
         {
             ChargeThrow();
         }
-        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf)
+        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+            Input.GetKeyUp(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf)
         {
             ReleaseThrow();
-            GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
+            if (damagePotionUI.activeSelf)
+            {
+                GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
+            }
+            if (frostPotionUI.activeSelf)
+            {
+                GameManager.instance.frostPotionItemCount = GameManager.instance.frostPotionItemCount - 1;
+            }
         }
     }
 
@@ -82,11 +94,12 @@ public class PotionThrower : MonoBehaviour
 
     void ThrowPotion(float force)
     {
-            Vector3 spawnPos = throwPosition.position + mainCam.transform.forward;
+        Vector3 spawnPos = throwPosition.position + mainCam.transform.forward;
 
-            GameObject potion = Instantiate(potionPrefab, spawnPos, mainCam.transform.rotation);
-
-            Rigidbody potionRB = potion.GetComponent<Rigidbody>();
+        if (damagePotionUI.activeSelf)
+        {
+            GameObject damagePotion = Instantiate(damagePotionPrefab, spawnPos, mainCam.transform.rotation);
+            Rigidbody potionRB = damagePotion.GetComponent<Rigidbody>();
             Rigidbody playerRB = this.GetComponent<Rigidbody>();
 
             AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
@@ -97,6 +110,22 @@ public class PotionThrower : MonoBehaviour
             potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
 
             AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
+        }
+        if (frostPotionUI.activeSelf)
+        {
+            GameObject frostPotion = Instantiate(frostPotionPrefab, spawnPos, mainCam.transform.rotation);
+            Rigidbody potionRB = frostPotion.GetComponent<Rigidbody>();
+            Rigidbody playerRB = this.GetComponent<Rigidbody>();
+
+            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
+
+            potionRB.velocity = playerRB.velocity;
+
+            Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
+            potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
+
+            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
+        }
     }
 
     void ShowTrajectory(Vector3 origin, Vector3 speed)
