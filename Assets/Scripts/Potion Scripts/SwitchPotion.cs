@@ -15,6 +15,9 @@ public class SwitchPotion : MonoBehaviour
     public bool frostPotionON;
     public bool firePotionON;
 
+    [SerializeField]
+    private int selectedPotion;
+
     private void Start()
     {
         damagePotionUI.SetActive(true);
@@ -30,28 +33,38 @@ public class SwitchPotion : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+
+        if (scrollWheel > 0f)
+        {
+            selectedPotion = Mathf.Clamp(selectedPotion + 1, 1, 4);
+        }
+        else if (scrollWheel < 0f)
+        {
+            selectedPotion = Mathf.Clamp(selectedPotion - 1, 1, 4);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1) || selectedPotion == 1)
         {
             DisableHealthPotion();
             EnableDamagePotion();
             DisableFrostPotion();
             DisableFirePotion();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) || selectedPotion == 2)
         {
             DisableDamagePotion();
             EnableHealthPotion();
             DisableFrostPotion();
             DisableFirePotion();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) || selectedPotion == 3)
         {
             DisableHealthPotion();
             EnableFrostPotion();
             DisableDamagePotion();
             DisableFirePotion();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4) || selectedPotion == 4)
         {
             DisableDamagePotion();
             EnableFirePotion();

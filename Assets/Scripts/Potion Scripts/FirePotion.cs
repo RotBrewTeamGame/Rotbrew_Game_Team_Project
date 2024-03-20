@@ -5,7 +5,6 @@ using UnityEngine;
 public class FirePotion : MonoBehaviour
 {
     public Material baseEnemyMAT;
-    public Material fireMAT;
     private Renderer enemyRenderer;
     private GameObject collidedEnemy;
     private bool coroutineRunning = false;
