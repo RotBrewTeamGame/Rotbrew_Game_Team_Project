@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6062219924892682050}
   - component: {fileID: 8160702660973120124}
   - component: {fileID: 7402695043546484841}
-  - component: {fileID: 4001551430092210676}
+  - component: {fileID: -1247145009833388365}
   m_Layer: 0
   m_Name: slimeBall
   m_TagString: Untagged
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4001551430092210676
+--- !u!114 &-1247145009833388365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3410420311263174414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f208c0c39041b694ca5c2db7caa3cb2d, type: 3}
+  m_Script: {fileID: 11500000, guid: 72b5b54482059d942b993d33cf28f8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
