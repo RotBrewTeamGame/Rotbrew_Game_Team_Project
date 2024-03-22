@@ -309,6 +309,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b91ebdadd76395845b67b9646f760f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  craftingEvent:
+    Guid:
+      Data1: 1735786285
+      Data2: 1330570346
+      Data3: 1268600218
+      Data4: 1260353992
+    Path: event:/Environment/PlantPickup
   plants:
   - {fileID: 5133069292159159281}
   - {fileID: 7514185420551462737}
@@ -320,6 +327,7 @@ MonoBehaviour:
   inTrigger: 0
   vfx: {fileID: 8702081342129639379}
   LeafSpawnRateParameterName: LeafSpawnRate
+  plant: 0
 --- !u!65 &-8262272663021788387
 BoxCollider:
   m_ObjectHideFlags: 0

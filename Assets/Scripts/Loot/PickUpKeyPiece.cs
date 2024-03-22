@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
 
 public class PickUpKeyPiece : MonoBehaviour
 {
+    public EventReference pickupSound; // New pickup sound event reference
     public string coreSpawnRateParameterName = "CoreSpawnRate"; // Name of the float parameter in VFX
     public string trailSpawnRateParameterName = "TrailSpawnRate";
     public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
     public VisualEffect vfx; // Reference to the VFX Graph component
 
     private bool hasIncreasedKeyPiece = false;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (!hasIncreasedKeyPiece && collision.gameObject.CompareTag("Player"))
@@ -20,6 +23,9 @@ public class PickUpKeyPiece : MonoBehaviour
             SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(7f));
             DisableCollider();
+
+            // Play the new pickup sound
+            RuntimeManager.PlayOneShot(pickupSound, transform.position);
         }
     }
 

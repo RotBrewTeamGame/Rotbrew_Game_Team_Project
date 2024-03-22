@@ -153,10 +153,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f0a21513540af4993385826e52b960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound:
+    Guid:
+      Data1: -1828920148
+      Data2: 1229994807
+      Data3: -969988945
+      Data4: 109645086
+    Path: event:/Environment/LootPickup
+  vfx: {fileID: 5692911766338260819}
   coreSpawnRateParameterName: CoreSpawnRate
   trailSpawnRateParameterName: TrailSpawnRate
   outerTrailSpawnRateParameterName: OuterTrailSpawnRate
-  vfx: {fileID: 5692911766338260819}
 --- !u!1 &7203370315076503896
 GameObject:
   m_ObjectHideFlags: 0

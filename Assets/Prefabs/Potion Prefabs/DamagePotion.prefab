@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 2728893039210312247}
   - component: {fileID: 5480219290367213170}
   - component: {fileID: 8058717555402013740}
+  - component: {fileID: 4081688525801920778}
   m_Layer: 7
   m_Name: DamagePotion
   m_TagString: Untagged
@@ -325,7 +326,7 @@ MonoBehaviour:
       Data2: 1228809434
       Data3: -2121252209
       Data4: -1561865661
-    Path: event:/PlayerMovement/potionSmash
+    Path: event:/Potion/PotionSmash
   potionSmashEffect: {fileID: 8926484042661614526, guid: d71e4dbbc9a01c14393c9eaaaccc935a,
     type: 3}
   VFXPrefab: {fileID: 6906867303468118253, guid: 15f86ad6729619f4cb0182de14c33cb5,
@@ -362,8 +363,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.84
-  m_Center: {x: 0, y: 0.42451513, z: 0}
+  m_Radius: 0.6273344
+  m_Center: {x: 0, y: 0.058146417, z: 0.0021064281}
 --- !u!54 &8058717555402013740
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -391,3 +392,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4081688525801920778
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487572040481391484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.7420714, z: 0.44834614}
+  m_Center: {x: 0, y: 1.0080233, z: -0.006315708}

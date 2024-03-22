@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2fd6704f-e7fa-4d01-9e6d-53de8df4e3a4}">
 		<property name="assetPath">
-			<value>Interaction/Plant Pickup.wav</value>
+			<value>Interaction/LootPickup.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

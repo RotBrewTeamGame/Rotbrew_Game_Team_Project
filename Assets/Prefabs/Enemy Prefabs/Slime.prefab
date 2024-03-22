@@ -140,6 +140,17 @@ MonoBehaviour:
   baseEnemyMat: {fileID: 2100000, guid: 736cee4abafb7664f9f3d05ff151cb5b, type: 2}
   damageFlashFX: {fileID: 2100000, guid: 446a751745854c34391d4f02d18109c4, type: 2}
   deathFX: {fileID: 2100000, guid: 9f7389f9403e6124389f3144fefc5ed8, type: 2}
+  deathVFXPrefab: {fileID: 0}
+  enemyDissolveSFX:
+    Guid:
+      Data1: -149314845
+      Data2: 1159744413
+      Data3: 721437610
+      Data4: -459882986
+    Path: event:/Enemies/Enemy Dissolve
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  damaged: 0
 --- !u!114 &1229872468287999741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,3 +316,4 @@ MonoBehaviour:
   agent: {fileID: 8656450222646634643}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0

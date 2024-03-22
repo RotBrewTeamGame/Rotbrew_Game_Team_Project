@@ -1,29 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
+using FMOD.Studio;
+using System.Collections; // Add this line to fix the error
 
 public class PickUpDamageLeaf : MonoBehaviour
 {
-    public string coreSpawnRateParameterName = "CoreSpawnRate"; // Name of the float parameter in VFX
+    // Reference to the FMODEvents script
+    private FMODEvents fmodEvents;
+
+    // Reference to the crafting event in the FMODEvents script
+    public EventReference pickupSound;
+
+    public VisualEffect vfx;
+    public string coreSpawnRateParameterName = "CoreSpawnRate";
     public string trailSpawnRateParameterName = "TrailSpawnRate";
     public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
-    public VisualEffect vfx;
 
     private bool hasIncreasedDamageLeaf = false;
+
+    private void Start()
+    {
+        // Find and store the FMODEvents script in the scene
+        fmodEvents = FindObjectOfType<FMODEvents>();
+        if (fmodEvents == null)
+        {
+            Debug.LogError("FMODEvents script not found in the scene.");
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (!hasIncreasedDamageLeaf && collision.gameObject.CompareTag("Player"))
         {
-            
             GameManager.instance.IncreaseDamagePlantAmount(1);
             hasIncreasedDamageLeaf = true;
             SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(7f));
             DisableCollider();
+
+            if (fmodEvents != null)
+            {
+                RuntimeManager.PlayOneShot(pickupSound, transform.position);
+            }
+            else
+            {
+                Debug.LogWarning("FMODEvents reference is not set.");
+            }
         }
     }
+
     private void SetSpawnRatesToZero()
     {
         // Set float parameters in VFX to zero
@@ -45,6 +71,5 @@ public class PickUpDamageLeaf : MonoBehaviour
         {
             collider.enabled = false;
         }
-
     }
 }

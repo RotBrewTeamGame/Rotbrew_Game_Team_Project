@@ -143,13 +143,14 @@ MonoBehaviour:
   deathVFXPrefab: {fileID: 0}
   enemyDissolveSFX:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -149314845
+      Data2: 1159744413
+      Data3: 721437610
+      Data4: -459882986
+    Path: event:/Enemies/Enemy Dissolve
   agent: {fileID: 0}
   player: {fileID: 0}
+  damaged: 0
 --- !u!114 &8996970713449120746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,3 +315,4 @@ MonoBehaviour:
   agent: {fileID: 9190595323757623436}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0

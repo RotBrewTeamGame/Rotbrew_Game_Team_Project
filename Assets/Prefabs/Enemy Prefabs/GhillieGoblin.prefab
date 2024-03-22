@@ -199,6 +199,7 @@ MonoBehaviour:
   agent: {fileID: 5576903840691412075}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0
 --- !u!1 &7775743114569427090
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,11 +330,14 @@ MonoBehaviour:
   deathVFXPrefab: {fileID: 0}
   enemyDissolveSFX:
     Guid:
-      Data1: -288827924
-      Data2: 1335241500
-      Data3: -2011231097
-      Data4: -947262005
+      Data1: -149314845
+      Data2: 1159744413
+      Data3: 721437610
+      Data4: -459882986
     Path: event:/Enemies/Enemy Dissolve
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  damaged: 0
 --- !u!114 &8643251747225790703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +353,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dart: {fileID: 1767295383071363785, guid: afb0eed5eb15345478bed03c62a0587f, type: 3}
   dartSpawn: {fileID: 7134977304738383620}
+  force: 0
   isShooting: 0
 --- !u!114 &84586058015022283
 MonoBehaviour:

@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
+using FMOD.Studio;
 
 public class LootPlants : MonoBehaviour
 {
+    // Reference to the FMODEvents script
+    private FMODEvents fmodEvents;
+
+    // Reference to the crafting event in the FMODEvents script
+    public EventReference craftingEvent;
+
     public List<GameObject> plants;
     public bool inTrigger = false;
     public VisualEffect vfx;
@@ -12,6 +20,16 @@ public class LootPlants : MonoBehaviour
     public int plant;
 
     private Coroutine fadeCoroutine; // Coroutine reference for fading effect
+
+    private void Start()
+    {
+        // Find and store the FMODEvents script in the scene
+        fmodEvents = FindObjectOfType<FMODEvents>();
+        if (fmodEvents == null)
+        {
+            Debug.LogError("FMODEvents script not found in the scene.");
+        }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -59,6 +77,16 @@ public class LootPlants : MonoBehaviour
                 {
                     fadeCoroutine = StartCoroutine(FadeLeafSpawnRate());
                 }
+            }
+
+            // Play crafting audio using the EventReference from the FMODEvents script
+            if (fmodEvents != null)
+            {
+                RuntimeManager.PlayOneShot(craftingEvent, transform.position);
+            }
+            else
+            {
+                Debug.LogWarning("FMODEvents reference is not set.");
             }
         }
     }

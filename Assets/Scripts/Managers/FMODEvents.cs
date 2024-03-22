@@ -24,6 +24,15 @@ public class FMODEvents : MonoBehaviour
     [Header("Enemy Dissolve SFX")]
     public EventReference enemyDissolveSFX;
 
+    [Header("Crafting")]
+    public EventReference craftingEvent;
+
+    [Header("Plant Collection")]
+    public EventReference plantCollectionEvent;
+
+    [Header("Loot Pick Up")]
+    public EventReference pickupSound;
+
     public static FMODEvents instance;
 
     private void Awake()
@@ -56,7 +65,7 @@ public class FMODEvents : MonoBehaviour
         FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
         if (character != null)
         {
-            character.Walked += PlayWalkingAudio;
+            character.Walked -= PlayWalkingAudio;
             character.Jumped -= PlayJumpAudio;
             character.Landed -= PlayLandingAudio;
             character.CrouchStarted -= PlayCrouchStartAudio;
@@ -130,5 +139,59 @@ public class FMODEvents : MonoBehaviour
         {
             RuntimeManager.PlayOneShot(enemyDissolveSFX, worldPos);
         }
+    }
+
+    public void PlayHealthPotionCraftingAudio()
+    {
+        // Play health potion crafting audio event
+        Debug.Log("Health potion crafting audio played.");
+
+        // Add FMOD logic here to trigger the health potion crafting audio event
+        if (!craftingEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(craftingEvent, transform.position);
+        }
+    }
+
+    public void PlayDamagePotionCraftingAudio()
+    {
+        // Play damage potion crafting audio event
+        Debug.Log("Damage potion crafting audio played.");
+
+        // Add FMOD logic here to trigger the damage potion crafting audio event
+        if (!craftingEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(craftingEvent, transform.position);
+        }
+    }
+
+    public void PlayFirePotionCraftingAudio()
+    {
+        // Play fire potion crafting audio event
+        Debug.Log("Fire potion crafting audio played.");
+
+        // Add FMOD logic here to trigger the fire potion crafting audio event
+        if (!craftingEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(craftingEvent, transform.position);
+        }
+    }
+
+    public void PlayFrostPotionCraftingAudio()
+    {
+        // Play fire potion crafting audio event
+        Debug.Log("Frost potion crafting audio played.");
+
+        // Add FMOD logic here to trigger the fire potion crafting audio event
+        if (!craftingEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(craftingEvent, transform.position);
+        }
+    }
+
+    public void PlayPlantCollectionAudio()
+    {
+        // Play plant collection audio event
+        Debug.Log("Plant collection audio played.");
     }
 }

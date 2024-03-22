@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 114576
+--- !u!114 &-6523496755604981610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/PlantPickup
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/PlantPickup
+  Guid:
+    Data1: 1735786285
+    Data2: 1330570346
+    Data3: 1268600218
+    Data4: 1260353992
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
 --- !u!114 &-4959216858910605055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +150,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638466346683881218
+  lastModified: 638466622949157902
   FileSizes:
   - Name: Desktop
-    Value: 109952
+    Value: 161184
   Exists: 1
 --- !u!114 &-1830112853031422595
 MonoBehaviour:
@@ -143,11 +170,38 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638466346412645316
+  lastModified: 638466591160329877
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &-1104998786807130201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/Crafted Potion SFX
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/Crafted Potion SFX
+  Guid:
+    Data1: 348195051
+    Data2: 1198967988
+    Data3: 939668637
+    Data4: 240486476
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1207
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,12 +231,16 @@ MonoBehaviour:
   - {fileID: 9114684619313449484}
   - {fileID: 5984366001188368943}
   - {fileID: -7935541309461723206}
+  - {fileID: -1104998786807130201}
+  - {fileID: 4076652530957923353}
+  - {fileID: -6523496755604981610}
+  - {fileID: 7987709226069307465}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1830112853031422595}
   StringsBanks:
   - {fileID: 5593902835667043549}
-  cacheTime: 638466346683881218
+  cacheTime: 638466622949157902
   cacheVersion: 131616
 --- !u!114 &2528604858955970413
 MonoBehaviour:
@@ -258,6 +316,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 552
+--- !u!114 &4076652530957923353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Enemy Dissolve
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Enemy Dissolve
+  Guid:
+    Data1: -149314845
+    Data2: 1159744413
+    Data3: 721437610
+    Data4: -459882986
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
 --- !u!114 &4167701872762839377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +385,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638453738577500678
+  lastModified: 638466591160273678
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -320,10 +405,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638466346412655564
+  lastModified: 638466591160339879
   FileSizes:
   - Name: Desktop
-    Value: 1460
+    Value: 1664
   Exists: 1
 --- !u!114 &5833664593191963810
 MonoBehaviour:
@@ -379,6 +464,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &7987709226069307465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/LootPickup
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/LootPickup
+  Guid:
+    Data1: -1828920148
+    Data2: 1229994807
+    Data3: -969988945
+    Data4: 109645086
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
 --- !u!114 &9114684619313449484
 MonoBehaviour:
   m_ObjectHideFlags: 0

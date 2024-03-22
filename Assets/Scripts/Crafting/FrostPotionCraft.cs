@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FrostPotionCraft : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public FMODEvents fmodEvents;
+
     void Start()
     {
-        
+        if (fmodEvents == null)
+        {
+            Debug.LogError("FMODEvents reference is not set.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnButtonClick()
@@ -23,6 +24,15 @@ public class FrostPotionCraft : MonoBehaviour
             GameManager.instance.damagePlantItemCount--;
             GameManager.instance.iceCrystalItemCount--;
             GameManager.instance.frostPotionItemCount++;
+
+            if (fmodEvents != null)
+            {
+                fmodEvents.PlayFrostPotionCraftingAudio();
+            }
+            else
+            {
+                Debug.LogWarning("FMODEvents reference is not set.");
+            }
         }
     }
 }
