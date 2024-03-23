@@ -263,8 +263,8 @@ Rigidbody:
   m_GameObject: {fileID: 3771630229702371136}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -314,8 +314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c494cdb40050e648ba2fcc34d238de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseEnemyMAT: {fileID: 0}
-  freezeMAT: {fileID: 0}
+  baseEnemyMAT: {fileID: 2100000, guid: f0d3c1c0ac4de054193ccb44d7d8d97e, type: 2}
+  freezeMAT: {fileID: 2100000, guid: 2e2e996eac2eb094885936788ae8b24c, type: 2}
+  VFXPrefab: {fileID: 3084072983496568271, guid: aaac34169a311524ea59df687ed191f3,
+    type: 3}
 --- !u!1 &9000802440541086296
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class FrostPotion : MonoBehaviour
 {
     public Material baseEnemyMAT;
     public Material freezeMAT;
+    public GameObject VFXPrefab; // Drag the VFX prefab onto this field in the Unity Editor
 
     private void OnCollisionEnter(Collision collide)
     {
@@ -14,10 +15,12 @@ public class FrostPotion : MonoBehaviour
         {
             Renderer enemyMAT = collide.gameObject.GetComponent<Renderer>();
             StartCoroutine(ColdEnemyEffect(enemyMAT));
-            
+
             NavMeshAgent agent = collide.gameObject.GetComponentInParent<NavMeshAgent>();
             StartCoroutine(FreezeEffect(agent));
-            //this.GetComponent<PotionSplash>().BreakPotion();
+
+            // Spawn VFX and destroy after 7 seconds
+            StartCoroutine(SpawnAndDestroyVFX(collide.contacts[0].point));
         }
     }
 
@@ -39,5 +42,16 @@ public class FrostPotion : MonoBehaviour
         yield return new WaitForSeconds(4f);
 
         mat.material = baseEnemyMAT;
+    }
+
+    IEnumerator SpawnAndDestroyVFX(Vector3 position)
+    {
+        // Spawn VFX
+        GameObject vfx = Instantiate(VFXPrefab, position, Quaternion.identity);
+
+        yield return new WaitForSeconds(7f);
+
+        // Destroy VFX after 7 seconds
+        Destroy(vfx);
     }
 }

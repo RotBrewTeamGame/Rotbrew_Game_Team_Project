@@ -59,6 +59,6 @@ Material:
     - _WobbleZ: 0
     m_Colors:
     - _Fresnel_Colour: {r: 1, g: 1, b: 1, a: 0}
-    - _Liquid_Colour: {r: 1.6862745, g: 0.5158604, b: 0.031372543, a: 0}
-    - _Surface_Colour: {r: 1.2413672, g: 0.08783258, b: 0.13346568, a: 0}
+    - _Liquid_Colour: {r: 3.3725488, g: 1.0317206, b: 0.06274508, a: 0}
+    - _Surface_Colour: {r: 2.4827344, g: 0.17566516, b: 0.26693135, a: 0}
   m_BuildTextureStacks: []
