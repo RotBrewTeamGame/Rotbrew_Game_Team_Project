@@ -45,6 +45,7 @@ public class SwitchPotion : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha1) || selectedPotion == 1)
         {
+            selectedPotion = 1;
             DisableHealthPotion();
             EnableDamagePotion();
             DisableFrostPotion();
@@ -52,6 +53,7 @@ public class SwitchPotion : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) || selectedPotion == 2)
         {
+            selectedPotion = 2;
             DisableDamagePotion();
             EnableHealthPotion();
             DisableFrostPotion();
@@ -59,6 +61,7 @@ public class SwitchPotion : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) || selectedPotion == 3)
         {
+            selectedPotion = 3;
             DisableHealthPotion();
             EnableFrostPotion();
             DisableDamagePotion();
@@ -66,6 +69,7 @@ public class SwitchPotion : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha4) || selectedPotion == 4)
         {
+            selectedPotion = 4;
             DisableDamagePotion();
             EnableFirePotion();
             DisableFrostPotion();

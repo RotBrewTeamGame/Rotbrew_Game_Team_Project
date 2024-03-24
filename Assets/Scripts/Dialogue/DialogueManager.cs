@@ -26,10 +26,13 @@ public class DialogueManager : MonoBehaviour
 
     private int currentDialogueIndex = 0;
 
+    public Rigidbody playerRB;
+
     private void Start()
     {
         dialogueParent.SetActive(false);
         playerCamera = Camera.main.transform;
+        playerRB = GetComponent<Rigidbody>();
     }
 
     public void DialogueStart(List<dialogueString> textToPrint, Transform NPC)
@@ -66,6 +69,8 @@ public class DialogueManager : MonoBehaviour
         Quaternion startRotation = playerCamera.rotation;
         Quaternion targetRotation = Quaternion.LookRotation(NPC.position - playerCamera.position);
 
+        playerRB.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
         float elapsedTime = 0f;
 
         while (elapsedTime < 1f)
@@ -76,13 +81,14 @@ public class DialogueManager : MonoBehaviour
         }
 
         playerCamera.rotation = targetRotation;
+        playerRB.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
     }
 
     private bool optionSelected = false;
 
     private IEnumerator PrintDialogue()
     {
-        while(currentDialogueIndex < dialogueList.Count)
+        while (currentDialogueIndex < dialogueList.Count)
         {
             dialogueString line = dialogueList[currentDialogueIndex];
 
@@ -159,5 +165,8 @@ public class DialogueManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        playerRB.constraints &= ~RigidbodyConstraints.FreezeRotationY;
+        playerRB.constraints &= ~RigidbodyConstraints.FreezePositionX | ~RigidbodyConstraints.FreezePositionY | ~RigidbodyConstraints.FreezePositionZ;
     }
 }
