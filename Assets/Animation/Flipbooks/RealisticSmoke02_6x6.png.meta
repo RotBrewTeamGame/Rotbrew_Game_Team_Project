@@ -1,0 +1,2239 @@
+fileFormatVersion: 2
+guid: 577b5e5d980c36049b9fc8d67c0718aa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_0
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3610
+        width: 270
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976b675c8fa69514aab32ee1ec6952ab
+      internalID: -1291912903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_1
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 3604
+        width: 282
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f6da7fc04bbbe4d9480ceb1205e3d3
+      internalID: 441638989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_2
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 3604
+        width: 294
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85706802be95be44bef6a2663e6a2e4
+      internalID: 1329745731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_3
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 3598
+        width: 310
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad421dd87d9c49e499e5f9fbb7d66191
+      internalID: 295062083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_4
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 3591
+        width: 322
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d532add40ad954f4d848c11690170658
+      internalID: 245601313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_5
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 3584
+        width: 336
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d940299472b3344b90ef777924eef8d
+      internalID: -956088633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_6
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2891
+        width: 353
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c279e3752a94bde4589bf496e5cc7653
+      internalID: 1122668921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_7
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 2883
+        width: 358
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0821955784a6548b71ad643e8b7828
+      internalID: -224985919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_8
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2875
+        width: 359
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d85e70057ec5a419b449e6603ba84c
+      internalID: -1122121725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_9
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2867
+        width: 362
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17672eb53de506d4e828625e79299108
+      internalID: 607043375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_10
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 2859
+        width: 366
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99aa129ac414ce43a31e0e50e2a377f
+      internalID: -1553852348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_11
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 2846
+        width: 371
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2da20316dc13c46b2b9e5123b64493
+      internalID: 738651587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2158
+        width: 383
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d8f5fd1db69c48982d07665587b5b
+      internalID: -469736034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_13
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 2153
+        width: 391
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d0ef1596d5f4e43a97b2655339df6d
+      internalID: -742208485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_14
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2145
+        width: 393
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6036d80a3b294e8429123cfe73c83463
+      internalID: -1475678728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_15
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 2139
+        width: 402
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aa0635a5d9cc246be4b15685bca0e6
+      internalID: 176535947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_16
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 2130
+        width: 410
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54877170fc39d61408894f350799641f
+      internalID: 1437544718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_17
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 2122
+        width: 422
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efff5bc5f0a4774398e59941f395c25
+      internalID: -1381021333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1434
+        width: 436
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edda7b6011bf1b4c9518d346903bedc
+      internalID: 1166792215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1424
+        width: 446
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54782d30c826304c8d09a52f6419e37
+      internalID: 1544797109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_20
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1424
+        width: 454
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81e010224a3a4e4c9621bce43ae11a1
+      internalID: -729309018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_21
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1412
+        width: 460
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054a4dd6692be5e44bb9591fd1154da9
+      internalID: -418859473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_22
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1404
+        width: 468
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30173077a170b29428d42543ab44d7f5
+      internalID: 687051493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_23
+      rect:
+        serializedVersion: 2
+        x: 3548
+        y: 1392
+        width: 478
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ea116f7968a2e4c95f9641c6d9ed42
+      internalID: -1251194841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 710
+        width: 490
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce59a443ce825ba429cac1f04c9c4120
+      internalID: -32329314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_25
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 708
+        width: 490
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033562aca8892e24da378572b9c76528
+      internalID: -713862264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_26
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 708
+        width: 494
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4897cb838b5776441b72cb469f0bdccb
+      internalID: -995491280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_27
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1164
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f00b66e95f6c4bb79cd2c2bc968ee
+      internalID: -1675086841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_28
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 740
+        width: 473
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d9f2c44ebd3b445ba50ac7e87c855d
+      internalID: 422375803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_29
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 1212
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781d3a217d6f8b54b8d909697e66d2ec
+      internalID: -1601281844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_30
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 732
+        width: 476
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45da0fffe319e314da5ca62e7323abe0
+      internalID: -511128924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_31
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 746
+        width: 484
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72717a26f0f63424ab765121ebb42f0c
+      internalID: -960620936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_32
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 1226
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096545c485c3ad6499f1536732b1ab5a
+      internalID: -169912162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_33
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1178
+        width: 66
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4e27736e1056b46863aed0a9f71ba3
+      internalID: 1396590041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_34
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1190
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574a4584e53a05f47b234f8e919847c4
+      internalID: -1524239523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_35
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 944
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9712daabeefd6459d1d989d20e24d3
+      internalID: 133570200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_36
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 936
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546d1f19ba7b8374eac563190f29ce2e
+      internalID: 107158892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_37
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 742
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c3c2e853603d740ac96e14431c1759
+      internalID: -449046739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_38
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 762
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b994bfb254672bd48818505e3e6e1925
+      internalID: -354615567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_39
+      rect:
+        serializedVersion: 2
+        x: 3776
+        y: 750
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd73902442712904abe5a82d8a9ff676
+      internalID: -689880107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_40
+      rect:
+        serializedVersion: 2
+        x: 3796
+        y: 762
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75daf8f1bd977843864358913638c1e
+      internalID: 1308934910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_41
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 760
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92f110c0e7bea54094d54a23799bd17
+      internalID: -1964548625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_42
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 748
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fbecc2b9d2ac24c898515d87af46be
+      internalID: -974290529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_43
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 748
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddef2eaae07008429def8577e031edd
+      internalID: 594982155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_44
+      rect:
+        serializedVersion: 2
+        x: 3732
+        y: 750
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1723b97d279dab141a66f8ada8dfdd4f
+      internalID: -364561104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_45
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 752
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e000fc9af261d949aa2610d47862653
+      internalID: -1613905951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_46
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 754
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a61384cf4a2cb44ad4fcc193d5a926
+      internalID: -859386543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_47
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 748
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5d05dcc052d114b963eb6f12d0a623
+      internalID: -2133121266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_48
+      rect:
+        serializedVersion: 2
+        x: 3826
+        y: 748
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3456b2a8a2f474da90469c1ac97374
+      internalID: -1377348057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_49
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 750
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f77fe8f4e783549ad9d8a1f098aa4f
+      internalID: -1038212794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_50
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 726
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2075c7f239f2d1c47a67f6e36152c5de
+      internalID: -275507780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_51
+      rect:
+        serializedVersion: 2
+        x: 3162
+        y: 744
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69b121afd776a54ab1793ffbd52ea20
+      internalID: 883690268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_52
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 734
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8434aa489332ce34f8d613729b4da2ea
+      internalID: 1493458835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_53
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 734
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b5bce6ca9640b46aef5c2f64413ba1
+      internalID: -1124396557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_54
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 722
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332c6ccda3f580a42882e57717a8f9dc
+      internalID: -529929922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_55
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 726
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83531e46ea4cda042b0fe0c60c1e2c63
+      internalID: -635986148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_56
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 704
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3530c84d82d2bb749bca70619d60dd8a
+      internalID: 716637179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_57
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 548
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5757ee230414a439ff093e22166b18
+      internalID: -621424041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_58
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 574
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1422e91ac69432448968839aceaf7eea
+      internalID: -1391151395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_59
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 574
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83785dfd4b3d2c24291799d30346259b
+      internalID: 820208934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_60
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 80
+        width: 482
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1afb7f3ddf8a72488048742ea23e82a
+      internalID: -1859009720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_61
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 508
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39874cecbd49dc54a9d60139cf793169
+      internalID: 1447302290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_62
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 568
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c613a3ccb043ee74a8e020c93efa6d5b
+      internalID: 688250990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_63
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 86
+        width: 452
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1681d53a5b48d740b5003fcc0a27c79
+      internalID: -298813216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_64
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 560
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23786ea03a083854e8cb329c804d2e60
+      internalID: -1342653225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_65
+      rect:
+        serializedVersion: 2
+        x: 3678
+        y: 550
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db53500e6ac6b0a41b22ac5977131922
+      internalID: -751136531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_66
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 544
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ccf62ce6ab822409ac51854d350abc
+      internalID: 1202427604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_67
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 86
+        width: 450
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a77880b5b45f454ab7ab480d858eecb
+      internalID: 1591748971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_68
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 80
+        width: 434
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def81933cba743c44ac7c6bcbf8326f3
+      internalID: 1462603242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_69
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 86
+        width: 444
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e4132494900c94c997a887e9f9644e
+      internalID: 2091491612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_70
+      rect:
+        serializedVersion: 2
+        x: 3668
+        y: 494
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbabb1a9c4fc8b0469e5a7735b8df00f
+      internalID: 2141631252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_71
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 530
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b154c10c5ddf542a0dad0867185e53
+      internalID: 1121418689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_72
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 90
+        width: 394
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675abf94b3338fc4b91cbeabc8cbd9e8
+      internalID: -281337634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_73
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 488
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2c90023f7540e42a6e47370c8741c1
+      internalID: 1781975292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_74
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 492
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6bc85121770d54f8b391d057911089
+      internalID: -53506053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_75
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 486
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36a803a1f7e7cc44be76ae93e316143
+      internalID: -1107995088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_76
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 404
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627a6658b0f23394ea61bf77e75aef71
+      internalID: 1454047677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_77
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 368
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ccf0b8feb73aa41b1abfe708586ef7
+      internalID: 1665625361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_78
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 364
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c8e7b41953b9f4ea4d0751f8dddb0a
+      internalID: -1793138840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_79
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 366
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17100827d30c0641be7d24cb116491b
+      internalID: 1960211755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_80
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 340
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1020b3d1af517c34e83e01bc1681c54b
+      internalID: 1894361248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_81
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 296
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2d8f758dcbdb34cb4c4cd9cae784bd
+      internalID: 1569089321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_82
+      rect:
+        serializedVersion: 2
+        x: 3844
+        y: 252
+        width: 72
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d729a0517b3cc4b96bae3b76086186
+      internalID: 752948361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_83
+      rect:
+        serializedVersion: 2
+        x: 3918
+        y: 296
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0380afc7be11acf43a10bf6a16d5f3a6
+      internalID: -112027219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_84
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 278
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc24c5c8c2fae448a5489e81bd897c6
+      internalID: -493835985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_85
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 274
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b6fa7367431a743bc7893bd275d364
+      internalID: 1295182261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_86
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 284
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896068e72fbe9e74caa276657b199e33
+      internalID: 918681889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_87
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 252
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccc74d7fb3d25e409ac2c4fa7bb02f4
+      internalID: 493479824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_88
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 272
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5297a2a326643dd4b809d233bc8da5e2
+      internalID: 1916426487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_89
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 214
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b2c0159a700274b95979abde59d016
+      internalID: 2075903034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_90
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 216
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dce932a9b69a348bcdc7900045e0e8
+      internalID: -1677371878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_91
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 176
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038a858f250d5b34a9a485e58c485714
+      internalID: 1058267496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_92
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 84
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c8fdee57d38114289c94440d79d1ab
+      internalID: 1119886837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_93
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 82
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d7740435ed56040a6e69f437b37f1e
+      internalID: -991322098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_94
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 78
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1f8d11cde83b47ae61b9164478591
+      internalID: 609667221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RealisticSmoke02_6x6_95
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 62
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162785508ae97624f95e981f341f0369
+      internalID: 317688261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8b9ede0b9d569ee4bb920bd0dfd10c2f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RealisticSmoke02_6x6_0: -1291912903
+      RealisticSmoke02_6x6_1: 441638989
+      RealisticSmoke02_6x6_10: -1553852348
+      RealisticSmoke02_6x6_11: 738651587
+      RealisticSmoke02_6x6_12: -469736034
+      RealisticSmoke02_6x6_13: -742208485
+      RealisticSmoke02_6x6_14: -1475678728
+      RealisticSmoke02_6x6_15: 176535947
+      RealisticSmoke02_6x6_16: 1437544718
+      RealisticSmoke02_6x6_17: -1381021333
+      RealisticSmoke02_6x6_18: 1166792215
+      RealisticSmoke02_6x6_19: 1544797109
+      RealisticSmoke02_6x6_2: 1329745731
+      RealisticSmoke02_6x6_20: -729309018
+      RealisticSmoke02_6x6_21: -418859473
+      RealisticSmoke02_6x6_22: 687051493
+      RealisticSmoke02_6x6_23: -1251194841
+      RealisticSmoke02_6x6_24: -32329314
+      RealisticSmoke02_6x6_25: -713862264
+      RealisticSmoke02_6x6_26: -995491280
+      RealisticSmoke02_6x6_27: -1675086841
+      RealisticSmoke02_6x6_28: 422375803
+      RealisticSmoke02_6x6_29: -1601281844
+      RealisticSmoke02_6x6_3: 295062083
+      RealisticSmoke02_6x6_30: -511128924
+      RealisticSmoke02_6x6_31: -960620936
+      RealisticSmoke02_6x6_32: -169912162
+      RealisticSmoke02_6x6_33: 1396590041
+      RealisticSmoke02_6x6_34: -1524239523
+      RealisticSmoke02_6x6_35: 133570200
+      RealisticSmoke02_6x6_36: 107158892
+      RealisticSmoke02_6x6_37: -449046739
+      RealisticSmoke02_6x6_38: -354615567
+      RealisticSmoke02_6x6_39: -689880107
+      RealisticSmoke02_6x6_4: 245601313
+      RealisticSmoke02_6x6_40: 1308934910
+      RealisticSmoke02_6x6_41: -1964548625
+      RealisticSmoke02_6x6_42: -974290529
+      RealisticSmoke02_6x6_43: 594982155
+      RealisticSmoke02_6x6_44: -364561104
+      RealisticSmoke02_6x6_45: -1613905951
+      RealisticSmoke02_6x6_46: -859386543
+      RealisticSmoke02_6x6_47: -2133121266
+      RealisticSmoke02_6x6_48: -1377348057
+      RealisticSmoke02_6x6_49: -1038212794
+      RealisticSmoke02_6x6_5: -956088633
+      RealisticSmoke02_6x6_50: -275507780
+      RealisticSmoke02_6x6_51: 883690268
+      RealisticSmoke02_6x6_52: 1493458835
+      RealisticSmoke02_6x6_53: -1124396557
+      RealisticSmoke02_6x6_54: -529929922
+      RealisticSmoke02_6x6_55: -635986148
+      RealisticSmoke02_6x6_56: 716637179
+      RealisticSmoke02_6x6_57: -621424041
+      RealisticSmoke02_6x6_58: -1391151395
+      RealisticSmoke02_6x6_59: 820208934
+      RealisticSmoke02_6x6_6: 1122668921
+      RealisticSmoke02_6x6_60: -1859009720
+      RealisticSmoke02_6x6_61: 1447302290
+      RealisticSmoke02_6x6_62: 688250990
+      RealisticSmoke02_6x6_63: -298813216
+      RealisticSmoke02_6x6_64: -1342653225
+      RealisticSmoke02_6x6_65: -751136531
+      RealisticSmoke02_6x6_66: 1202427604
+      RealisticSmoke02_6x6_67: 1591748971
+      RealisticSmoke02_6x6_68: 1462603242
+      RealisticSmoke02_6x6_69: 2091491612
+      RealisticSmoke02_6x6_7: -224985919
+      RealisticSmoke02_6x6_70: 2141631252
+      RealisticSmoke02_6x6_71: 1121418689
+      RealisticSmoke02_6x6_72: -281337634
+      RealisticSmoke02_6x6_73: 1781975292
+      RealisticSmoke02_6x6_74: -53506053
+      RealisticSmoke02_6x6_75: -1107995088
+      RealisticSmoke02_6x6_76: 1454047677
+      RealisticSmoke02_6x6_77: 1665625361
+      RealisticSmoke02_6x6_78: -1793138840
+      RealisticSmoke02_6x6_79: 1960211755
+      RealisticSmoke02_6x6_8: -1122121725
+      RealisticSmoke02_6x6_80: 1894361248
+      RealisticSmoke02_6x6_81: 1569089321
+      RealisticSmoke02_6x6_82: 752948361
+      RealisticSmoke02_6x6_83: -112027219
+      RealisticSmoke02_6x6_84: -493835985
+      RealisticSmoke02_6x6_85: 1295182261
+      RealisticSmoke02_6x6_86: 918681889
+      RealisticSmoke02_6x6_87: 493479824
+      RealisticSmoke02_6x6_88: 1916426487
+      RealisticSmoke02_6x6_89: 2075903034
+      RealisticSmoke02_6x6_9: 607043375
+      RealisticSmoke02_6x6_90: -1677371878
+      RealisticSmoke02_6x6_91: 1058267496
+      RealisticSmoke02_6x6_92: 1119886837
+      RealisticSmoke02_6x6_93: -991322098
+      RealisticSmoke02_6x6_94: 609667221
+      RealisticSmoke02_6x6_95: 317688261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

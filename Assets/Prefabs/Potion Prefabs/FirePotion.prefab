@@ -149,6 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseEnemyMAT: {fileID: 2100000, guid: f0d3c1c0ac4de054193ccb44d7d8d97e, type: 2}
+  vfxPrefab: {fileID: 6629616681947319540, guid: ce605595570a9854e8da2a4e8b687068,
+    type: 3}
+  burningMaterialRate: 0.5
+  flamesRate: 0.7
+  sparksRate: 0.9
 --- !u!1 &2516583496987829957
 GameObject:
   m_ObjectHideFlags: 0
