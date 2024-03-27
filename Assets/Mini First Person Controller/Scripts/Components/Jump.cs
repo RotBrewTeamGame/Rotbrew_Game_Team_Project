@@ -9,6 +9,7 @@ public class Jump : MonoBehaviour
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
 
+    public PauseGame pauseGame;
 
     void Reset()
     {
@@ -30,11 +31,14 @@ public class Jump : MonoBehaviour
 
     void LateUpdate()
     {
-        // Jump when the Jump button is pressed and we are on the ground.
-        if (Input.GetButtonDown("Jump") && (!groundCheck || groundCheck.isGrounded))
+        if (pauseGame.isPaused == false)
         {
-            rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
-            Jumped?.Invoke();
+            // Jump when the Jump button is pressed and we are on the ground.
+            if (Input.GetButtonDown("Jump") && (!groundCheck || groundCheck.isGrounded))
+            {
+                rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
+                Jumped?.Invoke();
+            }
         }
     }
 }

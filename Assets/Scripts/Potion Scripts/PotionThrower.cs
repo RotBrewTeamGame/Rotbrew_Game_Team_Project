@@ -36,6 +36,8 @@ public class PotionThrower : MonoBehaviour
     public GameObject frostPotionUI;
     public GameObject firePotionUI;
 
+    public PauseGame pauseGame;
+
     void Start()
     {
         mainCam = Camera.main;
@@ -44,34 +46,37 @@ public class PotionThrower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
-            Input.GetKeyDown(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
-            Input.GetKeyDown(throwKey) && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
+        if (pauseGame.isPaused == false)
         {
-            StartThrowing();
-        }
-        if (isCharging && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
-            isCharging && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
-            isCharging && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
-        {
-            ChargeThrow();
-        }
-        if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
-            Input.GetKeyUp(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
-            Input.GetKeyUp(throwKey) && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
-        {
-            ReleaseThrow();
-            if (damagePotionUI.activeSelf)
+            if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+                Input.GetKeyDown(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
+                Input.GetKeyDown(throwKey) && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
             {
-                GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
+                StartThrowing();
             }
-            if (frostPotionUI.activeSelf)
+            if (isCharging && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+                isCharging && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
+                isCharging && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
             {
-                GameManager.instance.frostPotionItemCount = GameManager.instance.frostPotionItemCount - 1;
+                ChargeThrow();
             }
-            if (firePotionUI.activeSelf)
+            if (Input.GetKeyUp(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
+                Input.GetKeyUp(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
+                Input.GetKeyUp(throwKey) && GameManager.instance.firePotionItemCount != 0 && !craftingUI.activeSelf && firePotionUI.activeSelf)
             {
-                GameManager.instance.firePotionItemCount = GameManager.instance.firePotionItemCount - 1;
+                ReleaseThrow();
+                if (damagePotionUI.activeSelf)
+                {
+                    GameManager.instance.damagePotionItemCount = GameManager.instance.damagePotionItemCount - 1;
+                }
+                if (frostPotionUI.activeSelf)
+                {
+                    GameManager.instance.frostPotionItemCount = GameManager.instance.frostPotionItemCount - 1;
+                }
+                if (firePotionUI.activeSelf)
+                {
+                    GameManager.instance.firePotionItemCount = GameManager.instance.firePotionItemCount - 1;
+                }
             }
         }
     }

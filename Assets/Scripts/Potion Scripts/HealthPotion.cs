@@ -7,13 +7,17 @@ public class HealthPotion : MonoBehaviour
 {
     public SwitchPotion potions;
     public PlayerHealth health;
+    public PauseGame pauseGame;
 
     void Update()
     {
-        if (potions.healthPotionON && Input.GetKeyDown(KeyCode.Mouse1) && GameManager.instance.healthPotionItemCount != 0 && health.health != health.maxHealth)
+        if (pauseGame.isPaused == false)
         {
-            health.HealHealth(1);
-            GameManager.instance.healthPotionItemCount--;
+            if (potions.healthPotionON && Input.GetKeyDown(KeyCode.Mouse1) && GameManager.instance.healthPotionItemCount != 0 && health.health != health.maxHealth)
+            {
+                health.HealHealth(1);
+                GameManager.instance.healthPotionItemCount--;
+            }
         }
     }
 }

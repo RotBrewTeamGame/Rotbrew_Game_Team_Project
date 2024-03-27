@@ -18,6 +18,8 @@ public class SwitchPotion : MonoBehaviour
     [SerializeField]
     private int selectedPotion;
 
+    public PauseGame pauseGame;
+
     private void Start()
     {
         damagePotionUI.SetActive(true);
@@ -35,45 +37,48 @@ public class SwitchPotion : MonoBehaviour
     {
         float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
 
-        if (scrollWheel > 0f)
+        if (pauseGame.isPaused == false)
         {
-            selectedPotion = Mathf.Clamp(selectedPotion + 1, 1, 4);
-        }
-        else if (scrollWheel < 0f)
-        {
-            selectedPotion = Mathf.Clamp(selectedPotion - 1, 1, 4);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1) || selectedPotion == 1)
-        {
-            selectedPotion = 1;
-            DisableHealthPotion();
-            EnableDamagePotion();
-            DisableFrostPotion();
-            DisableFirePotion();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2) || selectedPotion == 2)
-        {
-            selectedPotion = 2;
-            DisableDamagePotion();
-            EnableHealthPotion();
-            DisableFrostPotion();
-            DisableFirePotion();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3) || selectedPotion == 3)
-        {
-            selectedPotion = 3;
-            DisableHealthPotion();
-            EnableFrostPotion();
-            DisableDamagePotion();
-            DisableFirePotion();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4) || selectedPotion == 4)
-        {
-            selectedPotion = 4;
-            DisableDamagePotion();
-            EnableFirePotion();
-            DisableFrostPotion();
-            DisableDamagePotion();
+            if (scrollWheel > 0f)
+            {
+                selectedPotion = Mathf.Clamp(selectedPotion + 1, 1, 4);
+            }
+            else if (scrollWheel < 0f)
+            {
+                selectedPotion = Mathf.Clamp(selectedPotion - 1, 1, 4);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha1) || selectedPotion == 1)
+            {
+                selectedPotion = 1;
+                DisableHealthPotion();
+                EnableDamagePotion();
+                DisableFrostPotion();
+                DisableFirePotion();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2) || selectedPotion == 2)
+            {
+                selectedPotion = 2;
+                DisableDamagePotion();
+                EnableHealthPotion();
+                DisableFrostPotion();
+                DisableFirePotion();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3) || selectedPotion == 3)
+            {
+                selectedPotion = 3;
+                DisableHealthPotion();
+                EnableFrostPotion();
+                DisableDamagePotion();
+                DisableFirePotion();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4) || selectedPotion == 4)
+            {
+                selectedPotion = 4;
+                DisableDamagePotion();
+                EnableFirePotion();
+                DisableFrostPotion();
+                DisableDamagePotion();
+            }
         }
     }
 
