@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001BBE28CA458 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000133B914AF38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,45 +17,6 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] SystemI::mixerResume                     : Resuming output.
-[LOG] SoundI::release                          :  (000001BBA4408E58)
-[LOG] SoundI::release                          :     S100v2-PotionSmashSFX-1 (000001BBA31488A8)
-[LOG] SoundI::release                          :  (000001BBA44092A8)
-[LOG] SoundI::release                          :     S100v2-PotionSmashSFX-2 (000001BAC542EAB8)
-[LOG] SoundI::release                          :  (000001BBA4409418)
-[LOG] SoundI::release                          :     S100v2-PotionSmashSFX-3 (000001BBA3148568)
-[LOG] SoundI::release                          :  (000001BACA866B08)
-[LOG] SoundI::release                          :     LootPickup (000001BBE3E228F8)
-[LOG] SoundI::release                          :  (000001BC17907D98)
-[LOG] SoundI::release                          :     S121-throw1 (000001BBEEC80118)
-[LOG] SoundI::release                          :  (000001BBA1A1D1D8)
-[LOG] SoundI::release                          :     S121-throw2 (000001BBEEC81CB8)
-[LOG] SoundI::release                          :  (000001BBCC77D4E8)
-[LOG] SoundI::release                          :     footsteps-dirt-gravel-1 (000001BBA2D54088)
-[LOG] SoundI::release                          :  (000001BBCC77DAA8)
-[LOG] SoundI::release                          :     footsteps-dirt-gravel-2 (000001BBEAD67C48)
-[LOG] SoundI::release                          :  (000001BBCC77D208)
-[LOG] SoundI::release                          :     footsteps-dirt-gravel-3 (000001BBA2D548A8)
-[LOG] SoundI::release                          :  (000001BBCC77DC18)
-[LOG] SoundI::release                          :     footsteps-dirt-gravel-4 (000001BBA2D55408)
-[LOG] SoundI::release                          :  (000001BBCC77D378)
-[LOG] SoundI::release                          :     footsteps-dirt-gravel-5 (000001BBA2D543C8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
