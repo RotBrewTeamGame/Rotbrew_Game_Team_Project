@@ -66,34 +66,4 @@ public class FirstPersonMovement : MonoBehaviour
             }
         }
     }
-
-    /*
-    public float GetMovementVelocity()
-    {
-        // Implement logic to calculate movement velocity
-        return 0f;
-    }
-    
-
-    // Call these methods when the corresponding events occur
-    public void OnJumped()
-    {
-        Jumped?.Invoke();
-    }
-
-    public void OnLanded()
-    {
-        Landed?.Invoke();
-    }
-
-    public void OnCrouchStarted()
-    {
-        CrouchStarted?.Invoke();
-    }
-
-    public void OnCrouchEnded()
-    {
-        CrouchEnded?.Invoke();
-    }
-    */
 }

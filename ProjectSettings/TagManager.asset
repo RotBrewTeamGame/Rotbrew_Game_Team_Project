@@ -11,6 +11,9 @@ TagManager:
   - City Centre
   - Sewer
   - Dart
+  - CityCentreTrigger
+  - IndustrialZoneTrigger
+  - SewersTrigger
   layers:
   - Default
   - TransparentFX

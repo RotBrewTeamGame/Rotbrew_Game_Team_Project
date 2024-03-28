@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638466591160329877
+  lastModified: 638471741875269130
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -202,6 +202,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1207
+--- !u!114 &-962699366226405807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtracks/SewerThemeFastPaced
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtracks/SewerThemeFastPaced
+  Guid:
+    Data1: -139073504
+    Data2: 1177803874
+    Data3: 1711589299
+    Data4: -114350543
+  Banks:
+  - {fileID: 3223631239858659319}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33230
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,12 +262,14 @@ MonoBehaviour:
   - {fileID: 4076652530957923353}
   - {fileID: -6523496755604981610}
   - {fileID: 7987709226069307465}
+  - {fileID: -962699366226405807}
+  - {fileID: 7384860592185806365}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1830112853031422595}
   StringsBanks:
   - {fileID: 5593902835667043549}
-  cacheTime: 638466622949157902
+  cacheTime: 638471741889365123
   cacheVersion: 131616
 --- !u!114 &2528604858955970413
 MonoBehaviour:
@@ -284,10 +313,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638456977284283109
+  lastModified: 638471741889365123
   FileSizes:
   - Name: Desktop
-    Value: 1426624
+    Value: 2815136
   Exists: 1
 --- !u!114 &3838819007236347413
 MonoBehaviour:
@@ -369,7 +398,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7982
+  Length: 4968
 --- !u!114 &4787564334124508864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,10 +414,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638466591160273678
+  lastModified: 638471741875213837
   FileSizes:
   - Name: Desktop
-    Value: 155264
+    Value: 154784
   Exists: 1
 --- !u!114 &5593902835667043549
 MonoBehaviour:
@@ -405,10 +434,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638466591160339879
+  lastModified: 638471741875279467
   FileSizes:
   - Name: Desktop
-    Value: 1664
+    Value: 1768
   Exists: 1
 --- !u!114 &5833664593191963810
 MonoBehaviour:
@@ -464,6 +493,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &7384860592185806365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtracks/SewerTheme
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtracks/SewerTheme
+  Guid:
+    Data1: 911475551
+    Data2: 1335014090
+    Data3: 434472329
+    Data4: -569901546
+  Banks:
+  - {fileID: 3223631239858659319}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 88615
 --- !u!114 &7987709226069307465
 MonoBehaviour:
   m_ObjectHideFlags: 0

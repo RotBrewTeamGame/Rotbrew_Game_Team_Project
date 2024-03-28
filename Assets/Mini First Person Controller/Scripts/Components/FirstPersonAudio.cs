@@ -84,7 +84,7 @@ public class FirstPersonAudio : MonoBehaviour
 
         // Subscribe to game events to trigger FMOD events
         character.Walked += PlayStepAudio;
-        //character.Landed += PlayLandingAudio;
+        character.Landed += PlayLandingAudio;
         jump.Jumped += PlayJumpAudio;
         crouch.CrouchStart += PlayCrouchStartAudio;
         crouch.CrouchEnd += PlayCrouchEndAudio;
@@ -113,15 +113,6 @@ public class FirstPersonAudio : MonoBehaviour
     {
         Debug.Log("FirstPersonAudio::PlayStepAudio");
 
-        /*
-        // Play step audio
-        if (!stepEventInstance.isValid())
-        {
-            //stepEventInstance = audioManager.CreateInstance(playerFootsteps);
-            InvokeRepeating(“Walking”, 0.5f, walkingSpeed);
-        }
-        //stepEventInstance.start();
-        */
     }
     
     void PlayRunningAudio()

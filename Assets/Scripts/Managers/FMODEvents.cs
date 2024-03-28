@@ -33,7 +33,19 @@ public class FMODEvents : MonoBehaviour
     [Header("Loot Pick Up")]
     public EventReference pickupSound;
 
+    [Header("City Centre")]
+    public EventReference cityCentreSoundtrack;
+    
+    [Header("Industrial Zone")]
+    public EventReference industrialZoneSoundtrack;
+
+    [Header("Sewer Zone")]
+    public EventReference sewersSoundtrack;
+
     public static FMODEvents instance;
+    public GameObject cityCentreTrigger;
+    public GameObject industrialZoneTrigger;
+    public GameObject sewersTrigger;
 
     private void Awake()
     {
@@ -193,5 +205,30 @@ public class FMODEvents : MonoBehaviour
     {
         // Play plant collection audio event
         Debug.Log("Plant collection audio played.");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            string zone = "";
+
+            // Determine the zone based on the collider trigger entered
+            if (other.gameObject == cityCentreTrigger)
+            {
+                zone = "CityCentre";
+            }
+            else if (other.gameObject == industrialZoneTrigger)
+            {
+                zone = "IndustrialZone";
+            }
+            else if (other.gameObject == sewersTrigger)
+            {
+                zone = "Sewers";
+            }
+
+            // Play the soundtrack for the entered zone
+            AudioManager.instance.PlayZoneSoundtrack(zone);
+        }
     }
 }
