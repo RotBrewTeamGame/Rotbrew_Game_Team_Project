@@ -206,29 +206,4 @@ public class FMODEvents : MonoBehaviour
         // Play plant collection audio event
         Debug.Log("Plant collection audio played.");
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            string zone = "";
-
-            // Determine the zone based on the collider trigger entered
-            if (other.gameObject == cityCentreTrigger)
-            {
-                zone = "CityCentre";
-            }
-            else if (other.gameObject == industrialZoneTrigger)
-            {
-                zone = "IndustrialZone";
-            }
-            else if (other.gameObject == sewersTrigger)
-            {
-                zone = "Sewers";
-            }
-
-            // Play the soundtrack for the entered zone
-            AudioManager.instance.PlayZoneSoundtrack(zone);
-        }
-    }
 }

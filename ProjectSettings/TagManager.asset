@@ -14,6 +14,9 @@ TagManager:
   - CityCentreTrigger
   - IndustrialZoneTrigger
   - SewersTrigger
+  - CityCentre
+  - IndustrialZone
+  - Sewers
   layers:
   - Default
   - TransparentFX
@@ -23,9 +26,9 @@ TagManager:
   - UI
   - Player
   - Potion
-  - 
-  - 
-  - 
+  - CityCentre
+  - Sewers
+  - IndustrialZone
   - 
   - 
   - 
