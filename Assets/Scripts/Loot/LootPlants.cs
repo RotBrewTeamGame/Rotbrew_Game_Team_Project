@@ -173,7 +173,7 @@ public class LootPlants : MonoBehaviour
         // Wait for all plants to regenerate
         while (coroutineIndex < plants.Count)
         {
-            yield return new WaitForSeconds(20f); // Wait for 3 minutes
+            yield return new WaitForSeconds(180f); // Wait for 3 minutes
             plants[coroutineIndex].SetActive(true);
             coroutineIndex++;
             lastDisabledIndex = -1;
