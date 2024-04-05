@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3609443104302829375}
   - component: {fileID: 932282058204177419}
   - component: {fileID: 2715165369872894713}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -140,6 +140,17 @@ MonoBehaviour:
   baseEnemyMat: {fileID: 2100000, guid: 85f3a02a916f8174aa00c2743591390d, type: 2}
   damageFlashFX: {fileID: 2100000, guid: 446a751745854c34391d4f02d18109c4, type: 2}
   deathFX: {fileID: 2100000, guid: 9f7389f9403e6124389f3144fefc5ed8, type: 2}
+  deathVFXPrefab: {fileID: 0}
+  enemyDissolveSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  damaged: 0
 --- !u!114 &2715165369872894713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +178,7 @@ GameObject:
   - component: {fileID: 1330829882343779982}
   - component: {fileID: 1483465814303694680}
   - component: {fileID: 8490390585150743894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -229,6 +240,7 @@ MonoBehaviour:
   agent: {fileID: 1194729045447859875}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0
 --- !u!1 &4754771405620320692
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +252,7 @@ GameObject:
   - component: {fileID: 3319887964790632915}
   - component: {fileID: 1194729045447859875}
   - component: {fileID: 1516585743339456700}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}

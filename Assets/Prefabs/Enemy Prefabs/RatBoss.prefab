@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 679266418127027470}
   - component: {fileID: 8662446763702987541}
   - component: {fileID: 8996970713449120746}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2855225312293245191}
   - component: {fileID: 9190595323757623436}
   - component: {fileID: 1428775836480903705}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RatBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 2662314878741562145}
   - component: {fileID: 733355858262495766}
   - component: {fileID: 3926922442589818626}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Enemy
   m_Icon: {fileID: 0}

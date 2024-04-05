@@ -68,7 +68,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizonLineContribution: 1
+    - _HorizonLineContribution: 0
     - _HorizonLineExponent: 12.3
     - _Metallic: 0
     - _Mode: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7134977304738383620}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DartSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2119575689533556870}
   - component: {fileID: 5576903840691412075}
   - component: {fileID: 3349605013800889795}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GhillieGoblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 725261919933321029}
   - component: {fileID: 497602693960221416}
   - component: {fileID: 207425978852344847}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 8643251747225790703}
   - component: {fileID: 84586058015022283}
   - component: {fileID: 5883718658317520001}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_GhillieGoblin_Optimised
   m_TagString: Enemy
   m_Icon: {fileID: 0}

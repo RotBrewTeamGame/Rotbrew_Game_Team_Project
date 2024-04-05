@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5094687582118207305}
   - component: {fileID: 8356442809134711862}
   - component: {fileID: 3532941380991665033}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -73,6 +73,7 @@ MonoBehaviour:
   agent: {fileID: 4923128343497291186}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0
 --- !u!1 &3156072244546571664
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +85,7 @@ GameObject:
   - component: {fileID: 3051162653665141715}
   - component: {fileID: 4923128343497291186}
   - component: {fileID: 1463924983550114278}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SlimeBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -164,7 +165,7 @@ GameObject:
   - component: {fileID: 7793813628396940339}
   - component: {fileID: 5399586759100341489}
   - component: {fileID: 3681990286013198284}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_Slime_Optimised
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -299,6 +300,7 @@ MonoBehaviour:
     Path: 
   agent: {fileID: 4923128343497291186}
   player: {fileID: 0}
+  damaged: 0
 --- !u!114 &3681990286013198284
 MonoBehaviour:
   m_ObjectHideFlags: 0

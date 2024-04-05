@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7823947937524248382}
   - component: {fileID: 1959182241656580965}
   - component: {fileID: 1229872468287999741}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_Slime_Optimised
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 9049986744598317778}
   - component: {fileID: 8656450222646634643}
   - component: {fileID: 6619028971659588439}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 3788449147215107876}
   - component: {fileID: 1983664650715538846}
   - component: {fileID: 5233831411991554362}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Enemy
   m_Icon: {fileID: 0}

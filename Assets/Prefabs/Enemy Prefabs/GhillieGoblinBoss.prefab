@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7062643700076324629}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DartSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 3232635566547604910}
   - component: {fileID: 2013347807703775594}
   - component: {fileID: 2011388705888644986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HOL_GhillieGoblin_Optimised
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -159,6 +159,17 @@ MonoBehaviour:
   baseEnemyMat: {fileID: 2100000, guid: 34a90235107bab341b67985826728a1e, type: 2}
   damageFlashFX: {fileID: 2100000, guid: 446a751745854c34391d4f02d18109c4, type: 2}
   deathFX: {fileID: 2100000, guid: 9f7389f9403e6124389f3144fefc5ed8, type: 2}
+  deathVFXPrefab: {fileID: 0}
+  enemyDissolveSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  damaged: 0
 --- !u!114 &3396721950470622155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +185,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dart: {fileID: 1767295383071363785, guid: afb0eed5eb15345478bed03c62a0587f, type: 3}
   dartSpawn: {fileID: 7062643700076324629}
+  force: 0
   isShooting: 0
 --- !u!114 &3232635566547604910
 MonoBehaviour:
@@ -229,7 +241,7 @@ GameObject:
   - component: {fileID: 6538374567775461205}
   - component: {fileID: 209820498977153532}
   - component: {fileID: 7595688826024356401}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: enemyView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,6 +304,7 @@ MonoBehaviour:
   agent: {fileID: 3325276380686606523}
   patrolling: 0
   player: {fileID: 0}
+  chasingDistance: 0
 --- !u!1 &8656261178398156760
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +316,7 @@ GameObject:
   - component: {fileID: 782158742141012315}
   - component: {fileID: 3325276380686606523}
   - component: {fileID: 6241395123003861650}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GhillieGoblinBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
