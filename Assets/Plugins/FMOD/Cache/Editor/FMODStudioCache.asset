@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 140
+--- !u!114 &-8044614846995599783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/Fire Potion Throw
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/Fire Potion Throw
+  Guid:
+    Data1: -447095772
+    Data2: 1116165291
+    Data3: 165462680
+    Data4: -2012951977
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1536
 --- !u!114 &-7935541309461723206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +75,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3223631239858659319}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -81,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &-5788683359382882153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/Ice Potion throw
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/Ice Potion throw
+  Guid:
+    Data1: 914394107
+    Data2: 1301116003
+    Data3: 1016940179
+    Data4: 149113695
+  Banks:
+  - {fileID: -2480288474990560027}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1515
 --- !u!114 &-4959216858910605055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +204,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638477449089954092
+  lastModified: 638480271232579307
   FileSizes:
   - Name: Desktop
-    Value: 161184
+    Value: 218752
   Exists: 1
 --- !u!114 &-1830112853031422595
 MonoBehaviour:
@@ -170,7 +224,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638452765522643510
+  lastModified: 638480271231395680
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -223,7 +277,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3223631239858659319}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -264,12 +318,14 @@ MonoBehaviour:
   - {fileID: 7987709226069307465}
   - {fileID: -962699366226405807}
   - {fileID: 7384860592185806365}
+  - {fileID: -8044614846995599783}
+  - {fileID: -5788683359382882153}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1830112853031422595}
   StringsBanks:
   - {fileID: 5593902835667043549}
-  cacheTime: 638477449090452647
+  cacheTime: 638480383458859899
   cacheVersion: 131616
 --- !u!114 &2528604858955970413
 MonoBehaviour:
@@ -313,10 +369,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638477449090452647
+  lastModified: 638480383458859899
   FileSizes:
   - Name: Desktop
-    Value: 2815136
+    Value: 2815936
   Exists: 1
 --- !u!114 &3838819007236347413
 MonoBehaviour:
@@ -414,7 +470,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638477449089954092
+  lastModified: 638480271231329773
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -434,10 +490,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638477449089954092
+  lastModified: 638480271231410831
   FileSizes:
   - Name: Desktop
-    Value: 1768
+    Value: 1864
   Exists: 1
 --- !u!114 &5833664593191963810
 MonoBehaviour:
@@ -514,7 +570,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3223631239858659319}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1

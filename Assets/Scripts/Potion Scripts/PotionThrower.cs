@@ -26,6 +26,8 @@ public class PotionThrower : MonoBehaviour
 
     [Header("SFX")]
     [SerializeField] private EventReference damagePotionThrow;
+    [SerializeField] private EventReference frostPotionThrow; // New
+    [SerializeField] private EventReference firePotionThrow; // New
 
     private Camera mainCam;
 
@@ -122,8 +124,6 @@ public class PotionThrower : MonoBehaviour
 
             Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
             potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
-
-            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
         }
         if (frostPotionUI.activeSelf)
         {
@@ -131,14 +131,12 @@ public class PotionThrower : MonoBehaviour
             Rigidbody potionRB = frostPotion.GetComponent<Rigidbody>();
             Rigidbody playerRB = this.GetComponent<Rigidbody>();
 
-            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
+            AudioManager.instance.PlayOneShot(frostPotionThrow, this.transform.position); // Changed
 
             potionRB.velocity = playerRB.velocity;
 
             Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
             potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
-
-            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
         }
         if (firePotionUI.activeSelf)
         {
@@ -146,14 +144,12 @@ public class PotionThrower : MonoBehaviour
             Rigidbody potionRB = firePotion.GetComponent<Rigidbody>();
             Rigidbody playerRB = this.GetComponent<Rigidbody>();
 
-            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
+            AudioManager.instance.PlayOneShot(firePotionThrow, this.transform.position); // Changed
 
             potionRB.velocity = playerRB.velocity;
 
             Vector3 finalThrowDirection = (mainCam.transform.forward + throwDirection).normalized;
             potionRB.AddForce(finalThrowDirection * force, ForceMode.VelocityChange);
-
-            AudioManager.instance.PlayOneShot(damagePotionThrow, this.transform.position);
         }
     }
 
@@ -165,7 +161,7 @@ public class PotionThrower : MonoBehaviour
         for (int i = 0; i < points.Length; i++)
         {
             float time = i * 0.1f;
-            points[i] = origin + speed * time + 0.5f * Physics.gravity * time * time; 
+            points[i] = origin + speed * time + 0.5f * Physics.gravity * time * time;
         }
         trajectoryLine.SetPositions(points);
     }

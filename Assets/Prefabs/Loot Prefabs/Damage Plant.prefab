@@ -1,5 +1,90 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &519898651338642626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6254699591606841918}
+  - component: {fileID: 8746395621384872720}
+  - component: {fileID: 1341750215719623321}
+  m_Layer: 0
+  m_Name: Audio Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6254699591606841918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519898651338642626}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1897427064503858865}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8746395621384872720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519898651338642626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -516153655
+      Data2: 1082575629
+      Data3: 44564100
+      Data4: 1166183764
+    Path: event:/Environment/Ingredient Plant Hum
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!135 &1341750215719623321
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519898651338642626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.7149105
+  m_Center: {x: 0.061152935, y: 2.0997505, z: 0.018136978}
 --- !u!1001 &2152644350919283034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,7 +230,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 98d1d3e590624ec48b78dd29413cd16d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad4794b4df9feba4da63142df9ad69d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6254699591606841918}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ad4794b4df9feba4da63142df9ad69d2,
         type: 3}
@@ -205,6 +294,8 @@ MonoBehaviour:
   vfx: {fileID: 665230155326108384}
   LeafSpawnRateParameterName: LeafSpawnRate
   plant: 0
+  nextIndex: 0
+  lastDisabledIndex: -1
 --- !u!65 &159207001682342385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -337,6 +428,12 @@ VFXRenderer:
 --- !u!1 &1735332834170866881 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8806051687923442277, guid: ad4794b4df9feba4da63142df9ad69d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2152644350919283034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1897427064503858865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad4794b4df9feba4da63142df9ad69d2,
     type: 3}
   m_PrefabInstance: {fileID: 2152644350919283034}
   m_PrefabAsset: {fileID: 0}

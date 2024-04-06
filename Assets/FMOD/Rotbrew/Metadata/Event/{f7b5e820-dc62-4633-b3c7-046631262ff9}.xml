@@ -119,7 +119,14 @@
 			<destination>{c0ecb0fa-87b7-49c2-871f-dc4e09b88443}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{66312787-216e-4655-bdd8-a7900f036a06}" />
+	<object class="MixerBusPanner" id="{66312787-216e-4655-bdd8-a7900f036a06}">
+		<property name="surroundPanExtent">
+			<value>0</value>
+		</property>
+		<property name="disabledSpeakers">
+			<value>51</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{235281b0-564b-4b02-b116-20cac8b85953}" />
 	<object class="MixerBusEffectChain" id="{b0438d43-542c-45c1-9798-a6b2e92c1326}">
 		<relationship name="effects">
@@ -131,6 +138,9 @@
 	<object class="SpatialiserEffect" id="{c0ecb0fa-87b7-49c2-871f-dc4e09b88443}">
 		<property name="distanceRolloffType">
 			<value>4</value>
+		</property>
+		<property name="panBlend">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{608f069f-fa4d-4c92-8050-653f57663e6c}" />
