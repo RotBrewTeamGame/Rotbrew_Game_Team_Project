@@ -204,7 +204,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638481645638014393
+  lastModified: 638481822676943158
   FileSizes:
   - Name: Desktop
     Value: 218752
@@ -224,7 +224,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481645638003889
+  lastModified: 638481822676922930
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -325,7 +325,7 @@ MonoBehaviour:
   - {fileID: -1830112853031422595}
   StringsBanks:
   - {fileID: 5593902835667043549}
-  cacheTime: 638481645638113501
+  cacheTime: 638481822677042609
   cacheVersion: 131616
 --- !u!114 &2528604858955970413
 MonoBehaviour:
@@ -369,7 +369,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638481645638113501
+  lastModified: 638481822677042609
   FileSizes:
   - Name: Desktop
     Value: 2815936
@@ -470,7 +470,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638481645637994224
+  lastModified: 638481822676912957
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -490,7 +490,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638481645638003889
+  lastModified: 638481822676932920
   FileSizes:
   - Name: Desktop
     Value: 1864
