@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 
-public class BossDoor : MonoBehaviour
+public class SewerDoor : MonoBehaviour
 {
-    //public GameObject bossDoor;
+    //public GameObject sewerDoor;
     public Canvas interactionUI;
     public TextMeshProUGUI text;
 
@@ -44,7 +44,7 @@ public class BossDoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && canOpen && Input.GetKeyDown(KeyCode.E))
         {
-            //Destroy(bossDoor);
+            //Destroy(sewerDoor);
         }
     }
 }
