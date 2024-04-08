@@ -29,7 +29,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _HorizonLineBlendMode: 1
-    - _HorizonLineContribution: 0.222
+    - _HorizonLineContribution: 0.083
     - _HorizonLineExponent: 5
     - _SkyGradientExponent: 0.61
     - _SunDiscContribution: 1
