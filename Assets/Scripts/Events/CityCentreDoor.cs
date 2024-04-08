@@ -8,9 +8,6 @@ using Unity.VisualScripting;
 public class CityCentreDoor : MonoBehaviour
 {
     public Canvas interactionUI;
-    public TextMeshProUGUI text;
-
-    public bool canOpen;
 
     public void Start()
     {
@@ -20,18 +17,6 @@ public class CityCentreDoor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         interactionUI.gameObject.SetActive(true);
-
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount <= 1)
-        {
-            text.color = Color.red;
-            canOpen = false;
-        }
-
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount >= 1)
-        {
-            text.color = Color.green;
-            canOpen = true;
-        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -41,7 +26,7 @@ public class CityCentreDoor : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && canOpen && Input.GetKeyDown(KeyCode.E))
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
             SceneNavigator.instance.LoadCityCentre();
         }
