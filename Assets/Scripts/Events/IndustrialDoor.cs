@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 
-public class SewerDoor : MonoBehaviour
+public class IndustrialDoor : MonoBehaviour
 {
     public Canvas interactionUI;
 
@@ -28,7 +28,7 @@ public class SewerDoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
-            SceneNavigator.instance.LoadSewer();
+            SceneNavigator.instance.LoadIndustrialZone();
         }
     }
 }

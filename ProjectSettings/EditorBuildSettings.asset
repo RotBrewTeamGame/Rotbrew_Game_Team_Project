@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GAD3_NightOwls_Rotbrew_V2.unity
     guid: 231a6919c6e2981459e4f0796286ebb9
   - enabled: 1
     path: Assets/Scenes/Rotbrew_Industrial.unity
     guid: d7f69cc751703034d8793cb2690835db
+  - enabled: 1
+    path: Assets/Scenes/Rotbrew_Sewer.unity
+    guid: 4f977bade57939e4d9b6176d903440ad
+  - enabled: 1
+    path: Assets/Scenes/Rotbrew_CityCentre.unity
+    guid: 0cbfe508d3a797048848181f1313de43
   m_configObjects: {}
