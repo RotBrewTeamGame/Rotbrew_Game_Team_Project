@@ -180,7 +180,16 @@ public class LootPlants : MonoBehaviour
             nextIndex = 0;
         }
 
+        // Set spawn rate to 10 after regenerating all plants
+        SetSpawnRateToMax();
+
         // Reset coroutine index after regenerating all plants
         coroutineIndex = 0;
+    }
+
+    private void SetSpawnRateToMax()
+    {
+        // Set float parameters in VFX to maximum (10)
+        vfx.SetFloat(LeafSpawnRateParameterName, 10f);
     }
 }

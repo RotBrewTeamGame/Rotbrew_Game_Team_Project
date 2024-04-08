@@ -11,7 +11,7 @@ public class HealthPotion : MonoBehaviour
 
     void Update()
     {
-        if (pauseGame.isPaused == false)
+        if (pauseGame != null && !pauseGame.isPaused)
         {
             if (potions.healthPotionON && Input.GetKeyDown(KeyCode.Mouse1) && GameManager.instance.healthPotionItemCount != 0 && health.health != health.maxHealth)
             {
