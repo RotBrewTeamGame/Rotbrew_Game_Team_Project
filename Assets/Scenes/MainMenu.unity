@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa00738c88b614d4982399d526045a24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GAD3_NightOwls_Rotbrew_V2: GAD3_NightOwls_Rotbrew_V2
+  Rotbrew_CityCentre: Rotbrew_CityCentre
 --- !u!1 &1438137612
 GameObject:
   m_ObjectHideFlags: 0
