@@ -334,6 +334,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483805781}
   m_CullTransparentMesh: 1
+--- !u!1 &514722765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514722766}
+  - component: {fileID: 514722767}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &514722766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514722765}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 367.03024, y: 80.26281, z: 6.3313136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221191600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514722767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514722765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63570858e7b09314abc1a2332c451b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePlantItemCount: 0
+  healthHerbItemCount: 0
+  iceCrystalItemCount: 0
+  slimeBallItemCount: 0
+  keyPieceItemCount: 0
+  damagePotionItemCount: 100
+  healthPotionItemCount: 100
+  frostPotionItemCount: 100
+  firePotionItemCount: 100
+  keyItemCount: 0
+  damagePlantQuantity: {fileID: 0}
+  healthHerbQuantity: {fileID: 0}
+  iceCrystalQuantity: {fileID: 0}
+  slimeBallQuantity: {fileID: 0}
+  keyPieceQuantity: {fileID: 0}
+  damagePotionQuantity: {fileID: 0}
+  healthPotionQuantity: {fileID: 0}
+  frostPotionQuantity: {fileID: 0}
+  firePotionQuantity: {fileID: 0}
+  keyQuantity: {fileID: 0}
+  keyUI: {fileID: 0}
 --- !u!1 &744650044
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,12 +492,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797922660}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5992374, y: 4.9000187, z: 0.24994373}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 183.00618, y: 5.3512325, z: 3.239268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1221191600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797922662
 MonoBehaviour:
@@ -446,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705c846fb4d71e942b3672d83951a046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &976852199
+--- !u!1 &848373975
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,63 +519,173 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 976852201}
-  - component: {fileID: 976852200}
+  - component: {fileID: 848373976}
+  - component: {fileID: 848373977}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: FMODEvents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &976852200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976852199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63570858e7b09314abc1a2332c451b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePlantItemCount: 0
-  healthHerbItemCount: 0
-  iceCrystalItemCount: 0
-  slimeBallItemCount: 0
-  keyPieceItemCount: 0
-  damagePotionItemCount: 100
-  healthPotionItemCount: 100
-  frostPotionItemCount: 100
-  firePotionItemCount: 100
-  keyItemCount: 0
-  damagePlantQuantity: {fileID: 0}
-  healthHerbQuantity: {fileID: 0}
-  iceCrystalQuantity: {fileID: 0}
-  slimeBallQuantity: {fileID: 0}
-  keyPieceQuantity: {fileID: 0}
-  damagePotionQuantity: {fileID: 0}
-  healthPotionQuantity: {fileID: 0}
-  frostPotionQuantity: {fileID: 0}
-  firePotionQuantity: {fileID: 0}
-  keyQuantity: {fileID: 0}
-  keyUI: {fileID: 0}
---- !u!4 &976852201
+--- !u!4 &848373976
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976852199}
+  m_GameObject: {fileID: 848373975}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 182.42482, y: 79.81159, z: 3.3419893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1221191600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848373977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848373975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52718f872ad7a7a44a20295a9991c678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootsteps:
+    Guid:
+      Data1: -891470291
+      Data2: 1204564024
+      Data3: 904325796
+      Data4: 916417895
+    Path: event:/PlayerMovement/playerFootsteps
+  jumpEvent:
+    Guid:
+      Data1: 526865788
+      Data2: 1161865779
+      Data3: 78240700
+      Data4: -189844617
+    Path: event:/PlayerMovement/JumpEvent
+  landingEvent:
+    Guid:
+      Data1: -619148683
+      Data2: 1300026224
+      Data3: -203605367
+      Data4: -1617889020
+    Path: event:/PlayerMovement/LandingEvent
+  crouchStartEvent:
+    Guid:
+      Data1: -1894491826
+      Data2: 1153816092
+      Data3: 1031126656
+      Data4: -756813223
+    Path: event:/PlayerMovement/CrouchStartEvent
+  crouchEndEvent:
+    Guid:
+      Data1: -1158988528
+      Data2: 1325321358
+      Data3: 2080426
+      Data4: 292301492
+    Path: event:/PlayerMovement/CrouchEndEvent
+  enemyDissolveSFX:
+    Guid:
+      Data1: -149314845
+      Data2: 1159744413
+      Data3: 721437610
+      Data4: -459882986
+    Path: event:/Enemies/Enemy Dissolve
+  craftingEvent:
+    Guid:
+      Data1: 348195051
+      Data2: 1198967988
+      Data3: 939668637
+      Data4: 240486476
+    Path: event:/Potion/Crafted Potion SFX
+  plantCollectionEvent:
+    Guid:
+      Data1: 1735786285
+      Data2: 1330570346
+      Data3: 1268600218
+      Data4: 1260353992
+    Path: event:/Environment/PlantPickup
+  pickupSound:
+    Guid:
+      Data1: -1828920148
+      Data2: 1229994807
+      Data3: -969988945
+      Data4: 109645086
+    Path: event:/Environment/LootPickup
+  cityCentreSoundtrack:
+    Guid:
+      Data1: 1531331004
+      Data2: 1210537859
+      Data3: -1869123166
+      Data4: -1653354618
+    Path: event:/Soundtracks/CityCentre
+  industrialZoneSoundtrack:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  sewersSoundtrack:
+    Guid:
+      Data1: 911475551
+      Data2: 1335014090
+      Data3: 434472329
+      Data4: -569901546
+    Path: event:/Soundtracks/SewerTheme
+  cityCentreTrigger: {fileID: 1275864828}
+  industrialZoneTrigger: {fileID: 0}
+  sewersTrigger: {fileID: 2061467379}
+--- !u!1 &859365520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859365521}
+  - component: {fileID: 859365522}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859365521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859365520}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221191600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859365522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859365520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765393af2e21b9f4cb94fc5013f4f779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1044108104
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +833,218 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rotbrew_CityCentre: Rotbrew_CityCentre
+--- !u!1 &1128749591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1128749592}
+  - component: {fileID: 1128749593}
+  m_Layer: 0
+  m_Name: SceneNavigator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1128749592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128749591}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 252.22263, y: 2.2610521, z: 5.475546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221191600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1128749593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128749591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4d94f09fcb20444b88603887098de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1221191599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221191600}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221191600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221191599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -184.60542, y: -0.45121396, z: -2.9893243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 514722766}
+  - {fileID: 859365521}
+  - {fileID: 848373976}
+  - {fileID: 1266635854}
+  - {fileID: 1128749592}
+  - {fileID: 797922661}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1266635853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266635854}
+  - component: {fileID: 1266635855}
+  m_Layer: 0
+  m_Name: SoundtrackTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266635854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266635853}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1275864829}
+  - {fileID: 2061467380}
+  m_Father: {fileID: 1221191600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1266635855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266635853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506a6e503afab344ab408e7ae744a327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1275864828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275864829}
+  - component: {fileID: 1275864831}
+  - component: {fileID: 1275864830}
+  m_Layer: 8
+  m_Name: CityCentre
+  m_TagString: CityCentre
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1275864829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275864828}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1266635854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1275864830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275864828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1531331004
+      Data2: 1210537859
+      Data3: -1869123166
+      Data4: -1653354618
+    Path: event:/Soundtracks/CityCentre
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &1275864831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275864828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 120.91199, y: 26.853424, z: 120.25345}
+  m_Center: {x: 1.6681366, y: 13.582705, z: 3.4199505}
 --- !u!1 &1438137612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1451,91 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2061467379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061467380}
+  - component: {fileID: 2061467382}
+  - component: {fileID: 2061467381}
+  m_Layer: 9
+  m_Name: Sewers
+  m_TagString: Sewers
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2061467380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061467379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -81.6, y: -0.57, z: 1.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1266635854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2061467381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061467379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 911475551
+      Data2: 1335014090
+      Data3: 434472329
+      Data4: -569901546
+    Path: event:/Soundtracks/SewerTheme
+  Event: 
+  PlayEvent: 3
+  StopEvent: 4
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &2061467382
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061467379}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 224.87372, y: 16.629381, z: 216.16614}
+  m_Center: {x: -104.11301, y: 5.8252783, z: 5.6309967}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1071,5 +1543,4 @@ SceneRoots:
   - {fileID: 1573159894}
   - {fileID: 1876988166}
   - {fileID: 744650047}
-  - {fileID: 797922661}
-  - {fileID: 976852201}
+  - {fileID: 1221191600}
