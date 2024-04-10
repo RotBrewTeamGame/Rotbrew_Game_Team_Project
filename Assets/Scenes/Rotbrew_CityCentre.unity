@@ -16746,13 +16746,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893461544}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.12, y: 1.037, z: 14.372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -953.88, y: -538.963, z: 14.372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298786488}
-  m_Father: {fileID: 0}
+  - {fileID: 1654353354}
+  m_Father: {fileID: 1701417533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894051819 stripped
 GameObject:
@@ -31773,16 +31774,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654353353}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -14.372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1767071380}
-  m_Father: {fileID: 1701417533}
+  m_Father: {fileID: 893461545}
   m_LocalEulerAnglesHint: {x: 0, y: 45.795, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
+  m_AnchoredPosition: {x: 953.88, y: 538.963}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654353355
@@ -32305,9 +32306,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 893461545}
   - {fileID: 430365863}
-  - {fileID: 1654353354}
-  - {fileID: 2146223214}
   - {fileID: 2111899216}
   - {fileID: 228495477}
   - {fileID: 1940611487}
@@ -33488,7 +33488,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767071377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12.51055, y: 2.0992239, z: 1}
   m_ConstrainProportionsScale: 0
@@ -39695,7 +39695,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381974437}
-  m_Father: {fileID: 1701417533}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -39741,7 +39741,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2146223217
 Canvas:
   m_ObjectHideFlags: 0
@@ -39774,9 +39774,9 @@ SceneRoots:
   - {fileID: 1562847703}
   - {fileID: 1197357084}
   - {fileID: 1701417533}
+  - {fileID: 2146223214}
   - {fileID: 641736382}
   - {fileID: 1259009015}
-  - {fileID: 893461545}
   - {fileID: 36398787}
   - {fileID: 411470019}
   - {fileID: 687751546}
