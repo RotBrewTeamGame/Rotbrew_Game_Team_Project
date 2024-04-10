@@ -11,6 +11,7 @@ public class Respawn : MonoBehaviour
     public FirstPersonMovement movement;
     public Image healthBar;
     public GameObject deathScreen;
+    public Rigidbody rB;
 
     // Start is called before the first frame update
     void Start()
@@ -33,9 +34,11 @@ public class Respawn : MonoBehaviour
     public void OnButtonClick()
     {
         player.transform.position = respawnPoint.position;
+        player.transform.rotation = respawnPoint.rotation;
         playerHealth.health = playerHealth.maxHealth;
         healthBar.fillAmount = 1;
         movement.enabled = true;
         deathScreen.SetActive(false);
+        rB.isKinematic = false;
     }
 }

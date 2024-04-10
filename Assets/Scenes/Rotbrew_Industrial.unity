@@ -17283,7 +17283,7 @@ Transform:
   m_GameObject: {fileID: 743719336}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0, z: 95.7}
+  m_LocalPosition: {x: -0.2, y: 0, z: 115.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19252,6 +19252,7 @@ MonoBehaviour:
   movement: {fileID: 0}
   healthBar: {fileID: 1128506967}
   deathScreen: {fileID: 1274907489}
+  rB: {fileID: 1631159169}
 --- !u!114 &897731551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29658,6 +29659,11 @@ PrefabInstance:
       propertyPath: frostPotionThrow.Guid.Data4
       value: 149113695
       objectReference: {fileID: 0}
+    - target: {fileID: 1317910627943114178, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: damage
@@ -29736,7 +29742,7 @@ PrefabInstance:
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
