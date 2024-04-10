@@ -17,7 +17,6 @@ public class PickUpDamageLeaf : MonoBehaviour
     public string trailSpawnRateParameterName = "TrailSpawnRate";
     public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
 
-    private bool hasIncreasedDamageLeaf = false;
 
     private void Start()
     {
@@ -31,13 +30,18 @@ public class PickUpDamageLeaf : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!hasIncreasedDamageLeaf && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.IncreaseDamagePlantAmount(1);
-            hasIncreasedDamageLeaf = true;
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.IncreaseDamagePlantAmount(1);
+            }
+
             SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(7f));
             DisableCollider();
+
+            Debug.Log("Collided");
 
             if (fmodEvents != null)
             {

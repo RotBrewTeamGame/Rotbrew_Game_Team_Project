@@ -43,6 +43,8 @@ public class PotionThrower : MonoBehaviour
     void Start()
     {
         mainCam = Camera.main;
+        trajectoryLine.enabled = false;
+        trajectoryLine.positionCount = 0;
     }
 
     // Update is called once per frame
@@ -80,6 +82,10 @@ public class PotionThrower : MonoBehaviour
                     GameManager.instance.firePotionItemCount = GameManager.instance.firePotionItemCount - 1;
                 }
             }
+        }
+        if (isCharging)
+        {
+            ChargeThrow();
         }
     }
 

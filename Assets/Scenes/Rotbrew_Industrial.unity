@@ -7740,7 +7740,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527071899}
   m_Mesh: {fileID: -5254701819498319479, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
---- !u!1 &535029544
+--- !u!1 &533008559
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7748,63 +7748,126 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 535029545}
-  - component: {fileID: 535029546}
+  - component: {fileID: 533008560}
+  - component: {fileID: 533008561}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: FMODEvents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &535029545
+--- !u!4 &533008560
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535029544}
+  m_GameObject: {fileID: 533008559}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 367.03024, y: 80.26281, z: 6.3313136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 718437943}
+  m_Father: {fileID: 2047252734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &535029546
+--- !u!114 &533008561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535029544}
+  m_GameObject: {fileID: 533008559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63570858e7b09314abc1a2332c451b2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 52718f872ad7a7a44a20295a9991c678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePlantItemCount: 0
-  healthHerbItemCount: 0
-  iceCrystalItemCount: 0
-  slimeBallItemCount: 0
-  keyPieceItemCount: 0
-  damagePotionItemCount: 25
-  healthPotionItemCount: 10
-  frostPotionItemCount: 0
-  firePotionItemCount: 0
-  keyItemCount: 0
-  damagePlantQuantity: {fileID: 292087056}
-  healthHerbQuantity: {fileID: 980010649}
-  iceCrystalQuantity: {fileID: 1761412647}
-  slimeBallQuantity: {fileID: 1464451469}
-  keyPieceQuantity: {fileID: 132022978}
-  damagePotionQuantity: {fileID: 1188865139}
-  healthPotionQuantity: {fileID: 2106544856}
-  frostPotionQuantity: {fileID: 583322129}
-  firePotionQuantity: {fileID: 684694849}
-  keyQuantity: {fileID: 1400011106}
-  keyUI: {fileID: 1747233965}
+  playerFootsteps:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  jumpEvent:
+    Guid:
+      Data1: 526865788
+      Data2: 1161865779
+      Data3: 78240700
+      Data4: -189844617
+    Path: event:/PlayerMovement/JumpEvent
+  landingEvent:
+    Guid:
+      Data1: -619148683
+      Data2: 1300026224
+      Data3: -203605367
+      Data4: -1617889020
+    Path: event:/PlayerMovement/LandingEvent
+  crouchStartEvent:
+    Guid:
+      Data1: -1894491826
+      Data2: 1153816092
+      Data3: 1031126656
+      Data4: -756813223
+    Path: event:/PlayerMovement/CrouchStartEvent
+  crouchEndEvent:
+    Guid:
+      Data1: -1158988528
+      Data2: 1325321358
+      Data3: 2080426
+      Data4: 292301492
+    Path: event:/PlayerMovement/CrouchEndEvent
+  enemyDissolveSFX:
+    Guid:
+      Data1: -149314845
+      Data2: 1159744413
+      Data3: 721437610
+      Data4: -459882986
+    Path: event:/Enemies/Enemy Dissolve
+  craftingEvent:
+    Guid:
+      Data1: 348195051
+      Data2: 1198967988
+      Data3: 939668637
+      Data4: 240486476
+    Path: event:/Potion/Crafted Potion SFX
+  plantCollectionEvent:
+    Guid:
+      Data1: 1735786285
+      Data2: 1330570346
+      Data3: 1268600218
+      Data4: 1260353992
+    Path: event:/Environment/PlantPickup
+  pickupSound:
+    Guid:
+      Data1: -1828920148
+      Data2: 1229994807
+      Data3: -969988945
+      Data4: 109645086
+    Path: event:/Environment/LootPickup
+  cityCentreSoundtrack:
+    Guid:
+      Data1: 1531331004
+      Data2: 1210537859
+      Data3: -1869123166
+      Data4: -1653354618
+    Path: event:/Soundtracks/CityCentre
+  industrialZoneSoundtrack:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  sewersSoundtrack:
+    Guid:
+      Data1: 911475551
+      Data2: 1335014090
+      Data3: 434472329
+      Data4: -569901546
+    Path: event:/Soundtracks/SewerTheme
 --- !u!1 &536730057
 GameObject:
   m_ObjectHideFlags: 0
@@ -16876,7 +16939,7 @@ GameObject:
   - component: {fileID: 696313225}
   - component: {fileID: 696313228}
   - component: {fileID: 696313227}
-  - component: {fileID: 696313226}
+  - component: {fileID: 696313229}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -16899,28 +16962,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1766788165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &696313226
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696313224}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &696313227
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16971,6 +17012,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696313224}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &696313229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696313224}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.99214}
 --- !u!64 &704302097
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17091,40 +17153,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2954080746864944381, guid: 0c495a5aad2a3814e83c4f339d45a488, type: 3}
---- !u!1 &718437942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718437943}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &718437943
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718437942}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2149.6055, y: -0.45121396, z: -2.9893243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 535029545}
-  - {fileID: 1689354939}
-  - {fileID: 1957720067}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &736069761
 GameObject:
   m_ObjectHideFlags: 0
@@ -17136,7 +17164,7 @@ GameObject:
   - component: {fileID: 736069762}
   - component: {fileID: 736069765}
   - component: {fileID: 736069764}
-  - component: {fileID: 736069763}
+  - component: {fileID: 736069766}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -17159,28 +17187,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1922997115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &736069763
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736069761}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &736069764
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17231,6 +17237,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736069761}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &736069766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736069761}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88383, y: 55.949684, z: 153.99165}
 --- !u!1 &743719336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17827,7 +17854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9c09ca34cbeb240bdd0c4d3405701f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEvents: {fileID: 1957720066}
+  fmodEvents: {fileID: 0}
 --- !u!114 &797967431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18760,7 +18787,7 @@ GameObject:
   - component: {fileID: 872744580}
   - component: {fileID: 872744583}
   - component: {fileID: 872744582}
-  - component: {fileID: 872744581}
+  - component: {fileID: 872744584}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -18783,28 +18810,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 143524574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &872744581
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872744579}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &872744582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18855,6 +18860,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872744579}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &872744584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872744579}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88493, y: 55.949684, z: 153.9936}
+--- !u!1 &881807213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881807214}
+  - component: {fileID: 881807215}
+  m_Layer: 0
+  m_Name: SceneNavigator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &881807214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881807213}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 252.22263, y: 2.2610521, z: 5.475546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2047252734}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881807215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881807213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4d94f09fcb20444b88603887098de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &888293849
 GameObject:
   m_ObjectHideFlags: 0
@@ -18907,7 +18977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2943375956da43439ce8fba1f424d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEvents: {fileID: 1957720066}
+  fmodEvents: {fileID: 0}
 --- !u!114 &888293852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20052,7 +20122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d07ce1d0499b0949b45c5fe0f38cccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEvents: {fileID: 1957720066}
+  fmodEvents: {fileID: 0}
 --- !u!114 &978063775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21294,7 +21364,7 @@ GameObject:
   - component: {fileID: 1045799237}
   - component: {fileID: 1045799240}
   - component: {fileID: 1045799239}
-  - component: {fileID: 1045799238}
+  - component: {fileID: 1045799241}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -21317,28 +21387,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 65751879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1045799238
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045799236}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1045799239
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21389,6 +21437,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045799236}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1045799241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045799236}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.99165}
 --- !u!1 &1046018702
 GameObject:
   m_ObjectHideFlags: 0
@@ -21551,7 +21620,7 @@ GameObject:
   - component: {fileID: 1073427381}
   - component: {fileID: 1073427384}
   - component: {fileID: 1073427383}
-  - component: {fileID: 1073427382}
+  - component: {fileID: 1073427385}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -21574,28 +21643,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1976797032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1073427382
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073427380}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1073427383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21646,6 +21693,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073427380}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1073427385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073427380}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88493, y: 55.949684, z: 153.9916}
 --- !u!1 &1079600701
 GameObject:
   m_ObjectHideFlags: 0
@@ -22926,7 +22994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c82e4680774e14f9e90e4dada648ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEvents: {fileID: 1957720066}
+  fmodEvents: {fileID: 0}
 --- !u!114 &1158173370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23194,7 +23262,7 @@ GameObject:
   - component: {fileID: 1176292149}
   - component: {fileID: 1176292152}
   - component: {fileID: 1176292151}
-  - component: {fileID: 1176292150}
+  - component: {fileID: 1176292153}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -23217,28 +23285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2120040243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1176292150
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176292148}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1176292151
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23289,6 +23335,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176292148}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1176292153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176292148}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.9936}
 --- !u!1 &1177001558
 GameObject:
   m_ObjectHideFlags: 0
@@ -25392,7 +25459,7 @@ GameObject:
   - component: {fileID: 1296669693}
   - component: {fileID: 1296669696}
   - component: {fileID: 1296669695}
-  - component: {fileID: 1296669694}
+  - component: {fileID: 1296669697}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -25415,28 +25482,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1676898332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1296669694
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296669692}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1296669695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25487,6 +25532,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296669692}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1296669697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296669692}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88493, y: 55.949684, z: 153.9936}
 --- !u!1 &1310374953
 GameObject:
   m_ObjectHideFlags: 0
@@ -26105,6 +26171,50 @@ Transform:
   - {fileID: 1876777556}
   m_Father: {fileID: 32507600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1363849946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363849947}
+  - component: {fileID: 1363849948}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1363849947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363849946}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2047252734}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363849948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363849946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765393af2e21b9f4cb94fc5013f4f779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1365226554
 GameObject:
   m_ObjectHideFlags: 0
@@ -27623,7 +27733,7 @@ GameObject:
   - component: {fileID: 1473106568}
   - component: {fileID: 1473106571}
   - component: {fileID: 1473106570}
-  - component: {fileID: 1473106569}
+  - component: {fileID: 1473106572}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -27646,28 +27756,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 601991503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1473106569
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473106567}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1473106570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27718,6 +27806,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473106567}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1473106572
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473106567}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88298, y: 55.949684, z: 153.9936}
 --- !u!64 &1487969115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28477,6 +28586,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549242671}
   m_CullTransparentMesh: 1
+--- !u!1 &1554858027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554858028}
+  - component: {fileID: 1554858029}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1554858028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554858027}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 182.42482, y: 79.81159, z: 3.3419893}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554858029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554858027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63570858e7b09314abc1a2332c451b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePlantItemCount: 0
+  healthHerbItemCount: 0
+  iceCrystalItemCount: 0
+  slimeBallItemCount: 0
+  keyPieceItemCount: 0
+  damagePotionItemCount: 25
+  healthPotionItemCount: 10
+  frostPotionItemCount: 0
+  firePotionItemCount: 0
+  keyItemCount: 0
+  damagePlantQuantity: {fileID: 0}
+  healthHerbQuantity: {fileID: 0}
+  iceCrystalQuantity: {fileID: 0}
+  slimeBallQuantity: {fileID: 0}
+  keyPieceQuantity: {fileID: 0}
+  damagePotionQuantity: {fileID: 0}
+  healthPotionQuantity: {fileID: 0}
+  frostPotionQuantity: {fileID: 0}
+  firePotionQuantity: {fileID: 0}
+  keyQuantity: {fileID: 0}
+  keyUI: {fileID: 0}
 --- !u!1 &1562460073
 GameObject:
   m_ObjectHideFlags: 0
@@ -29663,7 +29837,7 @@ PrefabInstance:
         type: 3}
       propertyPath: attenuationObject
       value: 
-      objectReference: {fileID: 1957720065}
+      objectReference: {fileID: 0}
     - target: {fileID: 8547016651453611724, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_Layer
@@ -30874,50 +31048,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1686083892}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1689354938
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1689354939}
-  - component: {fileID: 1689354940}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1689354939
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689354938}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 718437943}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1689354940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689354938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 765393af2e21b9f4cb94fc5013f4f779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1698808389
 GameObject:
   m_ObjectHideFlags: 0
@@ -32291,6 +32421,69 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2142393649801985519, guid: 0c495a5aad2a3814e83c4f339d45a488, type: 3}
+--- !u!1 &1803342554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803342555}
+  - component: {fileID: 1803342556}
+  m_Layer: 0
+  m_Name: SoundtrackManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803342555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803342554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2047252734}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803342556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803342554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1531331004
+      Data2: 1210537859
+      Data3: -1869123166
+      Data4: -1653354618
+    Path: event:/Soundtracks/CityCentre
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1805217630
 GameObject:
   m_ObjectHideFlags: 0
@@ -34538,7 +34731,7 @@ GameObject:
   - component: {fileID: 1930146519}
   - component: {fileID: 1930146522}
   - component: {fileID: 1930146521}
-  - component: {fileID: 1930146520}
+  - component: {fileID: 1930146523}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -34561,28 +34754,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 243581699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1930146520
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930146518}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1930146521
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34633,6 +34804,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930146518}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1930146523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930146518}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.99165}
 --- !u!1 &1930146810
 GameObject:
   m_ObjectHideFlags: 0
@@ -34805,7 +34997,7 @@ GameObject:
   - component: {fileID: 1940481142}
   - component: {fileID: 1940481145}
   - component: {fileID: 1940481144}
-  - component: {fileID: 1940481143}
+  - component: {fileID: 1940481146}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -34828,28 +35020,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1895914898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1940481143
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940481141}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &1940481144
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34900,6 +35070,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940481141}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &1940481146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940481141}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.99165}
 --- !u!64 &1941327517
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34985,134 +35176,6 @@ Transform:
   - {fileID: 2024385251}
   - {fileID: 1333174550}
   m_Father: {fileID: 2132673398}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1957720065
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1957720067}
-  - component: {fileID: 1957720066}
-  m_Layer: 0
-  m_Name: FMODEvents
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1957720066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957720065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52718f872ad7a7a44a20295a9991c678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerFootsteps:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  jumpEvent:
-    Guid:
-      Data1: 526865788
-      Data2: 1161865779
-      Data3: 78240700
-      Data4: -189844617
-    Path: event:/PlayerMovement/JumpEvent
-  landingEvent:
-    Guid:
-      Data1: -619148683
-      Data2: 1300026224
-      Data3: -203605367
-      Data4: -1617889020
-    Path: event:/PlayerMovement/LandingEvent
-  crouchStartEvent:
-    Guid:
-      Data1: -1894491826
-      Data2: 1153816092
-      Data3: 1031126656
-      Data4: -756813223
-    Path: event:/PlayerMovement/CrouchStartEvent
-  crouchEndEvent:
-    Guid:
-      Data1: -1158988528
-      Data2: 1325321358
-      Data3: 2080426
-      Data4: 292301492
-    Path: event:/PlayerMovement/CrouchEndEvent
-  enemyDissolveSFX:
-    Guid:
-      Data1: -149314845
-      Data2: 1159744413
-      Data3: 721437610
-      Data4: -459882986
-    Path: event:/Enemies/Enemy Dissolve
-  craftingEvent:
-    Guid:
-      Data1: 348195051
-      Data2: 1198967988
-      Data3: 939668637
-      Data4: 240486476
-    Path: event:/Potion/Crafted Potion SFX
-  plantCollectionEvent:
-    Guid:
-      Data1: 1735786285
-      Data2: 1330570346
-      Data3: 1268600218
-      Data4: 1260353992
-    Path: event:/Environment/PlantPickup
-  pickupSound:
-    Guid:
-      Data1: -1828920148
-      Data2: 1229994807
-      Data3: -969988945
-      Data4: 109645086
-    Path: event:/Environment/LootPickup
-  cityCentreSoundtrack:
-    Guid:
-      Data1: 1531331004
-      Data2: 1210537859
-      Data3: -1869123166
-      Data4: -1653354618
-    Path: event:/Soundtracks/CityCentre
-  industrialZoneSoundtrack:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  sewersSoundtrack:
-    Guid:
-      Data1: 911475551
-      Data2: 1335014090
-      Data3: 434472329
-      Data4: -569901546
-    Path: event:/Soundtracks/SewerTheme
---- !u!4 &1957720067
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957720065}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 718437943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1962687588
 GameObject:
@@ -36924,6 +36987,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046696200}
   m_CullTransparentMesh: 1
+--- !u!1 &2047252733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047252734}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047252734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047252733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -184.60542, y: -0.45121396, z: -2.9893243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1363849947}
+  - {fileID: 533008560}
+  - {fileID: 881807214}
+  - {fileID: 1803342555}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048034731
 GameObject:
   m_ObjectHideFlags: 0
@@ -37835,7 +37933,7 @@ GameObject:
   - component: {fileID: 2078262704}
   - component: {fileID: 2078262707}
   - component: {fileID: 2078262706}
-  - component: {fileID: 2078262705}
+  - component: {fileID: 2078262708}
   m_Layer: 0
   m_Name: PotionStand
   m_TagString: Untagged
@@ -37858,28 +37956,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1159656265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2078262705
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078262703}
-  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
 --- !u!23 &2078262706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37930,6 +38006,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078262703}
   m_Mesh: {fileID: 5471709990277044448, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!65 &2078262708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078262703}
+  m_Material: {fileID: 13400000, guid: 0125b891c61ce494b9fd987dc2d353e8, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
+  m_Center: {x: -145.88396, y: 55.949684, z: 153.99178}
 --- !u!1 &2083675158
 GameObject:
   m_ObjectHideFlags: 0
@@ -38653,11 +38750,12 @@ SceneRoots:
   m_Roots:
   - {fileID: 1225422957}
   - {fileID: 357019513}
+  - {fileID: 1207016019}
+  - {fileID: 1554858028}
+  - {fileID: 2047252734}
   - {fileID: 1765243627}
-  - {fileID: 718437943}
   - {fileID: 1631159167}
   - {fileID: 540146893}
-  - {fileID: 1397376189}
-  - {fileID: 743719337}
   - {fileID: 448434648}
-  - {fileID: 1207016019}
+  - {fileID: 743719337}
+  - {fileID: 1397376189}
