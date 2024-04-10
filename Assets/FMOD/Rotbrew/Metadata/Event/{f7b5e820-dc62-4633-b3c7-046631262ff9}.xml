@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{f7b5e820-dc62-4633-b3c7-046631262ff9}">
 		<property name="name">
-			<value>SewerThemeFastPaced</value>
+			<value>SewerCombatSoundtrack</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

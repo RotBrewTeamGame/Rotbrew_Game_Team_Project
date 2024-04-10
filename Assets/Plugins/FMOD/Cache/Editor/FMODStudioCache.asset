@@ -189,6 +189,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-3762268859820059133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtracks/SewerCombatSoundtrack
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtracks/SewerCombatSoundtrack
+  Guid:
+    Data1: -139073504
+    Data2: 1177803874
+    Data3: 1711589299
+    Data4: -114350543
+  Banks:
+  - {fileID: 3223631239858659319}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33230
 --- !u!114 &-2480288474990560027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +231,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638481822676943158
+  lastModified: 638480271232579307
   FileSizes:
   - Name: Desktop
     Value: 218752
@@ -224,7 +251,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481822676922930
+  lastModified: 638483164982776171
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -256,33 +283,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1207
---- !u!114 &-962699366226405807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Soundtracks/SewerThemeFastPaced
-  m_EditorClassIdentifier: 
-  Path: event:/Soundtracks/SewerThemeFastPaced
-  Guid:
-    Data1: -139073504
-    Data2: 1177803874
-    Data3: 1711589299
-    Data4: -114350543
-  Banks:
-  - {fileID: 3223631239858659319}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 33230
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,16 +316,16 @@ MonoBehaviour:
   - {fileID: 4076652530957923353}
   - {fileID: -6523496755604981610}
   - {fileID: 7987709226069307465}
-  - {fileID: -962699366226405807}
   - {fileID: 7384860592185806365}
   - {fileID: -8044614846995599783}
   - {fileID: -5788683359382882153}
+  - {fileID: -3762268859820059133}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1830112853031422595}
   StringsBanks:
   - {fileID: 5593902835667043549}
-  cacheTime: 638481822677042609
+  cacheTime: 638483164983064467
   cacheVersion: 131616
 --- !u!114 &2528604858955970413
 MonoBehaviour:
@@ -369,7 +369,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638481822677042609
+  lastModified: 638483164983064467
   FileSizes:
   - Name: Desktop
     Value: 2815936
@@ -470,7 +470,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638481822676912957
+  lastModified: 638480271231329773
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -490,10 +490,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638481822676932920
+  lastModified: 638483164982791584
   FileSizes:
   - Name: Desktop
-    Value: 1864
+    Value: 1872
   Exists: 1
 --- !u!114 &5833664593191963810
 MonoBehaviour:

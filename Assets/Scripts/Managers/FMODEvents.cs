@@ -43,9 +43,6 @@ public class FMODEvents : MonoBehaviour
     public EventReference sewersSoundtrack;
 
     public static FMODEvents instance;
-    public GameObject cityCentreTrigger;
-    public GameObject industrialZoneTrigger;
-    public GameObject sewersTrigger;
 
     private void Awake()
     {

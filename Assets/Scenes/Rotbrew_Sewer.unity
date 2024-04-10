@@ -520,7 +520,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2846919369172777387, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 241740211}
   m_SourcePrefab: {fileID: 100100000, guid: dd99ebc8e62bf4f43904af27a7d0ffa4, type: 3}
 --- !u!4 &7895211 stripped
 Transform:
@@ -7200,9 +7204,6 @@ MonoBehaviour:
       Data3: 434472329
       Data4: -569901546
     Path: event:/Soundtracks/SewerTheme
-  cityCentreTrigger: {fileID: 0}
-  industrialZoneTrigger: {fileID: 0}
-  sewersTrigger: {fileID: 0}
 --- !u!4 &217814852
 Transform:
   m_ObjectHideFlags: 0
@@ -8148,6 +8149,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910856844}
   m_LocalEulerAnglesHint: {x: 0, y: -168.381, z: 0}
+--- !u!1 &241740209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2846919369172777387, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
+    type: 3}
+  m_PrefabInstance: {fileID: 7895210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &241740211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241740209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f576e737773accd43861ab7c5d6b4d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 7895212}
+  range: 9
+  centrePoint: {fileID: 7895211}
+  patrolling: 1
+  player: {fileID: 1613434336}
 --- !u!1 &244175610
 GameObject:
   m_ObjectHideFlags: 0
@@ -28116,6 +28140,64 @@ Transform:
   - {fileID: 1780862970}
   m_Father: {fileID: 1188691583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &892000668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892000669}
+  - component: {fileID: 892000670}
+  m_Layer: 0
+  m_Name: SoundtrackManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892000669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892000668}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1800690760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &892000670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892000668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7522a822bff7393428c2d3bff345c3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSoundtrack:
+    Guid:
+      Data1: 911475551
+      Data2: 1335014090
+      Data3: 434472329
+      Data4: -569901546
+    Path: event:/Soundtracks/SewerTheme
+  chaseSoundtrack:
+    Guid:
+      Data1: -139073504
+      Data2: 1177803874
+      Data3: 1711589299
+      Data4: -114350543
+    Path: event:/Soundtracks/SewerCombatSoundtrack
 --- !u!1 &893995012
 GameObject:
   m_ObjectHideFlags: 0
@@ -62893,6 +62975,7 @@ Transform:
   - {fileID: 1345843032}
   - {fileID: 1125212973}
   - {fileID: 217814852}
+  - {fileID: 892000669}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800764971
