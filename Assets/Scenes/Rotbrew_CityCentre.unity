@@ -12036,6 +12036,56 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6487572040481391484, guid: 60cfc916880712245bbf4d09bea2eac4,
         type: 3}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: firePotionThrow.Path
+      value: event:/Potion/Fire Potion Throw
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: frostPotionThrow.Path
+      value: event:/Potion/Ice Potion throw
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: firePotionThrow.Guid.Data1
+      value: -447095772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: firePotionThrow.Guid.Data2
+      value: 1116165291
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: firePotionThrow.Guid.Data3
+      value: 165462680
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: firePotionThrow.Guid.Data4
+      value: -2012951977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: frostPotionThrow.Guid.Data1
+      value: 914394107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: frostPotionThrow.Guid.Data2
+      value: 1301116003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: frostPotionThrow.Guid.Data3
+      value: 1016940179
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: frostPotionThrow.Guid.Data4
+      value: 149113695
+      objectReference: {fileID: 0}
     - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: damage
@@ -31107,11 +31157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerFootsteps:
     Guid:
-      Data1: -891470291
-      Data2: 1204564024
-      Data3: 904325796
-      Data4: 916417895
-    Path: event:/PlayerMovement/playerFootsteps
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   jumpEvent:
     Guid:
       Data1: 526865788

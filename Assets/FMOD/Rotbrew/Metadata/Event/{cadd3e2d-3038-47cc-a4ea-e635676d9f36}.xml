@@ -99,13 +99,16 @@
 			<value>true</value>
 		</property>
 		<property name="length">
-			<value>0.35000000000000003</value>
+			<value>0.34000000000000002</value>
 		</property>
 		<property name="volume">
 			<value>6</value>
 		</property>
 		<property name="pitch">
 			<value>-0.900000036</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{b57e7665-2c56-4d61-802f-2a7ece3db189}</destination>
@@ -134,7 +137,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>0.35000000000000003</value>
+			<value>0.34000000000000002</value>
 		</property>
 		<property name="triggerProbabilityEnabled">
 			<value>true</value>
