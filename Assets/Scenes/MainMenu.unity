@@ -383,10 +383,10 @@ MonoBehaviour:
   iceCrystalItemCount: 0
   slimeBallItemCount: 0
   keyPieceItemCount: 0
-  damagePotionItemCount: 100
-  healthPotionItemCount: 100
-  frostPotionItemCount: 100
-  firePotionItemCount: 100
+  damagePotionItemCount: 25
+  healthPotionItemCount: 10
+  frostPotionItemCount: 0
+  firePotionItemCount: 0
   keyItemCount: 0
   damagePlantQuantity: {fileID: 0}
   healthHerbQuantity: {fileID: 0}
@@ -639,9 +639,6 @@ MonoBehaviour:
       Data3: 434472329
       Data4: -569901546
     Path: event:/Soundtracks/SewerTheme
-  cityCentreTrigger: {fileID: 1275864828}
-  industrialZoneTrigger: {fileID: 0}
-  sewersTrigger: {fileID: 2061467379}
 --- !u!1 &859365520
 GameObject:
   m_ObjectHideFlags: 0

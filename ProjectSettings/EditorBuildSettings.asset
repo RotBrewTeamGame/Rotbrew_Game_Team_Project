@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GAD3_NightOwls_Rotbrew_V2.unity
     guid: 231a6919c6e2981459e4f0796286ebb9
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d4b9080005623d542b374245b7477c53
+  - enabled: 1
     path: Assets/Scenes/Rotbrew_Industrial.unity
     guid: d7f69cc751703034d8793cb2690835db
   - enabled: 1

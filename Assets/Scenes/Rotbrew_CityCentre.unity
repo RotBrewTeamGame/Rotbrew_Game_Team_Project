@@ -30357,10 +30357,10 @@ MonoBehaviour:
   iceCrystalItemCount: 0
   slimeBallItemCount: 0
   keyPieceItemCount: 0
-  damagePotionItemCount: 100
-  healthPotionItemCount: 100
-  frostPotionItemCount: 100
-  firePotionItemCount: 100
+  damagePotionItemCount: 25
+  healthPotionItemCount: 10
+  frostPotionItemCount: 0
+  firePotionItemCount: 0
   keyItemCount: 0
   damagePlantQuantity: {fileID: 956272023}
   healthHerbQuantity: {fileID: 669940706}
