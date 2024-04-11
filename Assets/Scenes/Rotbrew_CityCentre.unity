@@ -12241,6 +12241,11 @@ PrefabInstance:
       objectReference: {fileID: 641736384}
     - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
+      propertyPath: typingSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 106407837}
@@ -16758,6 +16763,7 @@ Transform:
   m_Children:
   - {fileID: 298786488}
   - {fileID: 1654353354}
+  - {fileID: 2146223214}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894051819 stripped
@@ -39709,16 +39715,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146223213}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 9.344}
+  m_LocalPosition: {x: 0, y: 0, z: -5.028}
   m_LocalScale: {x: 0.0025634125, y: 0.0025634125, z: 0.0025634125}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381974437}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 893461545}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.5939941, y: 2.7469482}
+  m_AnchoredPosition: {x: 343.974, y: 229.70996}
   m_SizeDelta: {x: 1182, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146223215
@@ -39794,7 +39800,6 @@ SceneRoots:
   - {fileID: 1197357084}
   - {fileID: 893461545}
   - {fileID: 1701417533}
-  - {fileID: 2146223214}
   - {fileID: 641736382}
   - {fileID: 1259009015}
   - {fileID: 36398787}
