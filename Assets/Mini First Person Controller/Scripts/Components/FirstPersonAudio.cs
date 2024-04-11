@@ -6,7 +6,9 @@ using System;
 public class FirstPersonAudio : MonoBehaviour
 {
     public bool playerIsMoving;
+    public bool playerIsGrounded; // Add a flag to track if the player is grounded
     public FirstPersonMovement character;
+    public FMODEvents fmodEvents; // Reference to the FMODEvents script
     public Jump jump;
     public Crouch crouch;
     public GroundCheck groundCheck;
@@ -44,6 +46,40 @@ public class FirstPersonAudio : MonoBehaviour
 
         // Set 3D attributes for the event instances
         Set3DAttributes();
+
+        character.WalkStarted += OnWalkStarted;
+        character.WalkEnded += OnWalkEnded;
+        character.Jumped += OnJumped;
+        character.Landed += OnLanded;
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from walk events
+        character.WalkStarted -= OnWalkStarted;
+        character.WalkEnded -= OnWalkEnded;
+        character.Jumped -= OnJumped;
+        character.Landed -= OnLanded;
+    }
+
+    void OnWalkStarted()
+    {
+        playerIsMoving = true;
+    }
+
+    void OnWalkEnded()
+    {
+        playerIsMoving = false;
+    }
+
+    void OnJumped()
+    {
+        playerIsGrounded = false;
+    }
+
+    void OnLanded()
+    {
+        playerIsGrounded = true;
     }
 
     void Set3DAttributes()
@@ -83,7 +119,6 @@ public class FirstPersonAudio : MonoBehaviour
         Debug.Log("FirstPersonAudio::SubscribeToEvents");
 
         // Subscribe to game events to trigger FMOD events
-        character.Walked += PlayStepAudio;
         character.Landed += PlayLandingAudio;
         jump.Jumped += PlayJumpAudio;
         crouch.CrouchStart += PlayCrouchStartAudio;
@@ -93,7 +128,6 @@ public class FirstPersonAudio : MonoBehaviour
     void UnsubscribeToEvents()
     {
         // Unsubscribe from game events
-        character.Walked -= PlayStepAudio;
         //character.Landed -= PlayLandingAudio;
         jump.Jumped -= PlayJumpAudio;
         crouch.CrouchStart -= PlayCrouchStartAudio;
@@ -149,5 +183,14 @@ public class FirstPersonAudio : MonoBehaviour
     {
         // Play crouch end audio
         audioManager.PlayOneShot(crouchEndEvent, transform.position);
+    }
+
+    void Update()
+    {
+        // Check if the player is moving, grounded, and not jumping, then tell FMODEvents to play footstep sounds accordingly
+        if (playerIsMoving && groundCheck.isGrounded)
+        {
+            fmodEvents.PlayWalkingAudio();
+        }
     }
 }

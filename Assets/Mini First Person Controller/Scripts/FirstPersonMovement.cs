@@ -12,21 +12,20 @@ public class FirstPersonMovement : MonoBehaviour
     public bool IsWalking;
     public KeyCode walkingKey = KeyCode.W;
     public float runSpeed = 9;
-    public KeyCode runningKey = KeyCode.LeftShift;
+    public KeyCode runningKey = KeyCode.LeftControl;
 
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<Func<float>> speedOverrides = new List<Func<float>>();
 
-    // Define events for jumping, landing, crouch start, and crouch end
-    public event Action Walked;
-    
-    // Delete the following
+    // Define events for walking
+    public event Action WalkStarted;
+    public event Action WalkEnded;
+
     public event Action Jumped;
     public event Action Landed;
     public event Action CrouchStarted;
     public event Action CrouchEnded;
-    
 
     void Awake()
     {
@@ -53,17 +52,14 @@ public class FirstPersonMovement : MonoBehaviour
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
 
-        
-        if (targetVelocity.magnitude > 0)
+        // Check if the player is walking and raise events accordingly
+        if (IsWalking)
         {
-            if (IsRunning)
-            {
-
-            }
-            else
-            {
-                Walked?.Invoke();
-            }
+            WalkStarted?.Invoke();
+        }
+        else
+        {
+            WalkEnded?.Invoke();
         }
     }
 }

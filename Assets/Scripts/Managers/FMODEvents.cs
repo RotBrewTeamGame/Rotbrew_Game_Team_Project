@@ -9,6 +9,9 @@ public class FMODEvents : MonoBehaviour
     [Header("Player Footsteps")]
     public EventReference playerFootsteps;
 
+    public float footstepCooldown = 0.35f; // Adjust this value to set the cooldown between footstep sounds
+    private float lastFootstepTime;
+
     [Header("Jump")]
     public EventReference jumpEvent;
 
@@ -44,6 +47,8 @@ public class FMODEvents : MonoBehaviour
 
     public static FMODEvents instance;
 
+    public FirstPersonAudio firstPersonAudio;
+
     private void Awake()
     {
         if (instance != null)
@@ -56,7 +61,6 @@ public class FMODEvents : MonoBehaviour
         FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
         if (character != null)
         {
-            character.Walked += PlayWalkingAudio;
             character.Jumped += PlayJumpAudio;
             character.Landed += PlayLandingAudio;
             character.CrouchStarted += PlayCrouchStartAudio;
@@ -74,7 +78,6 @@ public class FMODEvents : MonoBehaviour
         FirstPersonMovement character = FindObjectOfType<FirstPersonMovement>();
         if (character != null)
         {
-            character.Walked -= PlayWalkingAudio;
             character.Jumped -= PlayJumpAudio;
             character.Landed -= PlayLandingAudio;
             character.CrouchStarted -= PlayCrouchStartAudio;
@@ -84,11 +87,23 @@ public class FMODEvents : MonoBehaviour
 
     public void PlayWalkingAudio()
     {
-        if (!playerFootsteps.IsNull)
+        // Check if the player is currently walking
+        if (firstPersonAudio.playerIsMoving)
         {
-            RuntimeManager.PlayOneShot(playerFootsteps, transform.position);
+            // Check if enough time has passed since the last footstep sound
+            if (Time.time - lastFootstepTime >= footstepCooldown)
+            {
+                // Play footstep sound
+                if (!playerFootsteps.IsNull)
+                {
+                    RuntimeManager.PlayOneShot(playerFootsteps, transform.position);
+                    lastFootstepTime = Time.time; // Update last footstep time
+                }
+            }
         }
     }
+
+
 
     public void PlayJumpAudio()
     {

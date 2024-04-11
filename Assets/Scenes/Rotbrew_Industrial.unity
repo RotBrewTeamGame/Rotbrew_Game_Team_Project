@@ -7786,11 +7786,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerFootsteps:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -891470291
+      Data2: 1204564024
+      Data3: 904325796
+      Data4: 916417895
+    Path: event:/PlayerMovement/playerFootsteps
+  footstepCooldown: 0.35
   jumpEvent:
     Guid:
       Data1: 526865788
@@ -7868,6 +7869,7 @@ MonoBehaviour:
       Data3: 434472329
       Data4: -569901546
     Path: event:/Soundtracks/SewerTheme
+  firstPersonAudio: {fileID: 1596594281}
 --- !u!1 &536730057
 GameObject:
   m_ObjectHideFlags: 0
@@ -29159,6 +29161,18 @@ Transform:
   - {fileID: 1665915159}
   m_Father: {fileID: 1976797032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596594281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7918172192470837156, guid: a3d3277247ea6a94ea57c51caee81c98,
+    type: 3}
+  m_PrefabInstance: {fileID: 1631159167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f45facc01772ba47a9ae17bb7061b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &1597443184
 MeshCollider:
   m_ObjectHideFlags: 0
