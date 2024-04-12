@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using FMODUnity;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private Button option1Button;
     [SerializeField] private Button option2Button;
+    [SerializeField] private StudioEventEmitter nPCSound; // Using FMOD Studio Event Emitter
 
     [SerializeField] private float typingSpeed = 0.05f;
     [SerializeField] private float turnSpeed = 2f;
@@ -133,9 +135,15 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator TypeText(string text)
     {
         dialogueText.text = "";
+        int count = 0;
         foreach (char letter in text.ToCharArray())
         {
             dialogueText.text += letter;
+            count++;
+            if (count % 3 == 0) // Check if the count is even (every second character)
+            {
+                PlayTypingSound(); // Play the typing sound effect using FMOD
+            }
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -150,6 +158,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         currentDialogueIndex++;
+    }
+
+    private void PlayTypingSound()
+    {
+        // Ensure that the typing sound emitter is not null and the event is assigned
+        if (nPCSound != null)
+        {
+            nPCSound.Play(); // Play the FMOD event
+            Debug.Log("Sound Played");
+        }
     }
 
     public void DialogueStop()

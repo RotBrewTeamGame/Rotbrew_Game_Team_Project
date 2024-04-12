@@ -2211,6 +2211,7 @@ GameObject:
   - component: {fileID: 91165783}
   - component: {fileID: 91165782}
   - component: {fileID: 91165781}
+  - component: {fileID: 91165786}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -2332,8 +2333,40 @@ Transform:
   - {fileID: 922982837}
   - {fileID: 215188676}
   - {fileID: 1796790811}
+  - {fileID: 2146223214}
   m_Father: {fileID: 361226778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91165786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91165780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1156352963
+      Data2: 1321067743
+      Data3: -1345941069
+      Data4: 693488416
+    Path: event:/NPC/NPC Sound
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &93500349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5553406128073696075, guid: 7d35032a1439e0548808bb5d7b0d805d,
@@ -8405,7 +8438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: -122}
+  m_AnchoredPosition: {x: 0, y: -122}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381974438
@@ -12236,9 +12269,19 @@ PrefabInstance:
       objectReference: {fileID: 1606443027}
     - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
+      propertyPath: nPCSound
+      value: 
+      objectReference: {fileID: 91165786}
+    - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
       propertyPath: playerRB
       value: 
       objectReference: {fileID: 641736384}
+    - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: typingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 68274a8405578ba43a4ca5a09785f8a8, type: 3}
     - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: typingSpeed
@@ -12264,6 +12307,11 @@ PrefabInstance:
       propertyPath: dialogueParent
       value: 
       objectReference: {fileID: 1767071377}
+    - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: typingSoundEmitter
+      value: 
+      objectReference: {fileID: 91165786}
     - target: {fileID: 8299285398395173601, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: attenuationObject
@@ -16757,14 +16805,13 @@ Transform:
   m_GameObject: {fileID: 893461544}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -342.38, y: -226.96301, z: 14.372}
+  m_LocalPosition: {x: -1302.38, y: -766.963, z: 14.372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298786488}
   - {fileID: 1654353354}
-  - {fileID: 2146223214}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1701417533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894051819 stripped
 GameObject:
@@ -31200,6 +31247,13 @@ MonoBehaviour:
       Data3: -969988945
       Data4: 109645086
     Path: event:/Environment/LootPickup
+  nPCSound:
+    Guid:
+      Data1: 1156352963
+      Data2: 1321067743
+      Data3: -1345941069
+      Data4: 693488416
+    Path: event:/NPC/NPC Sound
   cityCentreSoundtrack:
     Guid:
       Data1: 1531331004
@@ -31787,9 +31841,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654353353}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -14.372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1767071380}
@@ -31797,9 +31851,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 45.795, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1302.38, y: 766.963}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654353355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32334,6 +32388,7 @@ RectTransform:
   - {fileID: 1385480046}
   - {fileID: 1158121527}
   - {fileID: 522978600}
+  - {fileID: 893461545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -39715,16 +39770,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146223213}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -5.028}
-  m_LocalScale: {x: 0.0025634125, y: 0.0025634125, z: 0.0025634125}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5439998}
+  m_LocalScale: {x: 0.0025634123, y: 0.0025634123, z: 0.0025634123}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381974437}
-  m_Father: {fileID: 893461545}
+  m_Father: {fileID: 91165785}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 343.974, y: 229.70996}
+  m_AnchoredPosition: {x: 0, y: 1.769928}
   m_SizeDelta: {x: 1182, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146223215
@@ -39798,7 +39853,6 @@ SceneRoots:
   - {fileID: 873165532}
   - {fileID: 1562847703}
   - {fileID: 1197357084}
-  - {fileID: 893461545}
   - {fileID: 1701417533}
   - {fileID: 641736382}
   - {fileID: 1259009015}
