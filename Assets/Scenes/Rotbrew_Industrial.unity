@@ -29828,6 +29828,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7918172192470837156, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: fmodEvents
+      value: 
+      objectReference: {fileID: 533008561}
     - target: {fileID: 8258405552040332992, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_Enabled

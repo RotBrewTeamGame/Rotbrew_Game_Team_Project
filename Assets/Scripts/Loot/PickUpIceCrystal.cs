@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,18 +11,24 @@ public class PickUpIceCrystal : MonoBehaviour
     //public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
     //public VisualEffect vfx;
 
-    private bool hasIncreasedIceCrystal = false;
+    private FMODEvents fmodEvents;
+
+    public EventReference pickupSound;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!hasIncreasedIceCrystal && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.IncreaseIceCrystalAmount(1);
+            }
 
-            GameManager.instance.IncreaseIceCrystalAmount(1);
-            hasIncreasedIceCrystal = true;
             //SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(1f)); //float originally 7
             //DisableCollider();
+
+            Debug.Log("Collided");
         }
     }
 

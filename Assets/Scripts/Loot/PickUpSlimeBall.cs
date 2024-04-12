@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,18 +11,29 @@ public class PickUpSlimeBall : MonoBehaviour
     //public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
     //public VisualEffect vfx;
 
-    private bool hasIncreasedSlimeBall = false;
+    private FMODEvents fmodEvents;
+
+    public EventReference pickupSound;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!hasIncreasedSlimeBall && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.IncreaseSlimeBallAmount(1);
+            }
 
-            GameManager.instance.IncreaseSlimeBallAmount(1);
-            hasIncreasedSlimeBall = true;
             //SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(1f)); //float originally 7
             //DisableCollider();
+
+            Debug.Log("Collided");
+
+            if (fmodEvents != null)
+            {
+                RuntimeManager.PlayOneShot(pickupSound, transform.position);
+            }
         }
     }
 

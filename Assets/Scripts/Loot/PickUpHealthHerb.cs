@@ -17,8 +17,6 @@ public class PickUpHealthHerb : MonoBehaviour
     public string trailSpawnRateParameterName = "TrailSpawnRate";
     public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
 
-    private bool hasIncreasedHealthHerb = false;
-
     private void Start()
     {
         // Find and store the FMODEvents script in the scene
@@ -31,13 +29,18 @@ public class PickUpHealthHerb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!hasIncreasedHealthHerb && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.IncreaseHealthHerbAmount(1);
-            hasIncreasedHealthHerb = true;
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.IncreaseHealthHerbAmount(1);
+            }
+
             SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(7f));
             DisableCollider();
+
+            Debug.Log("Collided");
 
             // Play the new pickup sound using the EventReference from the FMODEvents script
             if (fmodEvents != null)

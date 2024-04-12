@@ -12,17 +12,21 @@ public class PickUpKeyPiece : MonoBehaviour
     public string outerTrailSpawnRateParameterName = "OuterTrailSpawnRate";
     public VisualEffect vfx; // Reference to the VFX Graph component
 
-    private bool hasIncreasedKeyPiece = false;
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (!hasIncreasedKeyPiece && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.IncreaseKeyPieceAmount(1);
-            hasIncreasedKeyPiece = true;
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.IncreaseKeyPieceAmount(1);
+
+            }
+
             SetSpawnRatesToZero();
             StartCoroutine(DestroyAfterDelay(7f));
             DisableCollider();
+
+            Debug.Log("Collided");
 
             // Play the new pickup sound
             RuntimeManager.PlayOneShot(pickupSound, transform.position);
