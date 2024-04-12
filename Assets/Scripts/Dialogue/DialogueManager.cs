@@ -166,7 +166,6 @@ public class DialogueManager : MonoBehaviour
         if (nPCSound != null)
         {
             nPCSound.Play(); // Play the FMOD event
-            Debug.Log("Sound Played");
         }
     }
 

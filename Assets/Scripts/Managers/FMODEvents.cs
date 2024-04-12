@@ -36,9 +36,6 @@ public class FMODEvents : MonoBehaviour
     [Header("Loot Pick Up")]
     public EventReference pickupSound;
 
-    [Header("NPC Sound")]
-    public EventReference nPCSound;
-
     [Header("City Centre")]
     public EventReference cityCentreSoundtrack;
     
