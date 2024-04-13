@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638481822676912957
+  lastModified: 638486291113124054
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638485138053299300
+  lastModified: 638486307906209936
   FileSizes:
   - Name: Desktop
-    Value: 218752
+    Value: 467648
   Exists: 1
 --- !u!114 &-7778664462462785671
 MonoBehaviour:
@@ -148,6 +148,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 340
+--- !u!114 &-4222732711134698551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/FirePotionHit
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/FirePotionHit
+  Guid:
+    Data1: 548922071
+    Data2: 1149052891
+    Data3: -1510582600
+    Data4: -1436298533
+  Banks:
+  - {fileID: -8008863066510745689}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10440
+--- !u!114 &-2591600581912160744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/HealingSFX
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/HealingSFX
+  Guid:
+    Data1: -2142082366
+    Data2: 1264904987
+    Data3: -1982467451
+    Data4: 475995163
+  Banks:
+  - {fileID: -8008863066510745689}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3044
 --- !u!114 &-1875940439462638176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +229,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &-814945197760043663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC/NPC Sound
+  m_EditorClassIdentifier: 
+  Path: event:/NPC/NPC Sound
+  Guid:
+    Data1: 1117306701
+    Data2: 1210233474
+    Data3: -130802257
+    Data4: 1485777542
+  Banks:
+  - {fileID: -8008863066510745689}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 141
 --- !u!114 &-432879648055885830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +271,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638481822676922930
+  lastModified: 638486307905321459
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -286,12 +367,17 @@ MonoBehaviour:
   - {fileID: 557385423476090258}
   - {fileID: 7404972818416564556}
   - {fileID: -6475316953198327327}
+  - {fileID: -814945197760043663}
+  - {fileID: 7535312020704299159}
+  - {fileID: 5102291270106090850}
+  - {fileID: -4222732711134698551}
+  - {fileID: -2591600581912160744}
   EditorParameters: []
   MasterBanks:
   - {fileID: -432879648055885830}
   StringsBanks:
   - {fileID: 3956543449033771546}
-  cacheTime: 638485138053499046
+  cacheTime: 638486307906209936
   cacheVersion: 131616
 --- !u!114 &208792717327976440
 MonoBehaviour:
@@ -389,7 +475,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638485138053499046
+  lastModified: 638486291116313855
   FileSizes:
   - Name: Desktop
     Value: 2815936
@@ -490,11 +576,38 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638485138053289327
+  lastModified: 638486307905336785
   FileSizes:
   - Name: Desktop
-    Value: 1888
+    Value: 2126
   Exists: 1
+--- !u!114 &5102291270106090850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/FrostPotionHit
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/FrostPotionHit
+  Guid:
+    Data1: -520041791
+    Data2: 1296969844
+    Data3: -2067932251
+    Data4: -1204170740
+  Banks:
+  - {fileID: -8008863066510745689}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3986
 --- !u!114 &5923861776771618015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +689,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 88615
+--- !u!114 &7535312020704299159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potion/DamagePotionHit
+  m_EditorClassIdentifier: 
+  Path: event:/Potion/DamagePotionHit
+  Guid:
+    Data1: 1243039016
+    Data2: 1324945343
+    Data3: 1600411792
+    Data4: 1995096569
+  Banks:
+  - {fileID: -8008863066510745689}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1017
 --- !u!114 &8389428242611942512
 MonoBehaviour:
   m_ObjectHideFlags: 0

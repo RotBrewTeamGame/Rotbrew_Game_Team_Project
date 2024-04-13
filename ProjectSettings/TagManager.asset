@@ -17,6 +17,10 @@ TagManager:
   - CityCentre
   - IndustrialZone
   - Sewers
+  - damagePotion
+  - frostPotion
+  - firePotion
+  - healthPotion
   layers:
   - Default
   - TransparentFX

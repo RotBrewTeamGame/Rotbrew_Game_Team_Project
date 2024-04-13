@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7942939440550520315}
   m_Layer: 7
   m_Name: FirePotion
-  m_TagString: Untagged
+  m_TagString: firePotion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,10 +62,29 @@ MonoBehaviour:
       Data3: -2121252209
       Data4: -1561865661
     Path: event:/Potion/PotionSmash
-  potionSmashEffect: {fileID: 8926484042661614526, guid: d71e4dbbc9a01c14393c9eaaaccc935a,
-    type: 3}
   VFXPrefab: {fileID: 6906867303468118253, guid: 15f86ad6729619f4cb0182de14c33cb5,
     type: 3}
+  frostPotionSound:
+    Guid:
+      Data1: -520041791
+      Data2: 1296969844
+      Data3: -2067932251
+      Data4: -1204170740
+    Path: event:/Potion/FrostPotionHit
+  firePotionSound:
+    Guid:
+      Data1: 548922071
+      Data2: 1149052891
+      Data3: -1510582600
+      Data4: -1436298533
+    Path: event:/Potion/FirePotionHit
+  damagePotionSound:
+    Guid:
+      Data1: 1243039016
+      Data2: 1324945343
+      Data3: 1600411792
+      Data4: 1995096569
+    Path: event:/Potion/DamagePotionHit
   hasBroke: 0
 --- !u!135 &2278043608894969417
 SphereCollider:

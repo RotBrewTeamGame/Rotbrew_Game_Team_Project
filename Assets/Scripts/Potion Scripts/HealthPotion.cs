@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class HealthPotion : MonoBehaviour
 {
     public SwitchPotion potions;
     public PlayerHealth health;
     public PauseGame pauseGame;
+
+    [SerializeField] private EventReference healthPotionSound; // Reference to the FMOD sound for the health potion
 
     void Update()
     {
@@ -17,6 +17,9 @@ public class HealthPotion : MonoBehaviour
             {
                 health.HealHealth(1);
                 GameManager.instance.healthPotionItemCount--;
+
+                // Play the health potion sound
+                AudioManager.instance.PlayOneShot(healthPotionSound, transform.position);
             }
         }
     }

@@ -14450,6 +14450,13 @@ MonoBehaviour:
   potions: {fileID: 925550288}
   health: {fileID: 1631159170}
   pauseGame: {fileID: 0}
+  healthPotionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &546206505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28615,11 +28622,11 @@ Transform:
   m_GameObject: {fileID: 1554858027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 182.42482, y: 79.81159, z: 3.3419893}
+  m_LocalPosition: {x: 367.03024, y: 80.26281, z: 6.3313136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2047252734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1554858029
 MonoBehaviour:
@@ -29773,6 +29780,31 @@ PrefabInstance:
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 1631159175}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Path
+      value: event:/Potion/HealingSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data1
+      value: -2142082366
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data2
+      value: 1264904987
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data3
+      value: -1982467451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data4
+      value: 475995163
+      objectReference: {fileID: 0}
     - target: {fileID: 4347892561344129489, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_Layer
@@ -30619,6 +30651,13 @@ MonoBehaviour:
   potions: {fileID: 925550288}
   health: {fileID: 1631159170}
   pauseGame: {fileID: 0}
+  healthPotionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1678415741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37045,6 +37084,7 @@ Transform:
   - {fileID: 533008560}
   - {fileID: 881807214}
   - {fileID: 1803342555}
+  - {fileID: 1554858028}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048034731
@@ -38776,7 +38816,6 @@ SceneRoots:
   - {fileID: 1225422957}
   - {fileID: 357019513}
   - {fileID: 1207016019}
-  - {fileID: 1554858028}
   - {fileID: 2047252734}
   - {fileID: 1765243627}
   - {fileID: 1631159167}
