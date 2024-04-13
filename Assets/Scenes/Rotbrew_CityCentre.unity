@@ -8366,6 +8366,13 @@ MonoBehaviour:
   potions: {fileID: 1940611488}
   health: {fileID: 641736385}
   pauseGame: {fileID: 0}
+  healthPotionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &369371058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19842,6 +19849,13 @@ MonoBehaviour:
   potions: {fileID: 1940611488}
   health: {fileID: 641736385}
   pauseGame: {fileID: 0}
+  healthPotionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1100600482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31252,13 +31266,6 @@ MonoBehaviour:
       Data3: -969988945
       Data4: 109645086
     Path: event:/Environment/LootPickup
-  nPCSound:
-    Guid:
-      Data1: 1156352963
-      Data2: 1321067743
-      Data3: -1345941069
-      Data4: 693488416
-    Path: event:/NPC/NPC Sound
   cityCentreSoundtrack:
     Guid:
       Data1: 1531331004
@@ -31281,6 +31288,7 @@ MonoBehaviour:
       Data4: -569901546
     Path: event:/Soundtracks/SewerTheme
   firstPersonAudio: {fileID: 2018552400}
+  firstPersonMovement: {fileID: 641736387}
 --- !u!4 &1606443028
 Transform:
   m_ObjectHideFlags: 0

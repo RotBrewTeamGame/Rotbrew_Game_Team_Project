@@ -8029,6 +8029,7 @@ MonoBehaviour:
       Data4: -569901546
     Path: event:/Soundtracks/SewerTheme
   firstPersonAudio: {fileID: 411569204}
+  firstPersonMovement: {fileID: 1613434335}
 --- !u!4 &217814852
 Transform:
   m_ObjectHideFlags: 0
