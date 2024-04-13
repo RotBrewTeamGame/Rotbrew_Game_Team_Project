@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
     public Material damageFlashFX;
     public Material deathFX;
 
-    public GameObject deathVFXPrefab; // Reference to the death VFX prefab
+    //public GameObject deathVFXPrefab; // Reference to the death VFX prefab
     public EventReference enemyDissolveSFX; // FMOD EventReference for the enemy dissolve SFX
 
     private AudioManager audioManager;
@@ -23,9 +23,11 @@ public class EnemyHealth : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject player;
     public bool damaged;
+    public bool dead;
 
     void Start()
     {
+        dead = false;
         damaged = false;
 
         maxHealth = enemyHealth;
@@ -55,6 +57,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        dead = true;
         StartCoroutine(DeathTimer());
     }
 
@@ -76,14 +79,16 @@ public class EnemyHealth : MonoBehaviour
             yield return null;
         }
 
+        /*
         // Instantiate death VFX
         if (deathVFXPrefab != null)
         {
             Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
         }
+        */
 
         GetComponent<DropLoot>().InstantiateLoot(transform.position);
-        Destroy(enemyObject);
+        enemyObject.SetActive(false);
     }
 
     public IEnumerator DamageFlashTimer()

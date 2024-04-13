@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SewerShortcut : MonoBehaviour
 {
-    public EnemyHealth bossHealth;
+    public EnemyHealth boss1Health;
+    public EnemyHealth boss2Health;
     public GameObject sewerShortcut;
     public Canvas interactionUI;
     public bool sewerBossDead;
@@ -18,7 +19,7 @@ public class SewerShortcut : MonoBehaviour
 
     private void Update()
     {
-        if (bossHealth.enemyHealth == 0)
+        if (boss1Health.dead && boss2Health.dead)
         {
             sewerBossDead = true;
         }
@@ -47,7 +48,7 @@ public class SewerShortcut : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
+        if (other.gameObject.tag == "Player" && sewerBossDead && Input.GetKeyDown(KeyCode.E))
         {
             SceneNavigator.instance.LoadCityCentre();
         }
