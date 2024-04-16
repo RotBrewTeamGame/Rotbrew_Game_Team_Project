@@ -35,12 +35,12 @@ public class EnableCrafting : MonoBehaviour
 
         if (interacted)
         {
-            rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         }
         else
         {
             rb.constraints &= ~RigidbodyConstraints.FreezePosition;
-
+            rb.constraints &= ~RigidbodyConstraints.FreezeRotationY;
         }
     }
 

@@ -57,6 +57,11 @@ public class GameManager : MonoBehaviour
             IncreaseKeyPieceAmount(1);
         }
         */
+
+        if (keyPieceItemCount >= 4)
+        {
+            keyPieceItemCount = 3;
+        }
     }
 
     public void IncreaseDamagePlantAmount(int amount)
