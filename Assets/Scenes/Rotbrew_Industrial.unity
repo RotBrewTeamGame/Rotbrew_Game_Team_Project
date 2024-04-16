@@ -329,6 +329,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1730548086}
@@ -3213,6 +3218,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 488798862}
@@ -3549,6 +3559,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -6357,6 +6372,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -16841,6 +16861,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 901675948}
@@ -19871,6 +19896,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1196588594}
@@ -22137,6 +22167,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 677981554}
@@ -22413,6 +22448,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -23038,6 +23078,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -24691,6 +24736,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1263972408}
@@ -25237,6 +25287,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -28519,6 +28574,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159168}
     - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: chasingDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 207425978852344847, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1015815609}
@@ -31349,7 +31409,7 @@ PrefabInstance:
     - target: {fileID: 7595688826024356401, guid: a7369667eabce774081a6ab3c97e5fc1,
         type: 3}
       propertyPath: chasingDistance
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7595688826024356401, guid: a7369667eabce774081a6ab3c97e5fc1,
         type: 3}
