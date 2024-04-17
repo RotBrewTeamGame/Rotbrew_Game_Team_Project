@@ -12,9 +12,11 @@ public class EnemyPatrolPoints : MonoBehaviour
     public bool patrolling;
     public Transform player;
     public float chasingDistance;
+    public bool chasing;
 
     private void Start()
     {
+        chasing = false;
         patrolling = true;
 
         StartPatrol();
@@ -49,6 +51,8 @@ public class EnemyPatrolPoints : MonoBehaviour
 
     void ChasePlayer()
     {
+        chasing = true;
+
         agent.SetDestination(player.transform.position);
 
         if (agent.remainingDistance > chasingDistance)
