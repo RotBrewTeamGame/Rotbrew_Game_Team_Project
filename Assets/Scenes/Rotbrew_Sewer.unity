@@ -61336,7 +61336,7 @@ PrefabInstance:
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.4
+      value: 40.2
       objectReference: {fileID: 0}
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
@@ -61346,7 +61346,7 @@ PrefabInstance:
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -124.1
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
@@ -76170,8 +76170,6 @@ MonoBehaviour:
   firePotionON: 0
   selectedPotion: 0
   pauseGame: {fileID: 1613434338}
-  switched: 0
-  trajectoryLine: {fileID: 1613434340}
 --- !u!114 &2105953265
 MonoBehaviour:
   m_ObjectHideFlags: 0
