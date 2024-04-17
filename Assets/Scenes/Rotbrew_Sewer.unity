@@ -56209,6 +56209,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 3926922442589818626, guid: a1cc64ea50a91854aadd436a6297b80b,
         type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1613434331}
+    - target: {fileID: 3926922442589818626, guid: a1cc64ea50a91854aadd436a6297b80b,
+        type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 168488787}
@@ -76165,6 +76170,8 @@ MonoBehaviour:
   firePotionON: 0
   selectedPotion: 0
   pauseGame: {fileID: 1613434338}
+  switched: 0
+  trajectoryLine: {fileID: 1613434340}
 --- !u!114 &2105953265
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -164,11 +164,16 @@ public class PotionThrower : MonoBehaviour
         Vector3[] points = new Vector3[100];
         trajectoryLine.positionCount = points.Length;
 
+        float timeStep = 0.1f; // Time step between each point
+        float gravityModifier = Physics.gravity.magnitude; // Gravity magnitude
+
         for (int i = 0; i < points.Length; i++)
         {
-            float time = i * 0.1f;
-            points[i] = origin + speed * time + 0.5f * Physics.gravity * time * time;
+            float time = i * timeStep;
+            Vector3 displacement = speed * time + 0.5f * Physics.gravity * time * time;
+            points[i] = origin + displacement;
         }
+
         trajectoryLine.SetPositions(points);
     }
 }
