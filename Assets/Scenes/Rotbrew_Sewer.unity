@@ -69524,7 +69524,7 @@ MonoBehaviour:
   damagePotionItemCount: 84
   healthPotionItemCount: 10
   frostPotionItemCount: 0
-  firePotionItemCount: 0
+  firePotionItemCount: 33
   keyItemCount: 0
   damagePlantQuantity: {fileID: 1989936969}
   healthHerbQuantity: {fileID: 315433476}
