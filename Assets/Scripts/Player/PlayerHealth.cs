@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isDamageCooldown = false;
     public float damageCooldownDuration = 1.0f;
 
+    public PotionThrower potionThrower;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class PlayerHealth : MonoBehaviour
     {
         playerMovement.enabled = false;
         deathScreen.SetActive(true);
+        potionThrower.canThrowPotion = false;
     }
 
     IEnumerator ChangeAlphaCoroutine()

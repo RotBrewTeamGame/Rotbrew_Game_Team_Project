@@ -39,18 +39,21 @@ public class PotionThrower : MonoBehaviour
     public GameObject firePotionUI;
 
     public PauseGame pauseGame;
+    public Respawn respawn;
+    public bool canThrowPotion = true;
 
     void Start()
     {
         mainCam = Camera.main;
         trajectoryLine.enabled = false;
         trajectoryLine.positionCount = 0;
+        FindObjectOfType<DialogueManager>().onDialogueEnd.AddListener(OnDialogueEnd);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pauseGame.isPaused == false)
+        if (canThrowPotion && !pauseGame.isPaused)
         {
             if (Input.GetKeyDown(throwKey) && GameManager.instance.damagePotionItemCount != 0 && !craftingUI.activeSelf && damagePotionUI.activeSelf ||
                 Input.GetKeyDown(throwKey) && GameManager.instance.frostPotionItemCount != 0 && !craftingUI.activeSelf && frostPotionUI.activeSelf ||
@@ -87,6 +90,18 @@ public class PotionThrower : MonoBehaviour
         {
             ChargeThrow();
         }
+    }
+
+    void OnDialogueEnd()
+    {
+        StartCoroutine(DelayPotionThrow());
+    }
+
+    IEnumerator DelayPotionThrow()
+    {
+        canThrowPotion = false;
+        yield return new WaitForSeconds(0.5f);
+        canThrowPotion = true;
     }
 
     void StartThrowing()

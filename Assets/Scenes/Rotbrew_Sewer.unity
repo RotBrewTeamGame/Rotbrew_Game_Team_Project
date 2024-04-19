@@ -7848,6 +7848,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177271063}
   m_Mesh: {fileID: 8273224946844994028, guid: 0c495a5aad2a3814e83c4f339d45a488, type: 3}
+--- !u!114 &177654629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+    type: 3}
+  m_PrefabInstance: {fileID: 1613434330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613434336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71eadac381a634a9897331d68f2543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &179114580
 GameObject:
   m_ObjectHideFlags: 0
@@ -63064,6 +63076,7 @@ MonoBehaviour:
   healthBar: {fileID: 309447587}
   deathScreen: {fileID: 1162705656}
   rB: {fileID: 0}
+  potionThrower: {fileID: 177654629}
 --- !u!114 &1174600793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80403,6 +80416,11 @@ PrefabInstance:
       objectReference: {fileID: 1613434335}
     - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 1174600792}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 1613434338}
@@ -80515,6 +80533,11 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1162705656}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: potionThrower
+      value: 
+      objectReference: {fileID: 177654629}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key

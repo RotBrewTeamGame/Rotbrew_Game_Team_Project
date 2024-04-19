@@ -2611,7 +2611,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &91165781
 MonoBehaviour:
@@ -5386,7 +5386,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &215188676
 Transform:
@@ -6904,7 +6904,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &298786488
 Transform:
@@ -7708,7 +7708,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &351764644
 Transform:
@@ -8942,7 +8942,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!224 &381974437
 RectTransform:
@@ -9991,7 +9991,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &451300677
 Transform:
@@ -13505,6 +13505,11 @@ PrefabInstance:
       objectReference: {fileID: 641736387}
     - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 1626228032}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 641736390}
@@ -13622,6 +13627,11 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1123027768}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: potionThrower
+      value: 
+      objectReference: {fileID: 641736393}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key
@@ -14069,6 +14079,18 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &641736393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+    type: 3}
+  m_PrefabInstance: {fileID: 641736382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641736389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71eadac381a634a9897331d68f2543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &646174976
 GameObject:
   m_ObjectHideFlags: 0
@@ -19675,7 +19697,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &922982837
 Transform:
@@ -22825,7 +22847,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1089991415
 Transform:
@@ -25331,7 +25353,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1231695648
 Transform:
@@ -31082,7 +31104,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1292009123
 Transform:
@@ -32003,7 +32025,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1334406330
 Transform:
@@ -35022,7 +35044,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1558055303
 Transform:
@@ -36250,6 +36272,7 @@ MonoBehaviour:
   healthBar: {fileID: 169860668}
   deathScreen: {fileID: 1123027768}
   rB: {fileID: 0}
+  potionThrower: {fileID: 641736393}
 --- !u!114 &1626228033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37112,7 +37135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1664605944
 Transform:
@@ -38410,7 +38433,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1729973431
 Transform:
@@ -38543,7 +38566,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1742636377
 Transform:
@@ -39558,7 +39581,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1796790811
 Transform:
@@ -43446,7 +43469,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1962603317
 Transform:
@@ -44820,7 +44843,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2008805629
 Transform:
@@ -47119,7 +47142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!224 &2146223214
 RectTransform:

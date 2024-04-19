@@ -19089,6 +19089,18 @@ MonoBehaviour:
   frostPotionCount: {fileID: 583322129}
   firePotionCount: {fileID: 684694849}
   keyPieceCount: {fileID: 132022978}
+--- !u!114 &664008279 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+    type: 3}
+  m_PrefabInstance: {fileID: 1631159167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631159174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f71eadac381a634a9897331d68f2543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669638850
 GameObject:
   m_ObjectHideFlags: 0
@@ -23527,6 +23539,7 @@ MonoBehaviour:
   healthBar: {fileID: 1128506967}
   deathScreen: {fileID: 1274907489}
   rB: {fileID: 1631159169}
+  potionThrower: {fileID: 664008279}
 --- !u!114 &897731551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35435,6 +35448,11 @@ PrefabInstance:
       objectReference: {fileID: 1631159172}
     - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 897731550}
+    - target: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 1631159175}
@@ -35552,6 +35570,11 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1274907489}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: potionThrower
+      value: 
+      objectReference: {fileID: 664008279}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key
