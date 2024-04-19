@@ -35560,6 +35560,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 1317910627943114178, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: damage
