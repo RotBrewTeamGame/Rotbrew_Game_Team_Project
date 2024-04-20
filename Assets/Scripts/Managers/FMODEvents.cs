@@ -48,6 +48,19 @@ public class FMODEvents : MonoBehaviour
     public static FMODEvents instance;
 
     public FirstPersonAudio firstPersonAudio;
+    public FirstPersonMovement firstPersonMovement;
+
+    void Update()
+    {
+        if (firstPersonMovement.IsRunning)
+        {
+            footstepCooldown = 0.2f;
+        }
+        else
+        {
+            footstepCooldown = 0.35f;
+        }
+    }
 
     private void Awake()
     {

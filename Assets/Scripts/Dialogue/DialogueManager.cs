@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Button option1Button;
     [SerializeField] private Button option2Button;
     [SerializeField] private StudioEventEmitter nPCSound; // Using FMOD Studio Event Emitter
+    [SerializeField] private float potionThrowDelay = 0.5f;
 
     [SerializeField] private float typingSpeed = 0.05f;
     [SerializeField] private float turnSpeed = 2f;
@@ -29,6 +30,8 @@ public class DialogueManager : MonoBehaviour
     private int currentDialogueIndex = 0;
 
     public Rigidbody playerRB;
+
+    public UnityEvent onDialogueEnd = new UnityEvent();
 
     private void Start()
     {
@@ -121,6 +124,8 @@ public class DialogueManager : MonoBehaviour
             optionSelected = false;
         }
 
+        yield return new WaitForSeconds(potionThrowDelay);
+
         DialogueStop();
     }
 
@@ -175,6 +180,7 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         dialogueText.text = "";
         dialogueParent.SetActive(false);
+        onDialogueEnd.Invoke();
 
         firstPersonMovements.enabled = true;
         firstPersonCam.enabled = true;

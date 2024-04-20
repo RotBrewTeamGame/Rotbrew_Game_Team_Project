@@ -12,6 +12,7 @@ public class Respawn : MonoBehaviour
     public Image healthBar;
     public GameObject deathScreen;
     public Rigidbody rB;
+    public PotionThrower potionThrower;
 
     // Start is called before the first frame update
     void Start()
@@ -40,5 +41,6 @@ public class Respawn : MonoBehaviour
         movement.enabled = true;
         deathScreen.SetActive(false);
         rB.isKinematic = false;
+        potionThrower.canThrowPotion = false;
     }
 }
