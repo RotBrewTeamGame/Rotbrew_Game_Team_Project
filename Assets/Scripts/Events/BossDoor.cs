@@ -17,6 +17,14 @@ public class BossDoor : MonoBehaviour
         interactionUI.gameObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            GameManager.instance.keyPieceItemCount ++;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         interactionUI.gameObject.SetActive(true);
@@ -27,7 +35,7 @@ public class BossDoor : MonoBehaviour
             canOpen = false;
         }
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount >= 1)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount > 1)
         {
             text.color = Color.green;
             canOpen = true;
