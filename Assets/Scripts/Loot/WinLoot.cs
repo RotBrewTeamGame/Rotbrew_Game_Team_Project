@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.VFX;
 using FMODUnity;
 
-public class PickUpKeyPiece : MonoBehaviour
+public class WinLoot : MonoBehaviour
 {
     public EventReference winPickUpSound; // New pickup sound event reference
     public string winCoreSpawnRateParameterName = "CoreSpawnRate"; // Name of the float parameter in VFX
@@ -36,9 +36,9 @@ public class PickUpKeyPiece : MonoBehaviour
     private void SetWinSpawnRatesToZero()
     {
         // Reset float parameters in VFX
-        winVfx.SetFloat(coreSpawnRateParameterName, 0f);
-        winVfx.SetFloat(trailSpawnRateParameterName, 0f);
-        winVfx.SetFloat(outerTrailSpawnRateParameterName, 0f);
+        winVfx.SetFloat(winCoreSpawnRateParameterName, 0f);
+        winVfx.SetFloat(winTrailSpawnRateParameterName, 0f);
+        winVfx.SetFloat(winOuterTrailSpawnRateParameterName, 0f);
     }
 
     private IEnumerator WinDestroyAfterDelay(float delay)

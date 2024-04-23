@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: Win
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 0}
+  lootObject: {fileID: 382332879739653500, guid: 439957557d0efd9418f8ef04d88aea06,
+    type: 3}
   lootName: Win
   dropChance: 100
