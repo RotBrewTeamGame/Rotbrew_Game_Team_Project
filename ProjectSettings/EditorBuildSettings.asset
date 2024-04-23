@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rotbrew_CityCentre.unity
     guid: 0cbfe508d3a797048848181f1313de43
+  - enabled: 1
+    path: Assets/Scenes/Rotbrew_Kalos.unity
+    guid: 6fd3a0b3e8d781c4dae582cf6fda5fe6
   m_configObjects: {}

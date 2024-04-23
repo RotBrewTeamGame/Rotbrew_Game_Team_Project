@@ -51,14 +51,12 @@ public class SceneNavigator : MonoBehaviour
         }
     }
 
-    /*
-     * public void LoadFinalBossArena()
+     public void LoadFinalBossArena()
     {
-        if (SceneManager.GetActiveScene().name != "Rotbrew_FinalBoss")
+        if (SceneManager.GetActiveScene().name != "Rotbrew_Kalos")
         {
             previousSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("Rotbrew_FinalBoss");
+            SceneManager.LoadScene("Rotbrew_Kalos");
         }
     }
-     */
 }

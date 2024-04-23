@@ -18,7 +18,7 @@ public class KeyCraft : MonoBehaviour
 
     public void OnButtonClick()
     {
-        if (GameManager.instance.keyPieceItemCount == 3)
+        if (GameManager.instance.keyPieceItemCount >= 3)
         {
             GameManager.instance.keyPieceItemCount = GameManager.instance.keyPieceItemCount - 3;
             GameManager.instance.TurnOnKeyUI();

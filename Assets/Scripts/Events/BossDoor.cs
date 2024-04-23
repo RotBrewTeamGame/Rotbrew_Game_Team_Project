@@ -35,7 +35,7 @@ public class BossDoor : MonoBehaviour
             canOpen = false;
         }
 
-        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount > 1)
+        if (other.gameObject.tag == "Player" && GameManager.instance.keyItemCount >= 1)
         {
             text.color = Color.green;
             canOpen = true;
@@ -51,7 +51,7 @@ public class BossDoor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && canOpen && Input.GetKeyDown(KeyCode.E))
         {
-            //SceneNavigator.instance.LoadFinalBossArena();
+            SceneNavigator.instance.LoadFinalBossArena();
         }
     }
 }
