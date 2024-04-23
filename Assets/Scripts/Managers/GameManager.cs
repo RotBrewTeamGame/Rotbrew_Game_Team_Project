@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI keyQuantity;
 
     public GameObject keyUI;
+    public GameObject winUI;
 
     void Start()
     {
@@ -51,13 +52,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            IncreaseKeyPieceAmount(1);
-        }
-        */
-
         if (keyPieceItemCount >= 4)
         {
             keyPieceItemCount = 3;
@@ -204,5 +198,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("keyQuantity is not assigned.");
         }
+    }
+
+    public void WinUI()
+    {
+        winUI.SetActive(true);
     }
 }
