@@ -14270,6 +14270,31 @@ PrefabInstance:
       propertyPath: potionThrower
       value: 
       objectReference: {fileID: 641736393}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Path
+      value: event:/PlayerMovement/player Damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data1
+      value: -110883872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data2
+      value: 1325996547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data3
+      value: 1070126216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data4
+      value: -537984254
+      objectReference: {fileID: 0}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key
@@ -14361,6 +14386,31 @@ PrefabInstance:
       propertyPath: pauseGame
       value: 
       objectReference: {fileID: 641736390}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Path
+      value: event:/Potion/HealingSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data1
+      value: -2142082366
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data2
+      value: 1264904987
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data3
+      value: -1982467451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195116656568595283, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: healthPotionSound.Guid.Data4
+      value: 475995163
+      objectReference: {fileID: 0}
     - target: {fileID: 4347892561344129489, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: m_Layer

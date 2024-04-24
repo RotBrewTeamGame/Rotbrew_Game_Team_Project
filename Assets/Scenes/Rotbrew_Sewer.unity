@@ -71547,6 +71547,7 @@ MonoBehaviour:
   firePotionQuantity: {fileID: 343112412}
   keyQuantity: {fileID: 111651639}
   keyUI: {fileID: 2503572}
+  winUI: {fileID: 0}
 --- !u!1 &1346077482
 GameObject:
   m_ObjectHideFlags: 0
@@ -81154,6 +81155,31 @@ PrefabInstance:
       propertyPath: potionThrower
       value: 
       objectReference: {fileID: 177654629}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Path
+      value: event:/PlayerMovement/player Damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data1
+      value: -110883872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data2
+      value: 1325996547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data3
+      value: 1070126216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data4
+      value: -537984254
+      objectReference: {fileID: 0}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key
