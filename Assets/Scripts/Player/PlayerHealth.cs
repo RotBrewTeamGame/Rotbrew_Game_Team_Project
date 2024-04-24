@@ -1,24 +1,22 @@
+using FMODUnity;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float health;
     public float maxHealth;
-
     public PlayerHealthBar healthBar;
-
     private FirstPersonMovement playerMovement;
     public GameObject deathScreen;
-
     public UnityEngine.UI.Image damage;
     public bool isDamageCooldown = false;
     public float damageCooldownDuration = 1.0f;
-
     public PotionThrower potionThrower;
+
+    // FMOD event reference for damage sound
+    public EventReference damageSoundEvent;
 
     void Start()
     {
@@ -34,6 +32,8 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(ChangeAlphaCoroutine());
         StartCoroutine(StartDamageCooldown());
 
+        // Play damage sound effect using FMOD
+        PlayDamageSound();
 
         if (health <= 0)
         {
@@ -78,4 +78,12 @@ public class PlayerHealth : MonoBehaviour
         isDamageCooldown = false;
     }
 
+    void PlayDamageSound()
+    {
+        // Play damage sound effect using FMOD
+        if (!damageSoundEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(damageSoundEvent, transform.position);
+        }
+    }
 }

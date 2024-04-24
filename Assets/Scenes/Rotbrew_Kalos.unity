@@ -17131,6 +17131,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 408566168}
+    - target: {fileID: 6055406527523484853, guid: 750b8b0e2575ec04b8afc08307497dc2,
+        type: 3}
+      propertyPath: melee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7711174505780132253, guid: 750b8b0e2575ec04b8afc08307497dc2,
         type: 3}
       propertyPath: health
