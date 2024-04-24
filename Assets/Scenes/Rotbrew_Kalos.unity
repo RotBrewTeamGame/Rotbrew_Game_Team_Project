@@ -9364,7 +9364,6 @@ RectTransform:
   - {fileID: 1581832635}
   - {fileID: 536923497}
   - {fileID: 1906517659}
-  - {fileID: 1258924869}
   - {fileID: 890019794}
   - {fileID: 1461437148}
   - {fileID: 224271384}
@@ -9374,6 +9373,7 @@ RectTransform:
   - {fileID: 1465827852}
   - {fileID: 214286665}
   - {fileID: 1231200512}
+  - {fileID: 1258924869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12263,7 +12263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congradulations!
+  m_text: 'Congratulations!
 
     You win!
 
