@@ -8,26 +8,30 @@ public class KalosController : MonoBehaviour
     public Animator anim;
     public bool melee;
     public bool lightning;
+    public float meleeDistance;
 
     private void Update()
     {
-        if (patrol.patrolling || patrol.chasing)
+        if (patrol.patrolling || patrol.chasing || !melee)
         {
             anim.SetBool("walking", true); 
         }
-        else
+
+        if (patrol.chasing && (patrol.agent.remainingDistance < meleeDistance) && !melee)
         {
+            melee = true;
+            anim.SetBool("melee", true);
             anim.SetBool("walking", false);
         }
-
-
-        if (patrol.chasing && patrol.agent.remainingDistance >= 0.5f)
+        else if (patrol.chasing && (patrol.agent.remainingDistance >= meleeDistance) && melee)
         {
-            StartCoroutine("MeleeAttack");
+            melee = false;
+            anim.SetBool("melee", false);
+            anim.SetBool("walking", true);
         }
     }
 
-    IEnumerator MeleeAttack()
+    /*IEnumerator MeleeAttack()
     {
         anim.SetBool("walking", false);
         anim.SetTrigger("melee");
@@ -36,5 +40,5 @@ public class KalosController : MonoBehaviour
 
         anim.SetBool("walking", true);
         anim.ResetTrigger("melee");
-    }
+    }*/
 }

@@ -14006,6 +14006,20 @@ MonoBehaviour:
   droppedItemPrefab: {fileID: 0}
   lootList:
   - {fileID: 11400000, guid: d294b726543c85b4e8102532fb45bc76, type: 2}
+--- !u!114 &1626342477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626342459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232196948b73c824c993ae77a32c4589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 408566168}
+  damage: 3
 --- !u!1 &1635213802
 GameObject:
   m_ObjectHideFlags: 0
@@ -17246,6 +17260,11 @@ PrefabInstance:
       propertyPath: melee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6055406527523484853, guid: 750b8b0e2575ec04b8afc08307497dc2,
+        type: 3}
+      propertyPath: meleeDistance
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7711174505780132253, guid: 750b8b0e2575ec04b8afc08307497dc2,
         type: 3}
       propertyPath: health
@@ -17325,6 +17344,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1626342470}
+    - targetCorrespondingSourceObject: {fileID: 2151412144847068510, guid: 750b8b0e2575ec04b8afc08307497dc2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1626342477}
   m_SourcePrefab: {fileID: 100100000, guid: 750b8b0e2575ec04b8afc08307497dc2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
