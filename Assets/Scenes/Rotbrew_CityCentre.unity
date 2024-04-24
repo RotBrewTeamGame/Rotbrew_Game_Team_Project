@@ -2736,6 +2736,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5734,6 +5749,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10768,6 +10798,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12987,6 +13032,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16460,42 +16520,77 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 361226778}
     m_Modifications:
+    - target: {fileID: 249505114253075331, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 736318348452763445, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616224735864029084, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852204257485880237, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353918708955550741, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6059971746095067843, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_Name
       value: Furnace2
       objectReference: {fileID: 0}
+    - target: {fileID: 6059971746095067843, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719576823960521703, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9107345
+      value: 0.019947402
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.9107345
+      value: 0.019947402
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.9107345
+      value: 0.019947402
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.176437
+      value: 0.4611866
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18
+      value: 0.0018791372
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.06
+      value: 0.1467815
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
@@ -16505,7 +16600,7 @@ PrefabInstance:
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
@@ -16515,7 +16610,7 @@ PrefabInstance:
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
         type: 3}
@@ -16532,11 +16627,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6962640292842570950, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715792617849449253, guid: 03afd8896fcaa7545ad137228f1ef73c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03afd8896fcaa7545ad137228f1ef73c, type: 3}
+--- !u!4 &696022804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6868702596838074489, guid: 03afd8896fcaa7545ad137228f1ef73c,
+    type: 3}
+  m_PrefabInstance: {fileID: 696022803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &698876344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6036891351032043429, guid: 7d35032a1439e0548808bb5d7b0d805d,
@@ -19674,6 +19785,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20357,6 +20483,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20955,6 +21096,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24051,6 +24207,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30887,6 +31058,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1954942040}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d35032a1439e0548808bb5d7b0d805d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 696022804}
     - targetCorrespondingSourceObject: {fileID: 4903626745042846069, guid: 7d35032a1439e0548808bb5d7b0d805d,
         type: 3}
       insertIndex: -1
@@ -34238,6 +34413,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39183,6 +39373,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39846,6 +40051,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44806,6 +45026,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45475,6 +45710,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214824004972775095, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027228791024609348, guid: 32cbc4c96eeb6704a9766616b57f0f34,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53131,4 +53381,3 @@ SceneRoots:
   - {fileID: 1578951408}
   - {fileID: 126296287}
   - {fileID: 1217567030}
-  - {fileID: 696022803}
