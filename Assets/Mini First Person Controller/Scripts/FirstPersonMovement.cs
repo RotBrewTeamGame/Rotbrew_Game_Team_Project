@@ -48,8 +48,9 @@ public class FirstPersonMovement : MonoBehaviour
         // Get targetVelocity from input.
         Vector2 targetVelocity = new Vector2(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
-        // Apply movement.
-        rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        // Apply movement using Rigidbody.MovePosition().
+        Vector3 newPosition = rigidbody.position + transform.rotation * new Vector3(targetVelocity.x, 0, targetVelocity.y) * Time.fixedDeltaTime;
+        rigidbody.MovePosition(newPosition);
 
         // Check if the player is walking and raise events accordingly
         if (IsWalking)

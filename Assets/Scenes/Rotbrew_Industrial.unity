@@ -25640,7 +25640,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -36708,8 +36708,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1317910627943114178, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
-      propertyPath: m_CollisionDetection
+      propertyPath: m_Interpolate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1317910627943114178, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
