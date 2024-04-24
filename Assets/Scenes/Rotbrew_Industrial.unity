@@ -36726,6 +36726,31 @@ PrefabInstance:
       propertyPath: potionThrower
       value: 
       objectReference: {fileID: 664008279}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Path
+      value: event:/PlayerMovement/player Damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data1
+      value: -110883872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data2
+      value: 1325996547
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data3
+      value: 1070126216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626488554150424057, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      propertyPath: damageSoundEvent.Guid.Data4
+      value: -537984254
+      objectReference: {fileID: 0}
     - target: {fileID: 2214140876841951028, guid: a3d3277247ea6a94ea57c51caee81c98,
         type: 3}
       propertyPath: key
@@ -40476,11 +40501,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1531331004
-      Data2: 1210537859
-      Data3: -1869123166
-      Data4: -1653354618
-    Path: event:/Soundtracks/CityCentre
+      Data1: 911475551
+      Data2: 1335014090
+      Data3: 434472329
+      Data4: -569901546
+    Path: event:/Soundtracks/SewersSoundtrack
   Event: 
   PlayEvent: 1
   StopEvent: 2
