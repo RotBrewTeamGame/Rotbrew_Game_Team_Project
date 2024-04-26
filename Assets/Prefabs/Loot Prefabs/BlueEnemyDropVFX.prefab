@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5692911766338260819}
   - component: {fileID: 6418665926861469442}
   - component: {fileID: -797514682703590184}
-  - component: {fileID: 7055635672437269587}
+  - component: {fileID: -8585226676002212731}
   m_Layer: 0
-  m_Name: GreenEnemyDropVFX
+  m_Name: BlueEnemyDropVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,10 +60,10 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 0.18208934, y: 0.5660378, z: 0.14150944, w: 1}
+      - m_Value: {x: 0.5613053, y: 1.9610825, z: 3.828904, w: 1}
         m_Name: Core Color
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0.6226415, z: 0.061676826, w: 1}
+      - m_Value: {x: 0, y: 0.89254516, z: 2, w: 1}
         m_Name: Trails Color
         m_Overridden: 1
     m_Uint:
@@ -141,7 +141,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7055635672437269587
+--- !u!114 &-8585226676002212731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5350512052901728285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99f0a21513540af4993385826e52b960, type: 3}
+  m_Script: {fileID: 11500000, guid: f208c0c39041b694ca5c2db7caa3cb2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupSound:
@@ -208,7 +208,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.35479102, g: 0.6603774, b: 0, a: 1}
+  m_Color: {r: 0.53796005, g: 1, b: 0, a: 1}
   m_Intensity: 0.44
   m_Range: 0.777
   m_SpotAngle: 30

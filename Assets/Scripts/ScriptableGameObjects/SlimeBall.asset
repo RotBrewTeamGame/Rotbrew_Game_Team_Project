@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: SlimeBall
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 3410420311263174414, guid: 9eea3834f5543a84f9cfdf19db1ad8b6,
+  lootObject: {fileID: 5350512052901728285, guid: 9ea62deabb4b43843a49a49977597a53,
     type: 3}
   lootName: Slime Ball
   dropChance: 100

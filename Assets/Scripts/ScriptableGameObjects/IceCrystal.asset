@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3fddf0c424dc24fa01d90a18877daa, type: 3}
   m_Name: IceCrystal
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 3410420311263174414, guid: 9e4dc657543c5054f92f3429aa02969f,
+  lootObject: {fileID: 5350512052901728285, guid: f4bbe4be93aaecc498f35557ec194e5c,
     type: 3}
   lootName: Ice Crystal
   dropChance: 50
