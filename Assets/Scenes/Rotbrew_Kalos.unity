@@ -7119,7 +7119,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1454ce3b30ea1ed4da23666f1219cc48, type: 2}
+      objectReference: {fileID: 2100000, guid: 19f4baceaebe6c74cb1a1848b2910029, type: 2}
     - target: {fileID: -7480854062587003116, guid: 663ca96c91fa0204e89aeda89e513650,
         type: 3}
       propertyPath: m_Layer
@@ -7208,7 +7208,7 @@ PrefabInstance:
     - target: {fileID: -1308154924754892956, guid: 663ca96c91fa0204e89aeda89e513650,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1308154924754892956, guid: 663ca96c91fa0204e89aeda89e513650,
         type: 3}
@@ -7274,7 +7274,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1454ce3b30ea1ed4da23666f1219cc48, type: 2}
+      objectReference: {fileID: 2100000, guid: 19f4baceaebe6c74cb1a1848b2910029, type: 2}
     - target: {fileID: 1702535321922045742, guid: 663ca96c91fa0204e89aeda89e513650,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13097,6 +13097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4d94f09fcb20444b88603887098de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 0}
 --- !u!1 &1364373000
 GameObject:
   m_ObjectHideFlags: 0
