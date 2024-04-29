@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0431644, g: 0.040578693, b: 0.038241245, a: 1}
+  m_IndirectSpecularColor: {r: 0.043164395, g: 0.040578693, b: 0.03824125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -146,6 +146,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9201304825984415112, guid: 0c495a5aad2a3814e83c4f339d45a488, type: 3}
+--- !u!4 &11451347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1230359131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &19833984
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -453,9 +459,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1067019340}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 564209578}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -3420,6 +3441,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49949858, y: 0.3516726, z: 0.01990585}
   m_Center: {x: 0.28353423, y: -0.0010903381, z: 1.4402096}
+--- !u!4 &140358161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 925354501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &143125734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,9 +4601,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 987279787}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 623691607}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -4923,9 +4965,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1661450825}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1719090953}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -7746,6 +7803,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1469755852293090078, guid: 0c495a5aad2a3814e83c4f339d45a488, type: 3}
+--- !u!1 &350948482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1508669156236197296, guid: 188bf89f4b2b6cb44bd5d61b6ff211ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 8790703995607846223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &357019511
 GameObject:
   m_ObjectHideFlags: 0
@@ -8325,9 +8388,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1544242372}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1911587313}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -9286,6 +9364,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444375913}
   m_CullTransparentMesh: 1
+--- !u!1 &445169147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1083141503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &446723427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8636050107577424315, guid: 0c495a5aad2a3814e83c4f339d45a488,
@@ -19131,6 +19215,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554564644}
   m_CullTransparentMesh: 1
+--- !u!4 &564209578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 27737631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &568855480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19227,6 +19317,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570217379}
   m_CullTransparentMesh: 1
+--- !u!1 &579244368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8656261178398156760, guid: a7369667eabce774081a6ab3c97e5fc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686083892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &580873097
 GameObject:
   m_ObjectHideFlags: 0
@@ -20201,6 +20297,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2028152176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &623691607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 175545264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &627636264
 GameObject:
   m_ObjectHideFlags: 0
@@ -21752,9 +21854,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1299971396}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1884021091}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -23551,6 +23668,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788816673}
   m_Mesh: {fileID: 4985966400801562566, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!4 &790767088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106833470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &795077440
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24434,6 +24557,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49949858, y: 0.3516726, z: 0.01990585}
   m_Center: {x: 0.28353423, y: -0.0010903381, z: 1.4402096}
+--- !u!4 &837594465 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7062643700076324629, guid: a7369667eabce774081a6ab3c97e5fc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686083892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &838421872
 GameObject:
   m_ObjectHideFlags: 0
@@ -26035,9 +26164,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1672212070}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 140358161}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -27075,6 +27219,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986141492}
   m_CullTransparentMesh: 1
+--- !u!1 &987279787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 175545264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987810541
 GameObject:
   m_ObjectHideFlags: 0
@@ -28309,6 +28459,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49949858, y: 0.3516726, z: 0.01990585}
   m_Center: {x: 0.28353423, y: -0.0010903381, z: 1.4402096}
+--- !u!1 &1067019340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 27737631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1073427380
 GameObject:
   m_ObjectHideFlags: 0
@@ -28845,9 +29001,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 445169147}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1541363294}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -29134,9 +29305,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1595006586}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 790767088}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -29833,9 +30019,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1861147189}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1256654736}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -31640,9 +31841,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1928901485}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 11451347}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -31941,6 +32157,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242205329}
   m_Mesh: {fileID: -5254701819498319479, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!4 &1256654736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1140724949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1257234013
 GameObject:
   m_ObjectHideFlags: 0
@@ -32241,9 +32463,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1815941500}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1276044456}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -32599,6 +32836,12 @@ MonoBehaviour:
   bossDoor: {fileID: 0}
   tBCScreen: {fileID: 366145179}
   playerRB: {fileID: 1631159169}
+--- !u!4 &1276044456 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1260724589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1279390446
 GameObject:
   m_ObjectHideFlags: 0
@@ -32939,6 +33182,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 379.0587, y: 111.94513, z: 387.25995}
   m_Center: {x: -145.88493, y: 55.949684, z: 153.9936}
+--- !u!1 &1299971396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 685139983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1305950223
 GameObject:
   m_ObjectHideFlags: 0
@@ -34008,6 +34257,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765393af2e21b9f4cb94fc5013f4f779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1365137489 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1521756773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365226554
 GameObject:
   m_ObjectHideFlags: 0
@@ -35502,6 +35757,12 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1466712794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1521756773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1472822658
 GameObject:
   m_ObjectHideFlags: 0
@@ -36810,9 +37071,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 1466712794}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 8643251747225790703, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 1365137489}
     m_RemovedComponents:
     - {fileID: 497602693960221416, guid: 80c94e766eabc944eb6ab1c53be9ff2d, type: 3}
     m_RemovedGameObjects: []
@@ -36939,6 +37215,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020419061, y: 0.021727538, z: 0.010987533}
   m_Center: {x: 0.0056147403, y: 0.0056651193, z: -0.000045868193}
+--- !u!4 &1541363294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1083141503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1544242372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 370860568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1545134334
 GameObject:
   m_ObjectHideFlags: 0
@@ -37665,6 +37953,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594634354}
   m_CullTransparentMesh: 1
+--- !u!1 &1595006586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106833470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595409233
 GameObject:
   m_ObjectHideFlags: 0
@@ -39372,6 +39666,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653255590}
   m_CullTransparentMesh: 1
+--- !u!1 &1661450825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 180958210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1665164112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39726,6 +40026,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49949858, y: 0.3516726, z: 0.01990585}
   m_Center: {x: 0.28353423, y: -0.0010903381, z: 1.4402096}
+--- !u!1 &1672212070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 925354501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1676898331
 GameObject:
   m_ObjectHideFlags: 0
@@ -40067,9 +40373,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396721950470622155, guid: a7369667eabce774081a6ab3c97e5fc1,
         type: 3}
+      propertyPath: goblin
+      value: 
+      objectReference: {fileID: 579244368}
+    - target: {fileID: 3396721950470622155, guid: a7369667eabce774081a6ab3c97e5fc1,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1631159168}
+    - target: {fileID: 3396721950470622155, guid: a7369667eabce774081a6ab3c97e5fc1,
+        type: 3}
+      propertyPath: dartPrefab
+      value: 
+      objectReference: {fileID: 350948482}
+    - target: {fileID: 3396721950470622155, guid: a7369667eabce774081a6ab3c97e5fc1,
+        type: 3}
+      propertyPath: dartSpawnPoint
+      value: 
+      objectReference: {fileID: 837594465}
     - target: {fileID: 4685896860431758975, guid: a7369667eabce774081a6ab3c97e5fc1,
         type: 3}
       propertyPath: m_Material
@@ -40606,6 +40927,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11677739, y: 0.081843615, z: 0.11962517}
   m_Center: {x: 0, y: 0.0000000037252903, z: 0.000000029802322}
+--- !u!4 &1719090953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 180958210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1719478184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42753,6 +43080,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!1 &1815941500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1260724589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1816819417
 GameObject:
   m_ObjectHideFlags: 0
@@ -43441,6 +43774,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852668541}
   m_Mesh: {fileID: 3788972656975355841, guid: 7d35032a1439e0548808bb5d7b0d805d, type: 3}
+--- !u!1 &1861147189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1140724949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1869211362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43998,6 +44337,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883243913}
   m_CullTransparentMesh: 1
+--- !u!4 &1884021091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 685139983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1884221297
 GameObject:
   m_ObjectHideFlags: 0
@@ -44718,6 +45063,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4068373912626513877, guid: aafacc86e73049145a557518756cfd30, type: 3}
+--- !u!4 &1911587313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7134977304738383620, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 370860568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1916664549
 GameObject:
   m_ObjectHideFlags: 0
@@ -45171,6 +45522,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!1 &1928901485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705022004956534750, guid: 80c94e766eabc944eb6ab1c53be9ff2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1230359131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1930146518
 GameObject:
   m_ObjectHideFlags: 0
@@ -49756,6 +50113,11 @@ PrefabInstance:
     - target: {fileID: 2279962937248163594, guid: 188bf89f4b2b6cb44bd5d61b6ff211ad,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512154982776362282, guid: 188bf89f4b2b6cb44bd5d61b6ff211ad,
+        type: 3}
+      propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

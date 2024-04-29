@@ -1,14 +1,34 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDart : MonoBehaviour
 {
     public Transform player;
-    public GameObject dart;
-    public Transform dartSpawn;
+    public GameObject goblin; // Reference to the goblin GameObject
+    public GameObject dartPrefab;
+    public Transform dartSpawnPoint;
     public float force;
     public bool isShooting = false;
+
+    private Quaternion enemyRotation;
+
+    // Remove the field initializer for dartRotation
+
+    void Start()
+    {
+        // Get the initial rotation of the goblin GameObject
+        if (goblin != null)
+        {
+            enemyRotation = goblin.transform.rotation;
+        }
+        else
+        {
+            Debug.LogError("Goblin GameObject reference is missing!");
+        }
+
+        // Start shooting coroutine
+        StartCoroutine(ShootDart());
+    }
 
     public IEnumerator ShootDart()
     {
@@ -16,11 +36,16 @@ public class EnemyDart : MonoBehaviour
 
         if (isShooting)
         {
-            GameObject clone;
-            clone = Instantiate(dart, dartSpawn.transform.position, Quaternion.identity);
-            clone.GetComponent<Rigidbody>().velocity = dartSpawn.TransformDirection(Vector3.forward * force * Time.deltaTime);
+            // Initialize dartRotation here
+            Quaternion dartRotation = Quaternion.Euler(-66.016f, enemyRotation.eulerAngles.y, -90f);
 
-            Destroy(clone, 1);
+            GameObject dart = Instantiate(dartPrefab, dartSpawnPoint.position, dartRotation);
+            Rigidbody dartRigidbody = dart.GetComponent<Rigidbody>();
+
+            // Apply force in the forward direction of the dartSpawnPoint
+            dartRigidbody.velocity = dartSpawnPoint.forward * force;
+
+            Destroy(dart, 2); // Destroy after 2 seconds
         }
 
         StartCoroutine(ShootDart());
