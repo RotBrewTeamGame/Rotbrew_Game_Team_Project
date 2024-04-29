@@ -19,6 +19,7 @@ public class FirePotion : MonoBehaviour
         {
             collidedEnemy = collide.gameObject;
             StartCoroutine(FireEffect());
+            this.GetComponent<PotionSplash>().BreakPotion();
         }
     }
 

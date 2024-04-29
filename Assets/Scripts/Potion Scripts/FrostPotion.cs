@@ -21,6 +21,8 @@ public class FrostPotion : MonoBehaviour
 
             // Spawn VFX and destroy after 7 seconds
             StartCoroutine(SpawnAndDestroyVFX(collide.contacts[0].point));
+
+            this.GetComponent<PotionSplash>().BreakPotion();
         }
     }
 
