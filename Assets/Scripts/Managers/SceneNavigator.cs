@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SceneNavigator : MonoBehaviour
 {
+    public GameObject loadingScreen;
     public static SceneNavigator instance;
     private string previousSceneName;
 
@@ -22,12 +23,15 @@ public class SceneNavigator : MonoBehaviour
         }
 
         previousSceneName = SceneManager.GetActiveScene().name;
+
+        loadingScreen.SetActive(false);
     }
 
     public void LoadCityCentre()
     {
         if (SceneManager.GetActiveScene().name != "Rotbrew_CityCentre")
         {
+            loadingScreen.SetActive(true);
             previousSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Rotbrew_CityCentre");
         }
@@ -37,6 +41,7 @@ public class SceneNavigator : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "Rotbrew_Industrial")
         {
+            loadingScreen.SetActive(true);
             previousSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Rotbrew_Industrial");
         }
@@ -46,6 +51,7 @@ public class SceneNavigator : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "Rotbrew_Sewer")
         {
+            loadingScreen.SetActive(true);
             previousSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Rotbrew_Sewer");
         }
@@ -55,6 +61,7 @@ public class SceneNavigator : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "Rotbrew_Kalos")
         {
+            loadingScreen.SetActive(true);
             previousSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Rotbrew_Kalos");
         }
