@@ -2736,6 +2736,7 @@ GameObject:
   - component: {fileID: 108624790}
   - component: {fileID: 108624792}
   - component: {fileID: 108624791}
+  - component: {fileID: 108624793}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -2832,7 +2833,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2843,6 +2844,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &108624793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108624789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 108624792}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &108683040
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,6 +5769,7 @@ GameObject:
   - component: {fileID: 225070312}
   - component: {fileID: 225070314}
   - component: {fileID: 225070313}
+  - component: {fileID: 225070315}
   m_Layer: 0
   m_Name: Lights (5)
   m_TagString: Untagged
@@ -5848,7 +5866,7 @@ Light:
     serializedVersion: 2
     m_Bits: 8191
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5859,6 +5877,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &225070315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225070311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 225070314}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &227129804
 GameObject:
   m_ObjectHideFlags: 0
@@ -32174,6 +32208,7 @@ GameObject:
   - component: {fileID: 1257234014}
   - component: {fileID: 1257234016}
   - component: {fileID: 1257234015}
+  - component: {fileID: 1257234017}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -32270,7 +32305,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -32281,6 +32316,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &1257234017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257234013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1257234016}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!64 &1258915387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33199,6 +33250,7 @@ GameObject:
   - component: {fileID: 1305950224}
   - component: {fileID: 1305950226}
   - component: {fileID: 1305950225}
+  - component: {fileID: 1305950227}
   m_Layer: 0
   m_Name: Lights (7)
   m_TagString: Untagged
@@ -33295,7 +33347,7 @@ Light:
     serializedVersion: 2
     m_Bits: 8191
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -33306,6 +33358,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &1305950227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305950223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1305950226}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &1310374953
 GameObject:
   m_ObjectHideFlags: 0
@@ -42561,6 +42629,7 @@ GameObject:
   - component: {fileID: 1785762477}
   - component: {fileID: 1785762479}
   - component: {fileID: 1785762478}
+  - component: {fileID: 1785762480}
   m_Layer: 0
   m_Name: Lights (3)
   m_TagString: Untagged
@@ -42657,7 +42726,7 @@ Light:
     serializedVersion: 2
     m_Bits: 8191
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -42668,6 +42737,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &1785762480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785762476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1785762479}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &1803342554
 GameObject:
   m_ObjectHideFlags: 0
@@ -43203,6 +43288,7 @@ GameObject:
   - component: {fileID: 1819779755}
   - component: {fileID: 1819779757}
   - component: {fileID: 1819779756}
+  - component: {fileID: 1819779758}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -43299,7 +43385,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -43310,6 +43396,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &1819779758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819779754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1819779757}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &1829618633
 GameObject:
   m_ObjectHideFlags: 0
@@ -45774,7 +45876,7 @@ Light:
     serializedVersion: 2
     m_Bits: 8191
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -45785,27 +45887,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
---- !u!95 &1934034754
-Animator:
-  serializedVersion: 5
+--- !u!114 &1934034754
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934034750}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2aac79fcc85e924478f3ed507fd5cbb0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1934034753}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &1934609956
 GameObject:
   m_ObjectHideFlags: 0
@@ -48988,6 +49085,7 @@ GameObject:
   - component: {fileID: 2075059418}
   - component: {fileID: 2075059420}
   - component: {fileID: 2075059419}
+  - component: {fileID: 2075059421}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -49082,9 +49180,9 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8191
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -49095,6 +49193,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!114 &2075059421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075059417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a954933910117064bbe76b10d8794328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 2075059420}
+  minIntensity: 1
+  maxIntensity: 9.4
+  smoothing: 5
 --- !u!1 &2075746834
 GameObject:
   m_ObjectHideFlags: 0
