@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class KalosController : MonoBehaviour
 {
+    public List<GameObject> lightningAreas = new List<GameObject>();
+    public List<Lightning> lightningScripts = new List<Lightning>();
     public EnemyPatrolPoints patrol;
     public Animator anim;
     public bool melee;
     public bool lightning;
     public float meleeDistance;
+    public float lightningDistance;
+
+    private void Start()
+    {
+        foreach (var obj in lightningAreas)
+        {
+            obj.SetActive(false);
+        }
+    }
 
     private void Update()
     {
@@ -29,16 +40,26 @@ public class KalosController : MonoBehaviour
             anim.SetBool("melee", false);
             anim.SetBool("walking", true);
         }
+
+        if (patrol.chasing && (patrol.agent.remainingDistance > lightningDistance))
+        {
+            anim.SetTrigger("lightning");
+            StartCoroutine("LightningAttack");
+        }
     }
 
-    /*IEnumerator MeleeAttack()
+    IEnumerator LightningAttack()
     {
-        anim.SetBool("walking", false);
-        anim.SetTrigger("melee");
+        foreach (var obj in lightningAreas)
+        {
+            obj.SetActive(true);
+        }
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3f);
 
-        anim.SetBool("walking", true);
-        anim.ResetTrigger("melee");
-    }*/
+        foreach (var obj in lightningAreas)
+        {
+            obj.SetActive(false);
+        }
+    }
 }
