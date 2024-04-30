@@ -52,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         playerMovement.enabled = false;
         deathScreen.SetActive(true);
         potionThrower.canThrowPotion = false;
+        Time.timeScale = 0f;
     }
 
     IEnumerator ChangeAlphaCoroutine()
