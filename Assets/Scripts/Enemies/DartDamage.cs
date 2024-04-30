@@ -6,16 +6,13 @@ public class DartDamage : MonoBehaviour
 {
     public float damage;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-            Destroy(this);
-        }
-        else
-        {
-            Destroy(this);
+            Debug.Log("Dart triggered player");
+            Destroy(gameObject);
         }
     }
 }

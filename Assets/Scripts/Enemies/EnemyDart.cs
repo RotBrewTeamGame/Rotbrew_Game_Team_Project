@@ -16,7 +16,13 @@ public class EnemyDart : MonoBehaviour
 
     void Start()
     {
-        // Get the initial rotation of the goblin GameObject
+
+        // Start shooting coroutine
+        StartCoroutine(ShootDart());
+    }
+
+    void Update()
+    {
         if (goblin != null)
         {
             enemyRotation = goblin.transform.rotation;
@@ -25,9 +31,6 @@ public class EnemyDart : MonoBehaviour
         {
             Debug.LogError("Goblin GameObject reference is missing!");
         }
-
-        // Start shooting coroutine
-        StartCoroutine(ShootDart());
     }
 
     public IEnumerator ShootDart()
@@ -37,7 +40,7 @@ public class EnemyDart : MonoBehaviour
         if (isShooting)
         {
             // Initialize dartRotation here
-            Quaternion dartRotation = Quaternion.Euler(-66.016f, enemyRotation.eulerAngles.y, -90f);
+            Quaternion dartRotation = Quaternion.Euler(-66.016f, enemyRotation.eulerAngles.y - 90f, -90f);
 
             GameObject dart = Instantiate(dartPrefab, dartSpawnPoint.position, dartRotation);
             Rigidbody dartRigidbody = dart.GetComponent<Rigidbody>();

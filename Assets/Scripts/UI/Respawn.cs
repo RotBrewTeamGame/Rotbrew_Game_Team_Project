@@ -41,6 +41,6 @@ public class Respawn : MonoBehaviour
         movement.enabled = true;
         deathScreen.SetActive(false);
         rB.isKinematic = false;
-        potionThrower.canThrowPotion = false;
+        potionThrower.canThrowPotion = true;
     }
 }
