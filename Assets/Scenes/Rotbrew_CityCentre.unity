@@ -38817,7 +38817,7 @@ MonoBehaviour:
   movement: {fileID: 641736387}
   healthBar: {fileID: 169860668}
   deathScreen: {fileID: 1123027768}
-  rB: {fileID: 0}
+  rB: {fileID: 641736384}
   potionThrower: {fileID: 641736393}
   lineRenderer: {fileID: 641736392}
 --- !u!114 &1626228033

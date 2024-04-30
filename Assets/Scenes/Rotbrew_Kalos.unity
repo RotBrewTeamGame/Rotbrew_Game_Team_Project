@@ -4257,8 +4257,8 @@ MonoBehaviour:
   movement: {fileID: 408566170}
   healthBar: {fileID: 623072888}
   deathScreen: {fileID: 890019793}
-  rB: {fileID: 0}
-  potionThrower: {fileID: 0}
+  rB: {fileID: 408566171}
+  potionThrower: {fileID: 426068741}
   lineRenderer: {fileID: 408566173}
 --- !u!114 &505886147
 MonoBehaviour:
