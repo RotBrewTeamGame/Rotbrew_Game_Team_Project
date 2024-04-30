@@ -8295,7 +8295,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -38813,12 +38813,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 36398787}
   player: {fileID: 641736389}
-  playerHealth: {fileID: 0}
-  movement: {fileID: 0}
+  playerHealth: {fileID: 641736385}
+  movement: {fileID: 641736387}
   healthBar: {fileID: 169860668}
   deathScreen: {fileID: 1123027768}
   rB: {fileID: 0}
   potionThrower: {fileID: 641736393}
+  lineRenderer: {fileID: 641736392}
 --- !u!114 &1626228033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42645,7 +42646,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

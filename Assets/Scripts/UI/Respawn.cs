@@ -20,6 +20,7 @@ public class Respawn : MonoBehaviour
     {
         playerHealth = player.GetComponent<PlayerHealth>();
         movement = player.GetComponent <FirstPersonMovement>();
+        lineRenderer = player.GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame

@@ -64610,12 +64610,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 187326119}
   player: {fileID: 1613434336}
-  playerHealth: {fileID: 0}
-  movement: {fileID: 0}
+  playerHealth: {fileID: 1613434333}
+  movement: {fileID: 1613434335}
   healthBar: {fileID: 309447587}
   deathScreen: {fileID: 1162705656}
   rB: {fileID: 0}
   potionThrower: {fileID: 177654629}
+  lineRenderer: {fileID: 1613434340}
 --- !u!114 &1174600793
 MonoBehaviour:
   m_ObjectHideFlags: 0

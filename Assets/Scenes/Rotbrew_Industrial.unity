@@ -25691,8 +25691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 743719337}
   player: {fileID: 1631159174}
-  playerHealth: {fileID: 0}
-  movement: {fileID: 0}
+  playerHealth: {fileID: 1631159170}
+  movement: {fileID: 1631159172}
   healthBar: {fileID: 1128506967}
   deathScreen: {fileID: 1274907489}
   rB: {fileID: 1631159169}
