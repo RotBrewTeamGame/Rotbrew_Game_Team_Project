@@ -10,14 +10,16 @@ public class EnemyPatrolPoints : MonoBehaviour
     public int patrolPointIndex = 0;
     public NavMeshAgent agent;
     public bool patrolling;
-    public Transform player;
+    public GameObject player;
     public float chasingDistance;
     public bool chasing;
+    public PlayerHealth playerHealth;
 
     private void Start()
     {
         chasing = false;
         patrolling = true;
+        playerHealth = player.GetComponent<PlayerHealth>();
 
         StartPatrol();
     }
@@ -34,6 +36,12 @@ public class EnemyPatrolPoints : MonoBehaviour
         else
         {
             ChasePlayer();
+        }
+
+        if (playerHealth.health <= 0)
+        {
+            chasing = false;
+            patrolling = true;
         }
     }
 

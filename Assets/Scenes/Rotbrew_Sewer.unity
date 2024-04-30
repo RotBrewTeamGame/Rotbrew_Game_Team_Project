@@ -510,7 +510,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -6215,7 +6215,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -7446,7 +7446,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -10774,7 +10774,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -11275,6 +11275,7 @@ MonoBehaviour:
   centrePoint: {fileID: 7895211}
   patrolling: 1
   player: {fileID: 1613434336}
+  playerHealth: {fileID: 0}
 --- !u!1 &244175610
 GameObject:
   m_ObjectHideFlags: 0
@@ -12714,7 +12715,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -19218,7 +19219,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 3532941380991665033, guid: a169b238e88fe8244ba3d90715b86471,
         type: 3}
       propertyPath: chasingDistance
@@ -19282,11 +19283,7 @@ PrefabInstance:
       objectReference: {fileID: 1613434333}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3051162653665141715, guid: a169b238e88fe8244ba3d90715b86471,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 802269712}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8750010662271553388, guid: a169b238e88fe8244ba3d90715b86471,
         type: 3}
@@ -22509,7 +22506,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -23070,7 +23067,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -23737,7 +23734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -28053,7 +28050,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -31757,7 +31754,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -35058,7 +35055,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -37313,7 +37310,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -38448,7 +38445,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -39089,7 +39086,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 408174706}
+    m_TransformParent: {fileID: 1192895576}
     m_Modifications:
     - target: {fileID: 281611836550054814, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
@@ -39145,32 +39142,32 @@ PrefabInstance:
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.62601995
+      value: 1.1945001
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.62601995
+      value: 1.1945001
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.62601995
+      value: 1.1945001
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.73906
+      value: -8.190002
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2389843
+      value: -0.41239727
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 118.70533
+      value: -2.6299896
       objectReference: {fileID: 0}
     - target: {fileID: 3319887964790632915, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
@@ -39227,7 +39224,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -58112,7 +58109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -61646,7 +61643,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -63297,7 +63294,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -65426,7 +65423,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -65870,6 +65867,7 @@ Transform:
   - {fileID: 488319497}
   - {fileID: 1485444197}
   - {fileID: 1675069058}
+  - {fileID: 802269712}
   - {fileID: 1186793443}
   - {fileID: 1759021881}
   - {fileID: 408174706}
@@ -74465,7 +74463,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -74889,7 +74887,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -75104,7 +75102,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -76160,7 +76158,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -77403,7 +77401,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 3926922442589818626, guid: a1cc64ea50a91854aadd436a6297b80b,
         type: 3}
       propertyPath: chasing
@@ -79524,7 +79522,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -84062,7 +84060,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -85024,12 +85022,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1613434339}
   m_SourcePrefab: {fileID: 100100000, guid: a3d3277247ea6a94ea57c51caee81c98, type: 3}
---- !u!4 &1613434331 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
-    type: 3}
-  m_PrefabInstance: {fileID: 1613434330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1613434332 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1317910627943114178, guid: a3d3277247ea6a94ea57c51caee81c98,
@@ -85873,7 +85865,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -87429,7 +87421,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -90515,7 +90507,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -91466,7 +91458,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -96412,7 +96404,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 8490390585150743894, guid: 3c623ada2d55c7d4c8dfa6015820fc55,
         type: 3}
       propertyPath: chasingDistance
@@ -97098,7 +97090,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -104140,7 +104132,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance
@@ -117952,7 +117944,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1613434331}
+      objectReference: {fileID: 1613434336}
     - target: {fileID: 5233831411991554362, guid: dd99ebc8e62bf4f43904af27a7d0ffa4,
         type: 3}
       propertyPath: chasingDistance

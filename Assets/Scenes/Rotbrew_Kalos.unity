@@ -1542,8 +1542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245327202}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7, y: 0, z: 75.4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.46, y: 2.76, z: 69.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3843,12 +3843,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420945124}
   m_CullTransparentMesh: 1
---- !u!4 &426068732 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3173486234609608125, guid: a3d3277247ea6a94ea57c51caee81c98,
-    type: 3}
-  m_PrefabInstance: {fileID: 408566165}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &426068741 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1146991420123541280, guid: a3d3277247ea6a94ea57c51caee81c98,
@@ -15608,6 +15602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrier: {fileID: 611786658}
+  playerHealth: {fileID: 408566168}
 --- !u!1 &1574717748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919398331071869942, guid: 663ca96c91fa0204e89aeda89e513650,
@@ -19863,7 +19858,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 426068732}
+      objectReference: {fileID: 408566166}
     - target: {fileID: 1297773037295464689, guid: 750b8b0e2575ec04b8afc08307497dc2,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -20156,8 +20151,8 @@ SceneRoots:
   - {fileID: 1099955226}
   - {fileID: 595232401}
   - {fileID: 904049160}
-  - {fileID: 408566165}
   - {fileID: 245327203}
+  - {fileID: 408566165}
   - {fileID: 783732774}
   - {fileID: 1950556099}
   - {fileID: 8141031563015755689}

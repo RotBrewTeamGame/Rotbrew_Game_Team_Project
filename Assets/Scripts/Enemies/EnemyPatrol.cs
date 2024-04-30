@@ -14,10 +14,12 @@ public class EnemyPatrol : MonoBehaviour
 
     public bool patrolling;
     public GameObject player;
+    public PlayerHealth playerHealth;
 
     void Start()
     {
         patrolling = true;
+        playerHealth = player.GetComponent<PlayerHealth>();
     }
 
 
@@ -32,6 +34,10 @@ public class EnemyPatrol : MonoBehaviour
             ChasePlayer();
         }
 
+        if (playerHealth.health <= 0)
+        {
+            patrolling = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
