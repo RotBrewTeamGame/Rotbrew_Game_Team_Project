@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,6 +26,9 @@ public class FirstPersonMovement : MonoBehaviour
     public event Action Landed;
     public event Action CrouchStarted;
     public event Action CrouchEnded;
+
+    // Coroutine reference for freezing position and rotation
+    Coroutine freezeCoroutine;
 
     void Awake()
     {
@@ -56,10 +60,29 @@ public class FirstPersonMovement : MonoBehaviour
         if (IsWalking)
         {
             WalkStarted?.Invoke();
+            // If there's a coroutine running, stop it and unfreeze positions
+            if (freezeCoroutine != null)
+            {
+                StopCoroutine(freezeCoroutine);
+                rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionX;
+                rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+                freezeCoroutine = null;
+            }
         }
         else
         {
             WalkEnded?.Invoke();
+            // If not walking and there's no coroutine running, start one
+            if (freezeCoroutine == null)
+                freezeCoroutine = StartCoroutine(FreezePositionAndRotation());
         }
+    }
+
+    IEnumerator FreezePositionAndRotation()
+    {
+        // Wait for 1 second
+        yield return new WaitForSeconds(0.2f);
+        // Freeze x and z positions
+        rigidbody.constraints |= RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
     }
 }
