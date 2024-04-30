@@ -13,6 +13,7 @@ public class Respawn : MonoBehaviour
     public GameObject deathScreen;
     public Rigidbody rB;
     public PotionThrower potionThrower;
+    public LineRenderer lineRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -34,13 +35,21 @@ public class Respawn : MonoBehaviour
 
     public void OnButtonClick()
     {
+        StartCoroutine(EnablePotionThrowerAfterDelay());
+    }
+
+    private IEnumerator EnablePotionThrowerAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.1f);
         player.transform.position = respawnPoint.position;
         player.transform.rotation = respawnPoint.rotation;
         playerHealth.health = playerHealth.maxHealth;
         healthBar.fillAmount = 1;
         movement.enabled = true;
-        deathScreen.SetActive(false);
         rB.isKinematic = false;
+        lineRenderer.enabled = false;
         potionThrower.canThrowPotion = true;
+        Time.timeScale = 1f;
+        deathScreen.SetActive(false);
     }
 }

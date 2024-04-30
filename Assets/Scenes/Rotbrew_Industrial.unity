@@ -25697,6 +25697,7 @@ MonoBehaviour:
   deathScreen: {fileID: 1274907489}
   rB: {fileID: 1631159169}
   potionThrower: {fileID: 664008279}
+  lineRenderer: {fileID: 1631159177}
 --- !u!114 &897731551
 MonoBehaviour:
   m_ObjectHideFlags: 0
