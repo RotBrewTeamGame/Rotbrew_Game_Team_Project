@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KeyCraft : MonoBehaviour
 {
+    public GameObject keyUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class KeyCraft : MonoBehaviour
         if (GameManager.instance.keyPieceItemCount >= 3)
         {
             GameManager.instance.keyPieceItemCount = GameManager.instance.keyPieceItemCount - 3;
-            GameManager.instance.TurnOnKeyUI();
+            keyUI.SetActive(true);
             GameManager.instance.IncreaseKeyAmount(1);
         }
     }

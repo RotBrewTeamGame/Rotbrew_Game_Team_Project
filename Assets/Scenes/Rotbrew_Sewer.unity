@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10130972, g: 0.1526289, b: 0.18087588, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2503573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28862,7 +28862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &592326834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74196,8 +74196,6 @@ MonoBehaviour:
   frostPotionQuantity: {fileID: 507247373}
   firePotionQuantity: {fileID: 343112412}
   keyQuantity: {fileID: 111651639}
-  keyUI: {fileID: 2503572}
-  winUI: {fileID: 0}
 --- !u!1 &1346345560
 GameObject:
   m_ObjectHideFlags: 0
@@ -85557,6 +85555,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1613434339}
+    - targetCorrespondingSourceObject: {fileID: 6948424254339203268, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1613434341}
   m_SourcePrefab: {fileID: 100100000, guid: a3d3277247ea6a94ea57c51caee81c98, type: 3}
 --- !u!54 &1613434332 stripped
 Rigidbody:
@@ -85751,6 +85753,19 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1613434341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613434336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa921e611b0db040b8d0618b5b59ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyItem: {fileID: 2503572}
 --- !u!1 &1617495609
 GameObject:
   m_ObjectHideFlags: 0
@@ -101883,6 +101898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4c04dcfd9437448a80a201349924f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyUI: {fileID: 0}
 --- !u!114 &1987403652
 MonoBehaviour:
   m_ObjectHideFlags: 0

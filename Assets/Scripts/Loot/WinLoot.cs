@@ -11,6 +11,12 @@ public class WinLoot : MonoBehaviour
     public string winTrailSpawnRateParameterName = "TrailSpawnRate";
     public string winOuterTrailSpawnRateParameterName = "OuterTrailSpawnRate";
     public VisualEffect winVfx; // Reference to the VFX Graph component
+    public WinGame winGame;
+
+    void Start()
+    {
+        winGame = GameObject.Find("Win").GetComponent<WinGame>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -18,8 +24,8 @@ public class WinLoot : MonoBehaviour
         {
             if (GameManager.instance != null)
             {
-                GameManager.instance.WinUI();
-
+                winGame.win = true;
+                Time.timeScale = 0f;
             }
 
             SetWinSpawnRatesToZero();

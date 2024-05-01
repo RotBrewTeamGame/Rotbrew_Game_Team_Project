@@ -30,9 +30,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI firePotionQuantity;
     public TextMeshProUGUI keyQuantity;
 
-    public GameObject keyUI;
-    public GameObject winUI;
-
     void Start()
     {
         if (instance == null)
@@ -175,18 +172,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void TurnOnKeyUI()
-    {
-        if (keyUI != null)
-        {
-            keyUI.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("keyUI is not assigned.");
-        }
-    }
-
     public void IncreaseKeyAmount(int amount)
     {
         keyItemCount += amount;
@@ -198,10 +183,5 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("keyQuantity is not assigned.");
         }
-    }
-
-    public void WinUI()
-    {
-        winUI.SetActive(true);
     }
 }

@@ -834,6 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rotbrew_CityCentre: Rotbrew_CityCentre
+  buttonText: {fileID: 30379482}
 --- !u!1 &1128749591
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4d94f09fcb20444b88603887098de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 0}
 --- !u!1 &1221191599
 GameObject:
   m_ObjectHideFlags: 0

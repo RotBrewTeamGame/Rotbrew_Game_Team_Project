@@ -2286,6 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4c04dcfd9437448a80a201349924f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyUI: {fileID: 20648592}
 --- !u!114 &73356445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14748,6 +14749,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 641736391}
+    - targetCorrespondingSourceObject: {fileID: 6948424254339203268, guid: a3d3277247ea6a94ea57c51caee81c98,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 641736394}
   m_SourcePrefab: {fileID: 100100000, guid: a3d3277247ea6a94ea57c51caee81c98, type: 3}
 --- !u!4 &641736383 stripped
 Transform:
@@ -14960,6 +14965,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f71eadac381a634a9897331d68f2543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &641736394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641736389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa921e611b0db040b8d0618b5b59ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyItem: {fileID: 20648592}
 --- !u!1 &646174976
 GameObject:
   m_ObjectHideFlags: 0
@@ -24032,7 +24050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1046175824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24050,7 +24068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.3, y: -42.8}
+  m_AnchoredPosition: {x: 39, y: -42.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046175825
@@ -37741,8 +37759,6 @@ MonoBehaviour:
   frostPotionQuantity: {fileID: 1501236204}
   firePotionQuantity: {fileID: 1716333602}
   keyQuantity: {fileID: 786119731}
-  keyUI: {fileID: 20648592}
-  winUI: {fileID: 1945889818}
 --- !u!1 &1565217593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8849295915714560982, guid: 7d35032a1439e0548808bb5d7b0d805d,
@@ -39275,7 +39291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1654353354
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41920,7 +41936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1767071378
 MonoBehaviour:
   m_ObjectHideFlags: 0
