@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 638482947958415708
+  lastModified: 638501953262999133
   FileSizes:
   - Name: Desktop
     Value: 155264
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638499415199629921
+  lastModified: 638501953264030811
   FileSizes:
   - Name: Desktop
-    Value: 475968
+    Value: 475936
   Exists: 1
 --- !u!114 &-7778664462462785671
 MonoBehaviour:
@@ -175,6 +175,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 340
+--- !u!114 &-4919669847881265145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtracks/BossSoundtrack
+  m_EditorClassIdentifier: 
+  Path: event:/Soundtracks/BossSoundtrack
+  Guid:
+    Data1: -2107776337
+    Data2: 1279970689
+    Data3: 1074400644
+    Data4: 1092905988
+  Banks:
+  - {fileID: 1634982789875869402}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 156041
 --- !u!114 &-4222732711134698551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +325,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638452765522643510
+  lastModified: 638501956342726647
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -400,12 +427,13 @@ MonoBehaviour:
   - {fileID: -4222732711134698551}
   - {fileID: -2591600581912160744}
   - {fileID: -5843308631126366415}
+  - {fileID: -4919669847881265145}
   EditorParameters: []
   MasterBanks:
   - {fileID: -432879648055885830}
   StringsBanks:
   - {fileID: 3956543449033771546}
-  cacheTime: 638499415200075852
+  cacheTime: 638501957390492902
   cacheVersion: 131616
 --- !u!114 &208792717327976440
 MonoBehaviour:
@@ -503,10 +531,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Soundtracks.bank
   Name: Soundtracks
   StudioPath: bank:/Soundtracks
-  lastModified: 638499415200075852
+  lastModified: 638501957390492902
   FileSizes:
   - Name: Desktop
-    Value: 2816672
+    Value: 4746816
   Exists: 1
 --- !u!114 &2750164653299792374
 MonoBehaviour:
@@ -604,10 +632,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Rotbrew/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638499415199541359
+  lastModified: 638501956342747122
   FileSizes:
   - Name: Desktop
-    Value: 2176
+    Value: 2222
   Exists: 1
 --- !u!114 &5102291270106090850
 MonoBehaviour:

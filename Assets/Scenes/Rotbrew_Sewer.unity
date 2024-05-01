@@ -9995,7 +9995,7 @@ MonoBehaviour:
       Data2: 1210537859
       Data3: -1869123166
       Data4: -1653354618
-    Path: event:/Soundtracks/CityCentre
+    Path: event:/Soundtracks/CityCentreSoundtrack
   industrialZoneSoundtrack:
     Guid:
       Data1: 0
@@ -10009,7 +10009,7 @@ MonoBehaviour:
       Data2: 1335014090
       Data3: 434472329
       Data4: -569901546
-    Path: event:/Soundtracks/SewerTheme
+    Path: event:/Soundtracks/SewersSoundtrack
   firstPersonAudio: {fileID: 411569204}
   firstPersonMovement: {fileID: 1613434335}
 --- !u!4 &217814852
@@ -43827,7 +43827,7 @@ MonoBehaviour:
       Data2: 1335014090
       Data3: 434472329
       Data4: -569901546
-    Path: event:/Soundtracks/SewerTheme
+    Path: event:/Soundtracks/SewersSoundtrack
   chaseSoundtrack:
     Guid:
       Data1: -139073504
