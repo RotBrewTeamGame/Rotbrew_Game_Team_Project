@@ -43818,23 +43818,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 892000668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7522a822bff7393428c2d3bff345c3a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSoundtrack:
+  CollisionTag: 
+  EventReference:
     Guid:
       Data1: 911475551
       Data2: 1335014090
       Data3: 434472329
       Data4: -569901546
     Path: event:/Soundtracks/SewersSoundtrack
-  chaseSoundtrack:
-    Guid:
-      Data1: -139073504
-      Data2: 1177803874
-      Data3: 1711589299
-      Data4: -114350543
-    Path: event:/Soundtracks/SewerCombatSoundtrack
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &892050185
 GameObject:
   m_ObjectHideFlags: 0
